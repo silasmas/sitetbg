@@ -841,6 +841,7 @@ main {
     height: 100%;
     object-fit: cover;
     opacity: .8;
+    margin-top: 10px;
 }
 
 .temoignage .temoin {
@@ -1348,7 +1349,7 @@ footer li svg {
 }
 .form-block .card{
     border: none;
-    
+
 }
 .form-block .card.card-form{
     box-shadow: 0 22px 27px rgba(0, 0, 0, .05);
@@ -1653,7 +1654,7 @@ footer li svg {
         padding: 30px 20px!important;
         margin-top: -90px!important;
     }
-    
+
     .form-block h1 {
         font-size: 22px!important;
     }

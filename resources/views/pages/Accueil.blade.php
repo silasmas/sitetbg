@@ -84,7 +84,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="img-about">
-                        <img src="{{ asset('assets/images/slides/slide4.jpg') }}" alt="">
+                        <img src="{{ asset('assets/images/team/web-2.jpg') }}" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 content">
@@ -131,7 +131,7 @@
                                         class="img-logo-portfolio">
                                 </div>
                                 <div class="content text-left">
-                                    
+
                                     <h5>{{ $port->titre }}</h5>
                                 </div>
                                 <img src="{{ asset('storage/'. $port->cover) }}" alt=""
@@ -167,12 +167,13 @@
                             1
                         </div>
                         <div class="card-body">
-                            <div class="text-center">
+                            <a href="">
+                                <div class="text-center">
                                 <h4>Edition des livres</h4>
                                 <p> Nous réalisons votre rêve en éditant vos livres, concevant couverture et mise en
                                     page, jusqu'à sa sortie officielle.</p>
-
                             </div>
+                            </a>
                         </div>
                     </div>
                     <br>
@@ -308,7 +309,7 @@
                                     @empty(!$t->likedin)
                                         <a target="_blank" href="{{$t->likedin}}">
                                         <i class="fab fa-linkedin-in"></i></a>
-                                    @endempty       
+                                    @endempty
                                 </div>
                             </div>
                         </div>
@@ -317,7 +318,7 @@
                 </div>
                 <div class="col-lg-1"></div>
                 @empty
-                    
+
                 @endforelse
             </div>
             <div class="text-center mb-5">
@@ -350,7 +351,7 @@
                                     @empty(!$t->likedin)
                                         <a target="_blank" href="{{$t->likedin}}">
                                         <i class="fab fa-linkedin-in"></i></a>
-                                    @endempty       
+                                    @endempty
                                 </div>
                             </div>
                         </div>
@@ -359,7 +360,7 @@
                 </div>
                 <div class="col-lg-1"></div>
                 @empty
-                    
+
                 @endforelse
             </div>
             <div class="text-center mb-5">
@@ -392,7 +393,7 @@
                                     @empty(!$t->likedin)
                                         <a target="_blank" href="{{$t->likedin}}">
                                         <i class="fab fa-linkedin-in"></i></a>
-                                    @endempty       
+                                    @endempty
                                 </div>
                             </div>
                         </div>
@@ -401,7 +402,7 @@
                 </div>
                 <div class="col-lg-1"></div>
                 @empty
-                    
+
                 @endforelse
             </div>
         </div>
@@ -448,7 +449,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="bg-img">
-                        <img src="{{ asset('assets/images/portfolio/img-tem.jpg') }}" alt="img_tem" class="img-fluid">
+                        <img src="{{ asset('assets/images/team/s2.jpg') }}" alt="img_tem" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -478,7 +479,7 @@
                             <p><q>Aucun témoignage pour l'instant</q></p>
                             @endforelse
                         </div>
-                        
+
                         <ol class="carousel-indicators">
                             @for($i = 0; $i <$temoin->count(); $i++)
                                 <li data-target="#carouselExampleControls" data-slide-to="{{ $i }}"

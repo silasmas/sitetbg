@@ -31,7 +31,7 @@ Route::get('detail.portfolio/{id}', [
 
 Route::get('enregistrer/{id}',[PortofolioController::class,'showRegister'])->name('enregistrer');
 
-// Route::post('add.reservation',[ClientregisterController::class, 'store'])->name('add.reservation');
+Route::post('detailgraphique',[ClientregisterController::class, 'detailgraphique'])->name('detailgraphique');
 Route::post('addreservation',[App\Http\Controllers\ClientregisterController::class, 'store'])->name('addreservation');
 
 //Admin
