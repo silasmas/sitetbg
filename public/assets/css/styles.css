@@ -9,6 +9,9 @@ main {
     overflow-x: inherit;
 }
 
+a{
+    text-decoration: none !important;
+}
 .loading {
     height: 100%;
     width: 100%;
@@ -841,7 +844,6 @@ main {
     height: 100%;
     object-fit: cover;
     opacity: .8;
-    margin-top: 10px;
 }
 
 .temoignage .temoin {
