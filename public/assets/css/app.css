@@ -1,0 +1,93 @@
+
+:root{
+    --primaryColor: #8f1a2e;
+    --colorWhite: #fff;
+    --colorText: #171616;
+}
+body{
+    font-family: "sofia-pro", sans-serif;
+}
+header .btn{
+    background: var(--primaryColor)!important;
+    color: var(--colorWhite)!important;
+}
+.img-footer{
+    width: 90px;
+}
+.text-slate-500{
+    color: var(--colorText);
+}
+.ld-sf [type="submit"] {
+    color: var(--primaryColor);
+  }
+.lqd-pf-overlay-bg{
+    background: #8f1a2ebe!important;
+}
+.is-stuck{
+    backdrop-filter: blur(14px);
+}
+.bg-primary{
+    background: var(--primaryColor);
+}
+.main-nav > li > a{
+    color: var(--colorText);
+}
+.main-header .main-nav > li.current-menu-item > a, .main-header .main-nav > li.is-active > a, .main-header .main-nav > li:hover > a, .main-header .main-nav > li:focus > a{
+    color: var(--primaryColor);
+}
+.bg-orange-100{
+    background: #fde2e6;
+}
+.lqd-counter-element{
+    color: var(--colorText);
+}
+.text-primary{
+    color: var(--primaryColor)!important;
+}
+.team .lqd-tm-details svg stop:last-child{
+    stop-color: #8f1a2e73;
+}
+.bg-orange-100 h6{
+    color: var(--primaryColor);
+}
+.text-blue-700,.text-nightblue,
+.h2, h2,.h3, h3{
+    color: var(--colorText);
+
+}
+.h2, h2, .h3, h3{
+    font-family: "Golos Text", sans-serif;
+}
+.text-orange-500{
+    color: var(--primaryColor);
+}
+.navbar-brand img{
+    width: 80px;
+}
+.banner .btn-solid{
+    background: var(--primaryColor)!important;
+}
+.banner .btn-solid:hover{
+    background: var(--colorText)!important;
+}
+.banner h2{
+    color: var(--colorText);
+}
+.banner h2 span{
+    color: var(--primaryColor);
+}
+[data-mobile-nav-scheme="dark"] .lqd-mobile-sec .navbar-collapse{
+    background-color: var(--colorText);
+}
+
+.detail-project .carousel-nav.carousel-nav-appended.hidden{
+    display: none;
+}
+.text-title{
+    color: var(--colorText);
+}
+@media (max-width: 767px) {
+    .banner {
+      padding: 120px 10px 0px 10px;
+    }
+  }
