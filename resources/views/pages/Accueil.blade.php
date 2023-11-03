@@ -59,7 +59,7 @@
                             </defs>
                         </svg>
                         <figure class="clip-svg" data-responsive-bg="true">
-                            <img width="1292" height="1196" src="{{asset('assets/newimg/3.JPG')}}"
+                            <img width="1292" height="1196" src="{{asset('assets/newimg/03.JPG')}}"
                                 class="w-full invisible" alt="Banner Image">
                         </figure>
                     </div>
@@ -94,7 +94,7 @@
                         data-animate-shadow="true">
                         <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                             <figure class="w-full relative">
-                                <img class="rounded-8" src="{{asset('assets/newimg/8.JPG')}}"
+                                <img class="rounded-8" src="{{asset('assets/newimg/08.jpeg')}}"
                                     alt="digital experience">
                             </figure>
                         </div>
@@ -107,7 +107,7 @@
                         data-animate-shadow="true">
                         <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                             <figure class="w-full relative">
-                                <img class="rounded-8" src="{{asset('assets/newimg/6.JPG')}}"
+                                <img class="rounded-8" src="{{asset('assets/newimg/06.jpg')}}"
                                     alt="digital experience">
                             </figure>
                         </div>
@@ -120,7 +120,7 @@
                         data-animate-shadow="true">
                         <div class="lqd-imggrp-img-container inline-flex relative items-center justify-center">
                             <figure class="w-full relative">
-                                <img class="rounded-8" width="393" src="{{asset('assets/newimg/2.JPG')}}"
+                                <img class="rounded-8" width="393" src="{{asset('assets/newimg/2.jpg')}}"
                                     alt="digital experience">
                             </figure>
                         </div>
@@ -587,26 +587,26 @@
                             <span class="liquid-filter-items-label">Filter</span>
                             <ul class="filter-list filter-list-inline items-center text-0/8em md:hidden" id="lqd-pf-filter-case-studies">
                                 <li class="active" data-filter="*"><span>All</span></li>
-                                <li data-filter=".branding" class=""><span>Branding</span></li>
-                                <li data-filter=".custom-print" class=""><span>Custom Print</span></li>
-                                <li data-filter=".digital-design" class=""><span>Digital Design</span></li>
-                                <li data-filter=".ecommerce" class=""><span>Ecommerce</span></li>
-                                <li data-filter=".masonry" class=""><span>Masonry</span></li>
-                                <li data-filter=".portfolio-single" class=""><span>Portfolio Single</span></li>
+                                <li data-filter=".branding" class=""><span>Master Class</span></li>
+                                <li data-filter=".formation" class=""><span>Formation</span></li>
+                                <li data-filter=".digital-design" class=""><span>Publications</span></li>
+                                <li data-filter=".ecommerce" class=""><span>Conception</span></li>
+                                <li data-filter=".masonry" class=""><span>Marketing</span></li>
+                                <li data-filter=".portfolio-single" class=""><span>Evenements</span></li>
                             </ul>
                             <div class="lqd-filter-dropdown hidden md:block" data-form-options="{ &quot;dropdownAppendTo&quot;:  &quot;self&quot; }">
                                 <select name="lqd-filter-dropdown-lqd-pf-filter-case-studies" id="lqd-filter-dropdown-lqd-pf-filter-case-studies" style="display: none;">
                                     <option selected="" data-filter="*" value="*">All</option>
-                                    <option data-filter=".branding" value=".branding">Branding</option>
-                                    <option data-filter=".custom-print" value=".custom-print">Custom Print</option>
-                                    <option data-filter=".digital-design" value=".digital-design">Digital Design</option>
-                                    <option data-filter=".ecommerce" value=".ecommerce">Ecommerce</option>
-                                    <option data-filter=".masonry" value=".masonry">Masonry</option>
-                                    <option data-filter=".portfolio-single" value=".portfolio-single">Portfolio Single</option>
+                                    <option data-filter=".branding" value=".branding">Master Class</option>
+                                    <option data-filter=".formation" value=".formation">Formation</option>
+                                    <option data-filter=".digital-design" value=".digital-design">Publications</option>
+                                    <option data-filter=".ecommerce" value=".ecommerce">Conception</option>
+                                    <option data-filter=".masonry" value=".masonry">Marketing</option>
+                                    <option data-filter=".portfolio-single" value=".portfolio-single">Evenements</option>
                                 </select><div class="lqd-select-dropdown"><div class="ui-selectmenu-menu ui-front"><ul aria-hidden="true" aria-labelledby="lqd-filter-dropdown-lqd-pf-filter-case-studies-button" id="lqd-filter-dropdown-lqd-pf-filter-case-studies-menu" role="listbox" tabindex="0" class="ui-menu ui-corner-bottom ui-widget ui-widget-content"></ul></div></div><span tabindex="0" id="lqd-filter-dropdown-lqd-pf-filter-case-studies-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="lqd-filter-dropdown-lqd-pf-filter-case-studies-menu" aria-haspopup="true" class="ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget"><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text">All</span></span>
                             </div>
                             <a href="./page-modern-agency-projects.html" class="btn font-bold text-14 uppercase tracking-0/5 whitespace-nowrap btn-naked text-primary hover:text-primary btn-icon-shaped btn-has-label" target="_blank">
-                                <span class="btn-txt" data-text="See More">See More</span>
+                                <span class="btn-txt" data-text="See More"></span>
                             </a>
                         </div>
                     </div>
@@ -617,7 +617,7 @@
                                     <div class="lqd-pf-img mb-1em relative rounded-6 overflow-hidden">
                                         <figure>
                                             <figure class="w-full">
-                                                <img width="720" height="460" src="{{ asset('assets/images/slides/slide4.jpg') }}" class="w-full" alt="portfilio">
+                                                <img width="720" height="460" src="{{ asset('assets/newimg/010.jpeg') }}" class="w-full" alt="portfilio">
                                             </figure>
                                         </figure>
                                         <span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center text-white bg-transparent" style="background-image: linear-gradient(130deg, rgba(51, 106, 234, 0.87) 0%, rgb(255, 85, 56) 100%);">
@@ -632,7 +632,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <a href="./page-modern-agency-projects.html" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger" target="_blank"></a>
+                                    <a href="{{ route('showPortfolio',["id"=>1]) }}" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger"></a>
                                 </div>
                             </article>
                         </div>
@@ -642,7 +642,7 @@
                                     <div class="lqd-pf-img mb-1em relative rounded-6 overflow-hidden">
                                         <figure>
                                             <figure class="w-full">
-                                                <img width="720" height="1000" src="{{ asset('assets/images/slides/slide4.jpg') }}" class="w-full" alt="portfilio">
+                                                <img width="720" height="1000" src="{{ asset('assets/newimg/011.jpeg') }}" class="w-full" alt="portfilio">
                                             </figure>
                                         </figure>
                                         <span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center text-white bg-transparent" style="background-image: linear-gradient(130deg, rgba(51, 106, 234, 0.87) 0%, rgb(255, 85, 56) 100%);">
@@ -657,17 +657,17 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <a href="./page-modern-agency-projects.html" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger" target="_blank"></a>
+                                    <a href="{{ route('showPortfolio',["id"=>1]) }}" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger"></a>
                                 </div>
                             </article>
                         </div>
-                        <div class="px-25 py-0 lqd-pf-column col-lg-4 col-sm-6 col-12 masonry-item branding custom-print masonry portfolio-single" style="position: absolute; left: 780px; top: 0px;">
+                        <div class="px-25 py-0 lqd-pf-column col-lg-4 col-sm-6 col-12 masonry-item branding formation masonry portfolio-single" style="position: absolute; left: 780px; top: 0px;">
                             <article class="lqd-pf-item lqd-pf-item-style-2 lqd-pf-overlay-bg-scale lqd-pf-text-custom pf-details-h-str liquid-portfolio type-liquid-portfolio status-publish format-standard has-post-thumbnail hentry liquid-portfolio-category-branding liquid-portfolio-category-custom-print liquid-portfolio-category-masonry liquid-portfolio-category-portfolio-single">
                                 <div class="lqd-pf-item-inner">
                                     <div class="lqd-pf-img mb-1em relative rounded-6 overflow-hidden">
                                         <figure>
                                             <figure class="w-full">
-                                                <img width="720" height="460" src="{{ asset('assets/images/slides/slide4.jpg') }}" class="w-full" alt="portfilio">
+                                                <img width="720" height="460" src="{{ asset('assets/newimg/012.jpeg') }}" class="w-full" alt="portfilio">
                                             </figure>
                                         </figure>
                                         <span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center text-white bg-transparent" style="background-image: linear-gradient(130deg, rgba(51, 106, 234, 0.87) 0%, rgb(255, 85, 56) 100%);">
@@ -682,7 +682,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <a href="./page-modern-agency-projects.html" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger" target="_blank"></a>
+                                    <a href="{{ route('showPortfolio',["id"=>1]) }}" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger"></a>
                                 </div>
                             </article>
                         </div>
@@ -692,7 +692,7 @@
                                     <div class="lqd-pf-img mb-1em relative rounded-6 overflow-hidden">
                                         <figure>
                                             <figure class="w-full">
-                                                <img width="720" height="1000" src="{{ asset('assets/images/slides/slide4.jpg') }}" class="w-full" alt="portfilio">
+                                                <img width="720" height="1000" src="{{ asset('assets/newimg/014.jpg') }}" class="w-full" alt="portfilio">
                                             </figure>
                                         </figure>
                                         <span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center text-white bg-transparent" style="background-image: linear-gradient(130deg, rgba(51, 106, 234, 0.87) 0%, rgb(255, 85, 56) 100%);">
@@ -707,7 +707,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <a href="./page-modern-agency-projects.html" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger" target="_blank"></a>
+                                    <a href="{{ route('showPortfolio',["id"=>1]) }}" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger"></a>
                                 </div>
                             </article>
                         </div>
@@ -717,7 +717,7 @@
                                     <div class="lqd-pf-img mb-1em relative rounded-6 overflow-hidden">
                                         <figure>
                                             <figure class="w-full">
-                                                <img width="720" height="1000" src="{{ asset('assets/images/slides/slide4.jpg') }}" class="w-full" alt="portfilio">
+                                                <img width="720" height="1000" src="{{ asset('assets/newimg/015.jpg') }}" class="w-full" alt="portfilio">
                                             </figure>
                                         </figure>
                                         <span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center text-white bg-transparent" style="background-image: linear-gradient(130deg, rgba(51, 106, 234, 0.87) 0%, rgb(255, 85, 56) 100%);">
@@ -732,7 +732,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <a href="./page-modern-agency-projects.html" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger" target="_blank"></a>
+                                    <a href="{{ route('showPortfolio',["id"=>1]) }}" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger"></a>
                                 </div>
                             </article>
                         </div>
@@ -742,7 +742,7 @@
                                     <div class="lqd-pf-img mb-1em relative rounded-6 overflow-hidden">
                                         <figure>
                                             <figure class="w-full">
-                                                <img width="720" height="462" src="{{ asset('assets/images/slides/slide4.jpg') }}" class="w-full" alt="portfilio">
+                                                <img width="720" height="462" src="{{ asset('assets/newimg/016.jpg') }}" class="w-full" alt="portfilio">
                                             </figure>
                                         </figure>
                                         <span class="lqd-pf-overlay-bg lqd-overlay flex items-center justify-center text-white bg-transparent" style="background-image: linear-gradient(130deg, rgba(51, 106, 234, 0.87) 0%, rgb(255, 85, 56) 100%);">
@@ -757,7 +757,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <a href="./page-modern-agency-projects.html" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger" target="_blank"></a>
+                                    <a href="showPortfolio/1" class="lqd-overlay flex lqd-pf-overlay-link lqd-cc-label-trigger"></a>
                                 </div>
                             </article>
                         </div>
@@ -803,7 +803,7 @@
                     <div class="lqd-tm-img">
                         <figure class="m-0">
                             <img class="w-full" width="564" height="712"
-                                src="{{ asset('assets/newimg/22.jpg') }}" alt="Erik Genie">
+                                src="{{ asset('assets/newimg/022.jpg') }}" alt="Erik Genie">
                         </figure>
                     </div>
                     <div class="lqd-tm-details pb-1em relative" data-custom-animations="true"
@@ -831,7 +831,7 @@
                     <div class="lqd-tm-img">
                         <figure class="m-0">
                             <img class="w-full" width="564" height="712"
-                                src="{{ asset('assets/newimg/23.jpg') }}" alt="Lena Meki">
+                                src="{{ asset('assets/newimg/023.jpeg') }}" alt="Lena Meki">
                         </figure>
                     </div>
                     <div class="lqd-tm-details pb-1em relative" data-custom-animations="true"
@@ -850,7 +850,7 @@
                         <h3 class="mt-0 mb-0/35em text-blue-700">Lena Meki</h3>
                         <p class="mt-0 mb-0 text-blue-200">Consultation</p>
                     </div>
-                    <a class="lqd-overlay flex leading-1/4em fresco" href="{{ asset('assets/newimg/23.jpg') }}"
+                    <a class="lqd-overlay flex leading-1/4em fresco" href="{{ asset('assets/newimg/023.jpeg') }}"
                         data-fresco-group="team"></a>
                 </div>
             </div>
@@ -859,7 +859,7 @@
                     <div class="lqd-tm-img">
                         <figure class="m-0">
                             <img class="w-full" width="560" height="712"
-                                src="{{ asset('assets/newimg/30.jpg') }}" alt="Claudia Aria">
+                                src="{{ asset('assets/newimg/030.jpg') }}" alt="Claudia Aria">
                         </figure>
                     </div>
                     <div class="lqd-tm-details pb-1em relative" data-custom-animations="true"
@@ -878,7 +878,7 @@
                         <h3 class="mt-0 mb-0/35em text-blue-700">Erik Genie</h3>
                         <p class="mt-0 mb-0 text-blue-200">Senior Developer</p>
                     </div>
-                    <a class="lqd-overlay flex leading-1/4em fresco" href="{{ asset('assets/images/slides/slide4.jpg') }}"
+                    <a class="lqd-overlay flex leading-1/4em fresco" href="{{ asset('assets/newimg/030.jpg') }}"
                         data-fresco-group="team"></a>
                 </div>
             </div>
@@ -909,7 +909,7 @@
                         <div class="lqd-imggrp-img-container inline-flex relative transform-style-3d">
                             <figure class="w-full relative" data-stacking-factor="1">
                                 <img width="750" height="750"
-                                    src="{{asset('assets/newimg/21.JPG')}}" alt="Testimonial">
+                                    src="{{asset('assets/newimg/021.jpg')}}" alt="Testimonial">
                             </figure>
                         </div>
                     </div>
@@ -995,7 +995,7 @@
             <div class="col-6 col-md-4 col-xl-2 p-0">
                 <div class="lqd-imggrp-single inline-flex relative items-center justify-center animation-element">
                     <figure class="w-full relative">
-                        <img src="./assets/images/demo/digital-hub/client-dropcam.svg" alt="Dropcam">
+                        <img src="{{ asset('assets/images/logo-client/biy.png') }}" alt="BIY">
                         <a href="#" target="_blank" rel="nofollow"
                             class="lqd-overlay flex lqd-fi-overlay-link leading-1/4em"></a>
                     </figure>
@@ -1004,7 +1004,7 @@
             <div class="col-6 col-md-4 col-xl-2 p-0">
                 <div class="lqd-imggrp-single inline-flex relative items-center justify-center animation-element">
                     <figure class="w-full relative">
-                        <img src="./assets/images/demo/digital-hub/client-amazon.svg" alt="Amazon">
+                        <img src="{{ asset('assets/images/logo-client/gael.png') }}" alt="GAEL">
                         <a href="#" target="_blank" rel="nofollow"
                             class="lqd-overlay flex lqd-fi-overlay-link leading-1/4em"></a>
                     </figure>
@@ -1013,7 +1013,7 @@
             <div class="col-6 col-md-4 col-xl-2 p-0">
                 <div class="lqd-imggrp-single inline-flex relative items-center justify-center animation-element">
                     <figure class="w-full relative">
-                        <img src="./assets/images/demo/digital-hub/client-cisco.svg" alt="Cisco">
+                        <img src="{{ asset('assets/images/logo-client/pcn.jpg') }}" alt="PNC">
                         <a href="#" target="_blank" rel="nofollow"
                             class="lqd-overlay flex lqd-fi-overlay-link leading-1/4em"></a>
                     </figure>
@@ -1022,7 +1022,7 @@
             <div class="col-6 col-md-4 col-xl-2 p-0">
                 <div class="lqd-imggrp-single inline-flex relative items-center justify-center animation-element">
                     <figure class="w-full relative">
-                        <img src="./assets/images/demo/digital-hub/client-amd-logo.svg" alt="AMD">
+                        <img src="{{ asset('assets/images/logo-client/phila.png') }}" alt="PHILA">
                         <a href="#" target="_blank" rel="nofollow"
                             class="lqd-overlay flex lqd-fi-overlay-link leading-1/4em"></a>
                     </figure>
@@ -1032,7 +1032,7 @@
                 <div
                     class="lqd-imggrp-single inline-flex relative items-center justify-center module-img animation-element">
                     <figure class="w-full relative">
-                        <img src="./assets/images/demo/digital-hub/client-logitech.svg" alt="Logitech">
+                        <img src="{{ asset('assets/images/logo-client/sep.png') }}" alt="SEP">
                         <a href="#" target="_blank" rel="nofollow"
                             class="lqd-overlay flex lqd-fi-overlay-link leading-1/4em"></a>
                     </figure>
@@ -1041,7 +1041,7 @@
             <div class="col-6 col-md-4 col-xl-2 p-0">
                 <div class="lqd-imggrp-single inline-flex relative items-center justify-center animation-element">
                     <figure class="w-full relative">
-                        <img src="./assets/images/demo/digital-hub/client-Spotify.svg" alt="Spotify">
+                        <img src="{{ asset('assets/images/logo-client/touchmydream.jpg') }}" alt="TOUCHMYDREAM">
                         <a href="#" target="_blank" rel="nofollow"
                             class="lqd-overlay flex lqd-fi-overlay-link leading-1/4em"></a>
                     </figure>
@@ -1073,11 +1073,11 @@
                                 data-delay-options='{"elements": ".lqd-highlight-inner", "delayType": "transition"}'
                                 data-split-text="false" data-split-options='{"type": "lines"}'>
                                 <mark class="lqd-highlight">
-                                    <span class="lqd-highlight-txt">Any questions à </span>
+                                    <span class="lqd-highlight-txt">Vos questions </span>
                                     <span class="lqd-highlight-inner bg-slate-200 bottom-5 left-0"></span>
                                 </mark>
                                 <mark class="lqd-highlight">
-                                    <span class="lqd-highlight-txt">Projects?</span>
+                                    <span class="lqd-highlight-txt">sur nos projets?</span>
                                     <span class="lqd-highlight-inner bg-slate-200 bottom-5 left-0"></span>
                                 </mark>
                             </h2>
@@ -1097,7 +1097,7 @@
                                     class="lqd-imggrp-img-container inline-flex relative items-center justify-center transform-style-3d">
                                     <figure class="w-full relative" data-stacking-factor="1">
                                         <img width="308" height="552"
-                                            src="./assets/images/demo/digital-hub/shape-person.png" alt="consultaition">
+                                            src="{{ asset('assets/newimg/shape-person.png') }}" alt="consultaition">
                                     </figure>
                                 </div>
                             </div>
@@ -1111,19 +1111,22 @@
                     <div
                         class="w-50percent flex flex-col border-right border-black-10 py-30 pr-30 pl-60 sm:w-full module-white animation-element">
                         <div class="ld-fancy-heading relative">
-                            <p class="ld-fh-element inline-block relative m-0 text-blue-200">Project Offers</p>
+                            <p class="ld-fh-element inline-block relative m-0 text-blue-200">Offres des projets</p>
                         </div>
                         <div class="ld-fancy-heading relative">
-                            <h4 class="ld-fh-element inline-block relative m-0 text-20 text-blue-700">info.liquid.com
+                            <h4 class="ld-fh-element inline-block relative m-0 text-20 text-blue-700">
+                                <small>Contact@thebestgroup.org</small>
                             </h4>
                         </div>
                     </div>
                     <div class="w-50percent flex flex-col py-30 pr-30 pl-60 sm:w-full module-white animation-element">
                         <div class="ld-fancy-heading relative">
-                            <p class="ld-fh-element inline-block relative m-0 text-blue-200">Consultation</p>
+                            <p class="ld-fh-element inline-block relative m-0 text-blue-200">Nous Contacter</p>
                         </div>
                         <div class="ld-fancy-heading relative">
-                            <h4 class="ld-fh-element inline-block relative m-0 text-20 text-blue-700">+ 1 223 38 87</h4>
+                            <h4 class="ld-fh-element inline-block relative m-0 text-20 text-blue-700">
+                                <small>(+243) 824859415</small>
+                            </h4>
                         </div>
                     </div>
                 </div>

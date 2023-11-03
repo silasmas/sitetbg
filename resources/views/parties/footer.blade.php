@@ -65,10 +65,10 @@
                         <div class="ld-sf relative ld-sf--button-naked ld-sf--size-lg ld-sf--sharp ld-sf--inputs-has-border ld-sf--input-shadow ld-sf--button-show ld-sf--button-inside">
                             <form class="relative" method="post" action="#">
                                 <p class="relative">
-                                    <input type="email" class="block w-full rounded-2 text-gray-500 mb-20" name="email" placeholder="Your email to start">
+                                    <input type="email" class="block w-full rounded-2 text-gray-500 mb-20" name="email" placeholder="Votre e-mail pour commencer">
                                 </p>
                                 <button type="submit" class="inline-flex items-center justify-center m-0 rounded-2 relative font-normal tracking-0">
-                                    <span class="submit-text">Subscribe</span>
+                                    <span class="submit-text">S'abonner</span>
                                     <span class="submit-icon">
                                         <i class="lqd-icn-ess icon-md-arrow-round-forward-2"></i>
                                     </span>
@@ -83,21 +83,21 @@
                 </div>
                 <div class="col col-12 col-xl-6 p-0">
                     <div class="module pl-60 flex flex-row xl:text-start lg:pl-0">
+                        {{-- <div class="iconbox flex flex-grow-1 justify-start relative flex-wrap justify-end items-center p-10 mb-30">
+                            <div class="iconbox-icon-wrap mr-25">
+                                <div class="iconbox-icon-container text-14 inline-flex text-primary">
+                                    <i aria-hidden="true" class="lqd-icn-ess icon-lqd-check"></i>
+                                </div>
+                            </div>
+                            <h3 class="lqd-iconbox-heading text-end justify-lg-start text-slate-500 text-14 m-0">Obtenez des cadeaux et des réductions</h3>
+                        </div> --}}
                         <div class="iconbox flex flex-grow-1 justify-start relative flex-wrap justify-end items-center p-10 mb-30">
                             <div class="iconbox-icon-wrap mr-25">
                                 <div class="iconbox-icon-container text-14 inline-flex text-primary">
                                     <i aria-hidden="true" class="lqd-icn-ess icon-lqd-check"></i>
                                 </div>
                             </div>
-                            <h3 class="lqd-iconbox-heading text-end justify-lg-start text-slate-500 text-14 m-0">Get Freebies and Discounts </h3>
-                        </div>
-                        <div class="iconbox flex flex-grow-1 justify-start relative flex-wrap justify-end items-center p-10 mb-30">
-                            <div class="iconbox-icon-wrap mr-25">
-                                <div class="iconbox-icon-container text-14 inline-flex text-primary">
-                                    <i aria-hidden="true" class="lqd-icn-ess icon-lqd-check"></i>
-                                </div>
-                            </div>
-                            <h3 class="lqd-iconbox-heading text-end justify-lg-start text-slate-500 text-14 m-0">Weekly Design Newsletter </h3>
+                            <h3 class="lqd-iconbox-heading text-end justify-lg-start text-slate-500 text-14 m-0">Newsletter hebdomadaire de conception </h3>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,11 @@
                             </div>
                         </div>
                         <div class="ld-fancy-heading relative">
-                            <p class="ld-fh-element inline-block relative mb-2em">We're Hub agency. We're passionate about solving problems through creative and digital products.</p>
+                            <p class="ld-fh-element inline-block relative mb-2em">
+                                Nous existons pour assurer aux entrepreneurs une présentation extérieure conforme à leurs rêves et idéologies. Plus qu’une agence de publicité, nous sommes une consultance qui conseille, conçoit et réalise la communication interne et externe des entreprises.
+                                Nouvelle adresse : 16, avenue de la paix, Kinshasa-Gombe, Réf : Pressing 5 à sec.
+
+                            </p>
                         </div>
                         <ul class="icon-list-items inline-items flex flex-wrap list-none p-0 mb-0 -mx-10">
                             <li class="icon-list-item inline-item mx-10">
@@ -155,27 +159,30 @@
                         <div class="w-33percent sm:w-50percent">
                             <div class="module-list flex flex-col justify-start mb-30 p-10">
                                 <div class="ld-fancy-heading relative">
-                                    <h3 class="ld-fh-element inline-block relative mb-1/35em text-16 uppercase tracking-1">About us</h3>
+                                    <h3 class="ld-fh-element inline-block relative mb-1/35em text-16 uppercase tracking-1">Raccourcis</h3>
                                 </div>
                                 <div class="lqd-fancy-menu lqd-custom-menu relative lqd-menu-td-none">
                                     <ul class="reset-ul">
                                         <li class="w-full flex items-center mb-10">
-                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Company</a>
+                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Home</a>
                                         </li>
                                         <li class="w-full flex items-center mb-10">
-                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Careers</a>
+                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Qui sommes-nous</a>
                                         </li>
                                         <li class="w-full flex items-center mb-10">
-                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Press media</a>
+                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Services</a>
                                         </li>
                                         <li class="w-full flex items-center">
-                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Our Blog</a>
+                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Portfolios</a>
+                                        </li>
+                                        <li class="w-full flex items-center">
+                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Teams</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-33percent sm:w-50percent">
+                        {{-- <div class="w-33percent sm:w-50percent">
                             <div class="module-list flex flex-col justify-start mb-30 p-10">
                                 <div class="ld-fancy-heading relative">
                                     <h3 class="ld-fh-element inline-block relative mb-1/35em text-16 uppercase tracking-1">Company</h3>
@@ -197,25 +204,28 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="w-33percent sm:w-50percent">
                             <div class="module-list flex flex-col justify-start mb-30 p-10">
                                 <div class="ld-fancy-heading relative">
-                                    <h3 class="ld-fh-element inline-block relative mb-1/35em text-16 uppercase tracking-1">Cases</h3>
+                                    <h3 class="ld-fh-element inline-block relative mb-1/35em text-16 uppercase tracking-1">Nos Services</h3>
                                 </div>
                                 <div class="lqd-fancy-menu lqd-custom-menu relative lqd-menu-td-none">
                                     <ul class="reset-ul">
                                         <li class="w-full flex items-center mb-10">
-                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Management</a>
+                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Edition des livres</a>
                                         </li>
                                         <li class="w-full flex items-center mb-10">
-                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Reporting</a>
+                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Evénementiel</a>
                                         </li>
                                         <li class="w-full flex items-center mb-10">
-                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Tracking</a>
+                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Stratégie et plan de communication</a>
                                         </li>
                                         <li class="w-full flex items-center">
-                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Subscribe</a>
+                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Conception et Management des projets</a>
+                                        </li>
+                                        <li class="w-full flex items-center">
+                                            <a class="w-full flex items-center leading-1/4em text-blue-400" href="#">Campagne médiatique</a>
                                         </li>
                                     </ul>
                                 </div>

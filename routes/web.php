@@ -19,71 +19,67 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', [
-    App\Http\Controllers\PortofolioController::class,
-    'accueil',
+Route::get('/', [PortofolioController::class, 'accueil',
 ])->name('accueil');
 
-Route::get('detail.portfolio/{id}', [
-    App\Http\Controllers\PortofolioController::class,
-    'show'])->name('detail.portfolio');
+Route::get('showPortfolio/{id}', [PortofolioController::class, 'show'])->name('showPortfolio');
 
 Route::get('enregistrer/{id}', [PortofolioController::class, 'showRegister'])->name('enregistrer');
 
 Route::post('detailgraphique', [ClientregisterController::class, 'detailgraphique'])->name('detailgraphique');
-Route::post('addreservation', [App\Http\Controllers\ClientregisterController::class, 'store'])->name('addreservation');
+Route::post('addreservation', [ClientregisterController::class, 'store'])->name('addreservation');
 
 //Admin
 Route::middleware(['auth'])->group(function () {
     Route::get('/admin', [
-        App\Http\Controllers\HomeController::class,
+        HomeController::class,
         'login',
     ])->name('admin');
     Route::get('/home', [
-        App\Http\Controllers\HomeController::class,
+        HomeController::class,
         'index',
     ])->name('home');
 
     Route::get('/add_portofolio', [
-        App\Http\Controllers\TemoignageController::class,
+        TemoignageController::class,
         'portofolio',
     ])->name('add_portofolio');
     Route::get('/add_temoignage', [
-        App\Http\Controllers\TemoignageController::class,
+        TemoignageController::class,
         'index',
     ])->name('add_temoignage');
     Route::get('/add_user', [
-        App\Http\Controllers\TemoignageController::class,
+        TemoignageController::class,
         'user',
     ])->name('add_user');
     Route::get('/add_team', [
-        App\Http\Controllers\TeamController::class,
+        TeamController::class,
         'create',
     ])->name('add_team');
 
     Route::post('/add.porto', [
-        App\Http\Controllers\PortofolioController::class,
+        PortofolioController::class,
         'store',
     ])->name('add.porto');
     Route::post('/add.galeri', [
-        App\Http\Controllers\PortofolioController::class,
+        PortofolioController::class,
         'store_galeri',
     ])->name('add.galeri');
     Route::post('/add.team', [
-        App\Http\Controllers\TeamController::class,
+        TeamController::class,
         'store',
     ])->name('add.team');
 
     Route::post('/add.temoignage', [
-        App\Http\Controllers\TemoignageController::class,
+        TemoignageController::class,
         'store',
     ])->name('add.temoignage');
     Route::get('/add_register', [
-        App\Http\Controllers\RegisterController::class,
+        RegisterController::class,
         'create',
     ])->name('add_register');
     Route::post('/add.form', [
-        App\Http\Controllers\RegisterController::class,
+        RegisterController::class,
         'store',
     ])->name('add.form');
 
@@ -93,19 +89,19 @@ Route::middleware(['auth'])->group(function () {
     ])->name('switcheEvent');
 
     Route::get('destroy_temoignage/{id}', [
-        App\Http\Controllers\TemoignageController::class,
+        TemoignageController::class,
         'destroy',
     ])->name('destroy_temoignage');
     Route::get('destroy_url/{id}', [
-        App\Http\Controllers\TemoignageController::class,
+        TemoignageController::class,
         'destroy_user',
     ])->name('destroy_url');
     Route::get('destroy_team/{id}', [
-        App\Http\Controllers\TeamController::class,
+        TeamController::class,
         'destroy',
     ])->name('destroy_team');
     Route::get('destroy_portofolio/{id}', [
-        App\Http\Controllers\PortofolioController::class,
+        PortofolioController::class,
         'destroy',
     ])->name('destroy_portofolio');
     Route::get('destroy_event/{id}', [RegisterController::class,

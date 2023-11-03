@@ -55,29 +55,29 @@
 		<div id="contact-modal" class="lity-modal lqd-modal lity-hide" data-modal-type="fullscreen">
 			<div class="lqd-modal-inner">
 				<div class="lqd-modal-head"></div>
-				<section class="lqd-section lqd-modal-content link-black bg-center bg-cover bg-norepeat" style="background-image: url(./assets/images/common/modal-bg.jpeg);">
+				<section class="lqd-section lqd-modal-content link-black bg-center bg-cover bg-norepeat" style="background-image: url(./assets/newimg/013.jpeg);">
 					<div class="container min-h-100vh flex items-center flex-wrap">
 						<div class="w-55percent relative flex flex-col sm:w-full">
 							<div class="flex flex-col items-start justify-center py-10 pr-100 pl-10 module-content">
 								<div class="ld-fancy-heading">
-									<h2 class="ld-fh-element text-120 mb-0/5em leading-0/8em font-medium text-black">Send a <span>message.</span></h2>
+									<h2 class="ld-fh-element text-120 mb-0/5em leading-0/8em font-medium text-black">Laissez-nous <span>Un message.</span></h2>
 								</div>
 								<div class="ld-fancy-heading">
-									<p class="text-18 ld-fh-element">We're here to answer any question you may have.</p>
+									<p class="text-18 ld-fh-element">Nous sommes là pour répondre à toutes vos questions.</p>
 								</div>
 								<div class="w-full flex flex-wrap module-info">
 									<div class="w-50percent flex flex-col sm:w-full module-info-inner">
 										<div class="mb-10 ld-fancy-heading relative">
-											<h6 class="ld-fh-element inline-block relative mb-1/25em text-14 font-bold tracking-0 text-black">careers</h6>
+											<h6 class="ld-fh-element inline-block relative mb-1/25em text-14 font-bold tracking-0 text-black">Carrière</h6>
 										</div>
 										<div class="ld-fancy-heading relative">
-											<p class="ld-fh-element inline-block relative mb-0/75em text-16 leading-1/2em">Would you like to join our growing team?</p>
+											<p class="ld-fh-element inline-block relative mb-0/75em text-16 leading-1/2em">Vous souhaitez rejoindre notre équipe en pleine croissance?</p>
 										</div>
 										<div class="mb-10 ld-fancy-heading relative">
-											<p class="ld-fh-element inline-block relative mb-0/5em text-16 font-bold leading-1/2em">careers@hub.com</p>
+											<p class="ld-fh-element inline-block relative mb-0/5em text-16 font-bold leading-1/2em">Contact@thebestgroup.org</p>
 										</div>
 									</div>
-									<div class="w-50percent flex flex-col sm:w-full">
+									{{-- <div class="w-50percent flex flex-col sm:w-full">
 										<div class="mb-10 ld-fancy-heading relative">
 											<h6 class="ld-fh-element mb-0/5em inline-block relative mb-1/25em text-14 font-bold tracking-0 text-black">careers</h6>
 										</div>
@@ -87,7 +87,7 @@
 										<div class="mb-10 ld-fancy-heading relative">
 											<p class="ld-fh-element inline-block relative mb-0/5em text-16 font-bold leading-1/2em">careers@hub.com</p>
 										</div>
-									</div>
+									</div> --}}
 								</div>
 							</div>
 						</div>
@@ -100,18 +100,18 @@
 									<form action="./assets/php/mailer.php" method="post" class="lqd-cf-form" novalidate="novalidate" data-status="init">
 										<div class="row">
 											<div class="col col-md-6 col-12 p-0">
-												<p class="m-0 text-black-30 text-12">Your name</p>
+												<p class="m-0 text-black-30 text-12">Nom complet</p>
 												<p>
 													<span class="lqd-form-control-wrap text">
-														<input class="text-13 text-black" type="text" name="name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Full name">
+														<input class="text-13 text-black" type="text" name="name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Nom complet">
 													</span>
 												</p>
 											</div>
 											<div class="col col-md-6 col-12 p-0">
-												<p class="m-0 text-black-30 text-12">Email address</p>
+												<p class="m-0 text-black-30 text-12">Email</p>
 												<p>
 													<span class="lqd-form-control-wrap email">
-														<input class="text-13 text-black" type="email" name="email" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Email Address">
+														<input class="text-13 text-black" type="email" name="email" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Email">
 													</span>
 												</p>
 											</div>
@@ -119,15 +119,15 @@
 												<p class="m-0 text-black-30 text-12">(Optional)</p>
 												<p>
 													<span class="lqd-form-control-wrap tel">
-														<input class="text-13 text-black" type="tel" name="tel" value="" size="40" aria-invalid="false" placeholder="Phone number">
+														<input class="text-13 text-black" type="tel" name="tel" value="" size="40" aria-invalid="false" placeholder="Numero de téléphone">
 													</span>
 												</p>
 											</div>
 											<div class="col col-md-6 col-12 p-0">
-												<p class="m-0 text-black-30 text-12">Subject</p>
+												<p class="m-0 text-black-30 text-12">Sujet</p>
 												<p>
 													<span class="lqd-form-control-wrap text">
-														<input class="text-13 text-black" type="text" name="project-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="New Project">
+														<input class="text-13 text-black" type="text" name="project-name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Nom du projet">
 													</span>
 												</p>
 											</div>
@@ -135,7 +135,7 @@
 												<p class="m-0 text-black-30 text-12">Your message</p>
 												<p>
 													<span class="lqd-form-control-wrap textarea">
-														<textarea class="text-13 text-black" name="message" cols="10" rows="4" aria-required="true" aria-invalid="false" placeholder="Tell us about your project"></textarea>
+														<textarea class="text-13 text-black" name="message" cols="10" rows="4" aria-required="true" aria-invalid="false" placeholder="Parlez nous de votre projet"></textarea>
 													</span>
 												</p>
 											</div>
@@ -145,7 +145,7 @@
 														<span class="lqd-cf-list-item">
 															<label>
 																<input class="text-black" type="checkbox" name="acceptance" value="1" aria-invalid="false">
-																<span class="lqd-cf-list-item-label">I am bound by the terms of the Service I accept Privacy Policy</span>
+																<span class="lqd-cf-list-item-label">Je suis lié par les termes du Service. J'accepte la Politique de Confidentialité</span>
 															</label>
 														</span>
 													</span>

@@ -4,13 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\team;
 use App\Models\images;
-use App\Mail\visitorMail;
-use App\Models\clientregister;
-use App\Models\portofolio;
 use App\Models\register;
+use Illuminate\View\View;
+use App\Models\portofolio;
 use App\Models\temoignage;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
+use App\Models\clientregister;
 
 class PortofolioController extends Controller
 {
@@ -21,15 +20,16 @@ class PortofolioController extends Controller
      */
     public function index()
     {
-        $form=register::where('etat','active')->first();
-       
-        return view('pages.register',compact('form'));
+        $form = register::where('etat', 'active')->first();
+
+        return view('pages.register', compact('form'));
     }
 
     public function accueil()
     {
-        $event = register::where('etat','active')->get();
-       // dd($event->isEmpty());
+        $img = portofolio::all();
+        $event = register::where('etat', 'active')->get();
+        // dd($event->isEmpty());
         $temoin = temoignage::inRandomOrder()
             ->take(6)
             ->get();
@@ -151,20 +151,21 @@ class PortofolioController extends Controller
      * @param  \App\Models\portofolio  $portofolio
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($id):View 
     {
-        $img = portofolio::findOrFail($id);
-        $sim = portofolio::where('slogant', $img->slogant)->get();
-        $img->load('images');
-        // dd($img->images);
-        return view('pages.detail', compact('img', 'sim'));
+        // dd("ok");
+        // $img = portofolio::findOrFail($id);
+        // $sim = portofolio::where('slogant', $img->slogant)->get();
+        // $img->load('images');
+        return view('pages.detail');
+        // return view('pages.detail', compact('img', 'sim'));
     }
     public function showRegister($id)
     {
         $event = register::findOrFail($id);
-        $cl=clientregister::where('register_id',$id)->get();
+        $cl = clientregister::where('register_id', $id)->get();
         //  dd($event->id);
-        return view('pages.register', compact('event','cl'));
+        return view('pages.register', compact('event', 'cl'));
     }
 
     // public function envoi_mail(Request $req)
