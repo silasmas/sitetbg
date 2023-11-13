@@ -1,4 +1,4 @@
-<header id="site-header" class="main-header main-header-overlay" data-sticky-header="true" data-sticky-values-measured="false" data-sticky-options='{"disableOnMobile": true}'>
+{{-- <header id="site-header" class="main-header main-header-overlay" data-sticky-header="true" data-sticky-values-measured="false" data-sticky-options='{"disableOnMobile": true}'>
     <section class="lqd-section desktop-header md:hidden">
         <div class="container-fluid p-0">
             <div class="flex flex-wrap w-full justify-between">
@@ -125,7 +125,7 @@
                     <ul class="reset-ul inline-nav flex pointer-events-auto" data-lqd-interactive-color="true">
                         <li class="mb-20"><a href="#" target="_blank">EN.</a></li>
                         <li class="mb-20"><a href="#" target="_blank">FR.</a></li>
-                        {{-- <li><a href="#" target="_blank">ge.</a></li> --}}
+                        <li><a href="#" target="_blank">ge.</a></li>
                     </ul>
                 </div>
             </div>
@@ -135,4 +135,145 @@
                     <div class="lqd-scrl-indc header-module header-module-rotate flex -rotate-180 pointer-events-auto" data-lqd-scroll-indicator="true">
                     <a href="#wrap" data-localscroll="true" data-lqd-interactive-color="true"><span class="lqd-scrl-indc-inner flex items-center text-inherit">
                     <span class="lqd-scrl-indc-txt">scroll</span> <span class="lqd-scrl-indc-line w-1 h-60 relative text-inherit bg-black-30"><span class="lqd-scrl-indc-el absolute -top-5 -left-5 rounded-8 inline-block w-10 h-10 bg-current-color" style="transform: translate(0px);"></span></span></span></a></div></div></div></section>
+</header> --}}
+<!-- Main Header-->
+<header id="home" class="main-header header-style-one">
+    <!-- Main box -->
+    <div class="main-box">
+        <div class="logo-box">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="{{ asset('common/newimg/logoWhite.png') }}" alt="The best group" title="The best group">
+                </a>
+            </div>
+            <button class="ui-btn ui-btn search-btn">
+                <span class="icon lnr lnr-icon-search"></span>
+            </button>
+        </div>
+
+        <!--Nav Box-->
+        <div class="nav-outer">
+            <nav class="nav main-menu">
+                <ul class="navigation">
+                    <li class="current"><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#news">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Main Menu End-->
+
+        <div class="outer-box">
+            <a href="tel:+92(8800)9806" class="info-btn">
+                <i class="icon fa fa-phone"></i>
+                <strong class="text">+92 (8800) 6890</strong>
+            </a>
+
+            <!-- Mobile Nav toggler -->
+            <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+        </div>
+    </div>
+
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+
+        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+        <nav class="menu-box">
+            <div class="upper-box">
+                <div class="nav-logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a>
+                </div>
+                <div class="close-btn"><i class="icon fa fa-times"></i></div>
+            </div>
+
+            <ul class="navigation clearfix">
+                <!--Keep This Empty / Menu will come through Javascript-->
+            </ul>
+            <ul class="contact-list-one">
+                <li>
+                    <!-- Contact Info Box -->
+                    <div class="contact-info-box">
+                        <i class="icon lnr-icon-phone-handset"></i>
+                        <span class="title">Call Now</span>
+                        <a href="tel:+92880098670">+92 (8800) - 98670</a>
+                    </div>
+                </li>
+                <li>
+                    <!-- Contact Info Box -->
+                    <div class="contact-info-box">
+                        <span class="icon lnr-icon-envelope1"></span>
+                        <span class="title">Send Email</span>
+                        <a href="mailto:help@company.com">help@company.com</a>
+                    </div>
+                </li>
+                <li>
+                    <!-- Contact Info Box -->
+                    <div class="contact-info-box">
+                        <span class="icon lnr-icon-clock"></span>
+                        <span class="title">Send Email</span>
+                        Mon - Sat 8:00 - 6:30, Sunday - CLOSED
+                    </div>
+                </li>
+            </ul>
+
+
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </nav>
+    </div><!-- End Mobile Menu -->
+
+    <!-- Header Search -->
+    <div class="search-popup">
+        <span class="search-back-drop"></span>
+        <button class="close-search"><span class="fa fa-times"></span></button>
+
+        <div class="search-inner">
+            <form method="post" action="index.html">
+                <div class="form-group">
+                    <input type="search" name="search-field" value="" placeholder="Search..." required="">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End Header Search -->
+
+    <!-- Sticky Header  -->
+    <div class="sticky-header">
+        <div class="auto-container">
+            <div class="inner-container">
+                <!--Logo-->
+                <div class="logo">
+                    <a href="index.html" title="">
+                    <img src="{{ asset('common/newimg/logo.png') }}" alt="The best group" title="The best group">
+
+                    </a>
+                </div>
+
+                <!--Right Col-->
+                <div class="nav-outer">
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-collapse show collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <!--Keep This Empty / Menu will come through Javascript-->
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+
+                    <!--Mobile Navigation Toggler-->
+                    <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Sticky Menu -->
 </header>
+<!--End Main Header -->
