@@ -8753,6 +8753,7 @@ Section Title
 ***/
 .fun-fact-section {
   position: relative;
+  padding-top: 100px;
 }
 .fun-fact-section:before {
   position: absolute;
@@ -8761,16 +8762,20 @@ Section Title
   height: 100%;
   width: 100%;
   background-color: #141414;
-  height: 50%;
+  height: 70%;
   content: "";
 }
 .fun-fact-section .outer-box {
   position: relative;
-  background-color: var(--bg-theme-color1);
+  background-color: white;
   padding: 80px 80px 30px;
   padding-right: 30px;
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 5px 64px rgba(0, 0, 0, 0.1);
+}
+.fun-fact-section .outer-box h3{
+    color: var(--theme-color1)!important;
 }
 .fun-fact-section .outer-box .bg {
   background-position: center top;
@@ -8819,7 +8824,7 @@ Section Title
   right: -15px;
   height: 130px;
   width: 1px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
   content: "";
 }
 @media only screen and (max-width: 1023px) {
@@ -8848,7 +8853,7 @@ Section Title
 .counter-block .icon {
   position: relative;
   display: inline-block;
-  color: #ffffff;
+  color: var(--theme-color1);
   border-radius: 50%;
   font-size: 62px;
   z-index: 1;
@@ -8860,7 +8865,7 @@ Section Title
   position: relative;
   font-size: 50px;
   font-weight: 400;
-  color: #ffffff;
+  color: var(--theme-color1);
   line-height: 1em;
   font-family: var(--title-font);
   display: block;
