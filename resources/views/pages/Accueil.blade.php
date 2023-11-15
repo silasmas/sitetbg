@@ -346,7 +346,7 @@
         </div>
     </section>
     <!-- Projects Section Two-->
-    <section class="projects-section-two pt-5">
+    <section class="projects-section-two pt-5" id="portfolio">
         <div class="auto-container">
             <div class="sec-title text-center">
                 <span class="sub-title">recent portfolio</span>
@@ -360,7 +360,7 @@
                         <div class="inner-box">
                             <div class="image-box">
                                 <figure class="image"><a href="page-project-details.html"><img
-                                            src="images/resource/project-5.jpg" alt=""></a>
+                                            src="{{asset('common/newimg/p.jpg')}}" alt=""></a>
                                 </figure>
                                 <a href="page-project-details.html" class="read-more"><i
                                         class="fa fa-long-arrow-alt-right"></i></a>

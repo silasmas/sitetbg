@@ -158,7 +158,7 @@
                     <li class="current"><a href="#home">Accueil</a></li>
                     <li><a href="#about">A propos</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -173,7 +173,17 @@
             </a>
 
             <!-- Mobile Nav toggler -->
-            <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+            <div class="mobile-nav-toggler order-2"><span class="icon lnr-icon-bars"></span></div>
+            <div class="dropdown order-1">
+                <button class="btn btn-secondary btn-language dropdown-toggle ms-lg-4 ms-3" type="button"
+                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>Fr</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li class="active"><a class="dropdown-item" href="#">Français</a></li>
+                    <li><a class="dropdown-item" href="#">Anglais</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -185,7 +195,11 @@
         <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
         <nav class="menu-box">
             <div class="upper-box">
-                <div class="nav-logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a>
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="{{ asset('common/newimg/logoWhite.png') }}" alt="The best group"
+                            title="The best group">
+                    </a>
                 </div>
                 <div class="close-btn"><i class="icon fa fa-times"></i></div>
             </div>
@@ -253,13 +267,13 @@
                 <!--Logo-->
                 <div class="logo">
                     <a href="index.html" title="">
-                    <img src="{{ asset('common/newimg/logo.png') }}" alt="The best group" title="The best group">
+                        <img src="{{ asset('common/newimg/logo.png') }}" alt="The best group" title="The best group">
 
                     </a>
                 </div>
 
                 <!--Right Col-->
-                <div class="nav-outer">
+                <div class="nav-outer ms-auto d-flex align-items-center">
                     <!-- Main Menu -->
                     <nav class="main-menu">
                         <div class="navbar-collapse show collapse clearfix">
@@ -270,7 +284,18 @@
                     </nav><!-- Main Menu End-->
 
                     <!--Mobile Navigation Toggler-->
-                    <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                    <div class="dropdown order-1">
+                        <button class="btn btn-secondary btn-language dropdown-toggle ms-lg-5 ms-3" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>Fr</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li class="active"><a class="dropdown-item" href="#">Français</a></li>
+                            <li><a class="dropdown-item" href="#">Anglais</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-nav-toggler order-2"><span class="icon lnr-icon-bars"></span></div>
+
                 </div>
             </div>
         </div>
