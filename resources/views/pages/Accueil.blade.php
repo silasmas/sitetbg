@@ -536,6 +536,7 @@
         </div>
     </section>
     <!-- End Projects Section Two -->
+
     <!-- Testimonial Section Two -->
     <section class="testimonial-section-two">
         <div class="bg bg-pattern-2"></div>
@@ -622,24 +623,135 @@
         </div>
     </section>
     <!-- End Testimonial Section -->
-    <!-- Clients Section   -->
-	<section class="clients-section alternate">
+    <!-- Team Section -->
+	<section class="team-section" id="team">
 		<div class="auto-container">
-			<!-- Sponsors Outer -->
-			<div class="sponsors-outer">
-				<!--clients carousel-->
-				<ul class="clients-carousel owl-carousel owl-theme">
-					<li class="slide-item"> <a href="#"><img src="{{asset('common/images/logo-client/biy.png')}}" alt=""></a> </li>
-					<li class="slide-item"> <a href="#"><img src="{{asset('common/images/logo-client/biy.png')}}" alt=""></a> </li>
-					<li class="slide-item"> <a href="#"><img src="images/resource/client.png" alt=""></a> </li>
-					<li class="slide-item"> <a href="#"><img src="images/resource/client.png" alt=""></a> </li>
-					<li class="slide-item"> <a href="#"><img src="images/resource/client.png" alt=""></a> </li>
-				</ul>
+			<div class="sec-title text-center">
+				<span class="sub-title">our team members</span>
+				<h2>Meet the experts</h2>
+			</div>
+
+			<div class="row">
+				<!-- Team block -->
+				<div class="team-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+					<div class="inner-box">
+						<div class="image-box">
+							<figure class="image"><a href="page-team-details.html"><img src="{{ asset('common/newimg/022.jpg')}}" alt=""></a></figure>
+							<div class="social-links">
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fab fa-facebook"></i></a>
+								<a href="#"><i class="fab fa-pinterest-p"></i></a>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</div>
+							<span class="share-icon fa fa-share-alt"></span>
+						</div>
+						<div class="info-box">
+							<h5 class="name"><a href="page-team-details.html">Mike Hardson</a></h5>
+							<span class="designation">Designer</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Team block -->
+				<div class="team-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+					<div class="inner-box">
+						<div class="image-box">
+							<figure class="image"><a href="page-team-details.html"><img src="{{ asset('common/newimg/028.jpg')}}" alt=""></a></figure>
+							<div class="social-links">
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fab fa-facebook"></i></a>
+								<a href="#"><i class="fab fa-pinterest-p"></i></a>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</div>
+							<span class="share-icon fa fa-share-alt"></span>
+						</div>
+						<div class="info-box">
+							<h5 class="name"><a href="page-team-details.html">Aleesha brown</a></h5>
+							<span class="designation">Designer</span>
+						</div>
+					</div>
+				</div>
+                <!-- Team block -->
+				<div class="team-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+					<div class="inner-box">
+						<div class="image-box">
+							<figure class="image"><a href="page-team-details.html"><img src="{{ asset('common/newimg/030.jpg')}}" alt=""></a></figure>
+							<div class="social-links">
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fab fa-facebook"></i></a>
+								<a href="#"><i class="fab fa-pinterest-p"></i></a>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</div>
+							<span class="share-icon fa fa-share-alt"></span>
+						</div>
+						<div class="info-box">
+							<h5 class="name"><a href="page-team-details.html">michale smith</a></h5>
+							<span class="designation">Designer</span>
+						</div>
+					</div>
+				</div>
+                <!-- Team block -->
+				<div class="team-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
+					<div class="inner-box">
+						<div class="image-box">
+							<figure class="image"><a href="page-team-details.html"><img src="{{ asset('common/newimg/027.jpeg')}}" alt=""></a></figure>
+							<div class="social-links">
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fab fa-facebook"></i></a>
+								<a href="#"><i class="fab fa-pinterest-p"></i></a>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</div>
+							<span class="share-icon fa fa-share-alt"></span>
+						</div>
+						<div class="info-box">
+							<h5 class="name"><a href="page-team-details.html">michale smith</a></h5>
+							<span class="designation">Designer</span>
+						</div>
+					</div>
+				</div>
+				<!-- Team block -->
+				<div class="team-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1600ms">
+					<div class="inner-box">
+						<div class="image-box">
+							<figure class="image"><a href="page-team-details.html"><img src="{{ asset('common/newimg/024.jpeg')}}" alt=""></a></figure>
+							<div class="social-links">
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fab fa-facebook"></i></a>
+								<a href="#"><i class="fab fa-pinterest-p"></i></a>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</div>
+							<span class="share-icon fa fa-share-alt"></span>
+						</div>
+						<div class="info-box">
+							<h5 class="name"><a href="page-team-details.html">michale smith</a></h5>
+							<span class="designation">Designer</span>
+						</div>
+					</div>
+				</div>
+
+                <!-- Team block -->
+				<div class="team-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="2000ms">
+					<div class="inner-box">
+						<div class="image-box">
+							<figure class="image"><a href="page-team-details.html"><img src="{{ asset('common/newimg/025.jpeg')}}" alt=""></a></figure>
+							<div class="social-links">
+								<a href="#"><i class="fab fa-twitter"></i></a>
+								<a href="#"><i class="fab fa-facebook"></i></a>
+								<a href="#"><i class="fab fa-pinterest-p"></i></a>
+								<a href="#"><i class="fab fa-instagram"></i></a>
+							</div>
+							<span class="share-icon fa fa-share-alt"></span>
+						</div>
+						<div class="info-box">
+							<h5 class="name"><a href="page-team-details.html">michale smith</a></h5>
+							<span class="designation">Designer</span>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
-	<!--End Clients Section -->
-
+	<!-- End Team Section -->
     <section id="contact" class="contact-section">
 		<div class="bg bg-pattern-6"></div>
 		<div class="bg-image"><img src="images/resource/girl.png" alt=""></div>
@@ -718,4 +830,47 @@
 			</div>
 		</div>
 	</section>
+    <!-- Clients Section   -->
+	<section class="clients-section alternate">
+		<div class="auto-container">
+			<!-- Sponsors Outer -->
+			<div class="sponsors-outer">
+				<!--clients carousel-->
+				<ul class="clients-carousel owl-carousel owl-theme">
+					<li class="slide-item">
+                        <div class="img">
+                            <img src="{{asset('common/images/logo-client/biy.png')}}" alt="">
+                        </div>
+                    </li>
+					<li class="slide-item">
+                        <div class="img">
+                            <img src="{{asset('common/images/logo-client/gael.png')}}" alt="">
+                        </div>
+                    </li>
+					<li class="slide-item">
+                        <div class="img">
+                            <img src="{{asset('common/images/logo-client/pcn.jpg')}}" alt="">
+                        </div>
+                    </li>
+					<li class="slide-item">
+                        <div class="img">
+                            <img src="{{asset('common/images/logo-client/phila.png')}}" alt="">
+                        </div>
+                    </li>
+					<li class="slide-item">
+                        <div class="img">
+                            <img src="{{asset('common/images/logo-client/sep.png')}}" alt="">
+                        </div>
+                    </li>
+					<li class="slide-item">
+                        <div class="img">
+                            <img src="{{asset('common/images/logo-client/touchmydream.jpg')}}" alt="">
+                        </div>
+                    </li>
+
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!--End Clients Section -->
 @endsection

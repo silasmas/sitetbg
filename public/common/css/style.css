@@ -6844,6 +6844,8 @@ Section Title
   position: relative;
   display: inline-block;
   margin-bottom: 0;
+  width: 400px;
+  max-width: 100%;
 }
 .about-section .image-column .image-1 img {
   width: 100%;
@@ -6859,6 +6861,8 @@ Section Title
   left: 0;
   bottom: 0;
   margin-bottom: 0px;
+  width: 400px;
+  max-width: 100%;
 }
 .about-section .image-column .image-2 img {
   width: 100%;
@@ -10001,6 +10005,8 @@ Section Title
   width: 100%;
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
+  max-height: 420px;
+  object-fit: cover;
 }
 .team-block-two .info-box {
   position: relative;
@@ -10586,14 +10592,19 @@ Section Title
 .clients-carousel .slide-item a:hover img {
   opacity: 1;
 }
+.clients-carousel .slide-item .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+}
 .clients-carousel .slide-item img {
   display: inline-block;
-  max-width: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  opacity: 0.2;
 }
 
 .clients-carousel .owl-nav {
