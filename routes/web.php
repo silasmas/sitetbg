@@ -1,9 +1,12 @@
 <?php
 
-use App\Http\Controllers\ClientregisterController;
-use App\Http\Controllers\PortofolioController;
-use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TeamController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\PortofolioController;
+use App\Http\Controllers\TemoignageController;
+use App\Http\Controllers\ClientregisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,12 +18,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
  */
+// Language
+Route::get('/language/{locale}', [PortofolioController::class, 'changeLanguage'])->name('change_language');
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', [PortofolioController::class, 'accueil',
-])->name('accueil');
+Route::get('/', [PortofolioController::class, 'accueil'])->name('accueil');
 
 Route::get('showPortfolio/{id}', [PortofolioController::class, 'show'])->name('showPortfolio');
 

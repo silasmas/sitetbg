@@ -150,12 +150,11 @@
             <div class="sec-title light">
                 <div class="row">
                     <div class="col-lg-7">
-                        <span class="sub-title">our services</span>
+                        <span class="sub-title">Nos Services</span>
                         <h2>Services we offer</h2>
                     </div>
                     <div class="col-lg-5">
-                        <div class="text">There are many variations of passages of available but majority alteration in
-                            some form, by humou or randomised words.</div>
+                        <div class="text">Le professionnalisme dans nos <br> services est de rigueur</div>
                     </div>
                 </div>
             </div>
@@ -163,43 +162,69 @@
 
             <div class="row">
                 <!-- Service Block -->
-                <div class="service-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp">
+                <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <span class="count">01</span>
-                        <h6 class="title"><a href="page-service-details.html">Website <br>Development</a></h6>
+                        <h6 class="title"><a href="page-service-details.html">Edition <br>des livres</a></h6>
                         <i class="icon flaticon-digital-services"></i>
-                        <div class="text">Digital agency is an high end test for business, website work</div>
+                        <div class="text">Nous réalisons votre rêve en éditant vos livres, concevant couverture et mise en
+                            page, jusqu'à sa sortie officielle</div>
                     </div>
                 </div>
 
                 <!-- Service Block -->
-                <div class="service-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
+                <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
                     <div class="inner-box">
                         <span class="count">02</span>
-                        <h6 class="title"><a href="page-service-details.html">Graphic <br>designing</a></h6>
+                        <h6 class="title"><a href="page-service-details.html">Conception et<br> Management des projets</a></h6>
                         <i class="icon flaticon-graphic-design"></i>
-                        <div class="text">Digital agency is an high end test for business, website work</div>
+                        <div class="text">Nous concevons et mettons à exécution les projets, nous les faisons naître et nous
+                            les voyons grandir.
+                            Les projets non conçus par notre équipe ne sont pas un frein, nous nous identifions à
+                            cela comme s'ils portaient déjà notre ADN.</div>
                     </div>
                 </div>
 
                 <!-- Service Block -->
-                <div class="service-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
+                <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
                     <div class="inner-box">
                         <span class="count">03</span>
-                        <h6 class="title"><a href="page-service-details.html">Digital <br>marketing</a></h6>
+                        <h6 class="title"><a href="page-service-details.html">Evénementiel <br></a></h6>
                         <i class="icon flaticon-technology"></i>
-                        <div class="text">Digital agency is an high end test for business, website work</div>
+                        <div class="text">Une fois votre event conçu, nous passons à l'action en mettant à exécution, le projet
+                            dans son entièreté.</div>
                     </div>
                 </div>
 
 
                 <!-- Service Block -->
-                <div class="service-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
+                <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
                     <div class="inner-box">
                         <span class="count">04</span>
-                        <h6 class="title"><a href="page-service-details.html">Apps <br>development</a></h6>
+                        <h6 class="title"><a href="page-service-details.html">Formation indoor  <br>et outdoor du personnel</a></h6>
                         <i class="icon flaticon-mobile-app"></i>
-                        <div class="text">Digital agency is an high end test for business, website work</div>
+                        <div class="text">Nous apportons notre expertise auprès de vous et dans le soucis de vous mettre dans
+                            les meilleures conditions, nous choisissons un cadre meilleur ou mieux, nous venons
+                            dans vos bureaux.</div>
+                    </div>
+                </div>
+                <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
+                    <div class="inner-box">
+                        <span class="count">05</span>
+                        <h6 class="title"><a href="page-service-details.html">Stratégie et<br>plan de communication</a></h6>
+                        <i class="icon flaticon-mobile-app"></i>
+                        <div class="text">Nous mettons en place, tous les moyens possibles pour atteindre notre cible en
+                            élaborant un plan de communication sur mesure, et la stratégie adéquate.</div>
+                    </div>
+                </div>
+                <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
+                    <div class="inner-box">
+                        <span class="count">06</span>
+                        <h6 class="title"><a href="page-service-details.html">Campagne <br> médiatique</a></h6>
+                        <i class="icon flaticon-mobile-app"></i>
+                        <div class="text">Le monde d'aujourd'hui étant devenu très médiatique, nous assurons selon le profil
+                            du client, une communication médiatique et utilisant tous les supports possibles afin
+                            d'assurer une présence digitale du client mais aussi hors médias.</div>
                     </div>
                 </div>
             </div>
@@ -215,12 +240,12 @@
                         data-wow-delay="600ms">
                         <div class="inner-column">
                             <div class="sec-title">
-                                <span class="sub-title">get to know us</span>
-                                <h2>Leading the best digital <br>agency in town</h2>
+                                <span class="sub-title">Qui Sommes-Nous ?</span>
+                                <h2>Conseiller - Concevoir - Réaliser</h2>
                                 <h4>The professional approach to development.</h4>
-                                <div class="text">There are many variations of simply free text passages of available but
-                                    the majority have suffered alteration in some form, by injected hum randomised words
-                                    which don't slightly.</div>
+                                <div class="text">Nous conseillons par la formation et le coaching, nous concevons des projets de développement
+                                    d'entreprise et des plans de communication et nous réalisons les évènements internes ainsi
+                                    qu'externes des entreprises et personnes de notoriétés.</div>
                             </div>
 
                             <!--Skills-->
@@ -228,34 +253,34 @@
                                 <!--Skill Item-->
                                 <div class="skill-item">
                                     <div class="skill-header">
-                                        <h6 class="skill-title">Website Designing</h6>
+                                        <h6 class="skill-title">At TBG, We</h6>
                                     </div>
-                                    <div class="skill-bar">
+                                    {{-- <div class="skill-bar">
                                         <div class="bar-inner">
-                                            <div class="bar progress-line" data-width="77">
+                                            <div class="bar progress-line" data-width="90">
                                                 <div class="skill-percentage">
                                                     <div class="count-box"><span class="count-text" data-speed="3000"
-                                                            data-stop="77">0</span>%</div>
+                                                            data-stop="99">0</span>%</div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
 
                             <ul class="list-style-one">
-                                <li><i class="fa fa-check-circle"></i> Maecenas id amet libero rutrum</li>
-                                <li><i class="fa fa-check-circle"></i> Nolam vel suffered sit form</li>
-                                <li><i class="fa fa-check-circle"></i> Proin mattis noted purus</li>
+                                <li><i class="fa fa-check-circle"></i> Design your dream </li>
+                                <li><i class="fa fa-check-circle"></i> Share tour event</li>
+                                <li><i class="fa fa-check-circle"></i> Share tour event</li>
                             </ul>
 
                             <div class="bottom-box">
-                                <a href="page-about.html" class="theme-btn btn-style-one hvr-dark"><span
-                                        class="btn-title">Discover More</span></a>
+                                {{-- <a href="page-about.html" class="theme-btn btn-style-one hvr-dark"><span
+                                        class="btn-title">Discover More</span></a> --}}
 
                                 <!-- Founder Info -->
                                 <div class="exp-box">
-                                    <h2 class="count"><i class="icon flaticon-experience"></i> +30</h2>
+                                    <h2 class="count"><i class="icon flaticon-experience"></i> +10</h2>
                                     <span class="txt">Years of Experience</span>
                                 </div>
                             </div>
@@ -349,187 +374,38 @@
     <section class="projects-section-two pt-5" id="portfolio">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <span class="sub-title">recent portfolio</span>
-                <h2>Our Recent work</h2>
+                <span class="sub-title">Projets</span>
+                <h2>Recent Case Studies</h2>
             </div>
 
             <div class="carousel-outer">
                 <div class="projects-carousel-two owl-carousel owl-theme default-navs">
                     <!-- Project Block-->
-                    <div class="project-block-two">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="page-project-details.html"><img
-                                            src="{{asset('common/newimg/p.jpg')}}" alt=""></a>
-                                </figure>
-                                <a href="page-project-details.html" class="read-more"><i
-                                        class="fa fa-long-arrow-alt-right"></i></a>
-                                <div class="info-box">
-                                    <h4 class="title"><a href="page-project-details.html">Marketing webdesign</a></h4>
-                                </div>
-                            </div>
-                            <div class="overlay-content">
-                                <div class="info-box">
-                                    <h4 class="title"><a href="page-project-details.html">Marketing webdesign</a></h4>
-                                    <div class="text">The Human Rights and Democracy Study Visa Programms</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @forelse ($travail as $port)
 
-                    <!-- Project Block-->
                     <div class="project-block-two">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a href="page-project-details.html"><img
-                                            src="images/resource/project-6.jpg" alt=""></a>
+                                <figure class="image"><a href="{{ route('showPortfolio',["id"=>$port->id]) }}"><img
+                                            src="{{ asset('storage'. $port->cover) }}" alt=""></a>
                                 </figure>
-                                <a href="page-project-details.html" class="read-more"><i
+                                <a href="{{ route('showPortfolio',["id"=>$port->id]) }}" class="read-more"><i
                                         class="fa fa-long-arrow-alt-right"></i></a>
                                 <div class="info-box">
-                                    <h4 class="title"><a href="page-project-details.html">Marketing webdesign</a></h4>
+                                    <h4 class="title"><a href="{{ route('showPortfolio',["id"=>$port->id]) }}">{{ $port->titre }}</a></h4>
                                 </div>
                             </div>
                             <div class="overlay-content">
                                 <div class="info-box">
-                                    <h4 class="title"><a href="page-project-details.html">Marketing webdesign</a></h4>
-                                    <div class="text">The Human Rights and Democracy Study Visa Programms</div>
+                                    <h4 class="title"><a href="{{ route('showPortfolio',["id"=>$port->id]) }}">{{ $port->titre }}</a></h4>
+                                    <div class="text">{{ $port->description }}</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Project Block-->
-                    <div class="project-block-two">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="page-project-details.html"><img
-                                            src="images/resource/project-7.jpg" alt=""></a>
-                                </figure>
-                                <a href="page-project-details.html" class="read-more"><i
-                                        class="fa fa-long-arrow-alt-right"></i></a>
-                                <div class="info-box">
-                                    <h4 class="title"><a href="page-project-details.html">Marketing webdesign</a></h4>
-                                </div>
-                            </div>
-                            <div class="overlay-content">
-                                <div class="info-box">
-                                    <h4 class="title"><a href="page-project-details.html">Marketing webdesign</a></h4>
-                                    <div class="text">The Human Rights and Democracy Study Visa Programms</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Block-->
-                    <div class="project-block-two">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="page-project-details.html"><img
-                                            src="images/resource/project-8.jpg" alt=""></a>
-                                </figure>
-                                <a href="page-project-details.html" class="read-more"><i
-                                        class="fa fa-long-arrow-alt-right"></i></a>
-                                <div class="info-box">
-                                    <h4 class="title"><a href="page-project-details.html">Marketing webdesign</a></h4>
-                                </div>
-                            </div>
-                            <div class="overlay-content">
-                                <div class="info-box">
-                                    <h4 class="title"><a href="page-project-details.html">Marketing webdesign</a></h4>
-                                    <div class="text">The Human Rights and Democracy Study Visa Programms</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Block-->
-                    <div class="project-block-two">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="page-project-details.html"><img
-                                            src="images/resource/project-5.jpg" alt=""></a>
-                                </figure>
-                                <a href="page-project-details.html" class="read-more"><i
-                                        class="fa fa-long-arrow-alt-right"></i></a>
-                                <div class="info-box">
-                                    <h4 class="title"><a href="page-project-details.html">Marketing webdesign</a></h4>
-                                </div>
-                            </div>
-                            <div class="overlay-content">
-                                <div class="info-box">
-                                    <h4 class="title"><a href="page-project-details.html">Marketing webdesign</a></h4>
-                                    <div class="text">The Human Rights and Democracy Study Visa Programms</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Block-->
-                    <div class="project-block-two">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="page-project-details.html"><img
-                                            src="images/resource/project-6.jpg" alt=""></a>
-                                </figure>
-                                <a href="page-project-details.html" class="read-more"><i
-                                        class="fa fa-long-arrow-alt-right"></i></a>
-                                <div class="info-box">
-                                    <h4 class="title"><a href="page-project-details.html">Marketing webdesign</a></h4>
-                                </div>
-                            </div>
-                            <div class="overlay-content">
-                                <div class="info-box">
-                                    <h4 class="title"><a href="page-project-details.html">Marketing webdesign</a></h4>
-                                    <div class="text">The Human Rights and Democracy Study Visa Programms</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Block-->
-                    <div class="project-block-two">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="page-project-details.html"><img
-                                            src="images/resource/project-7.jpg" alt=""></a>
-                                </figure>
-                                <a href="page-project-details.html" class="read-more"><i
-                                        class="fa fa-long-arrow-alt-right"></i></a>
-                                <div class="info-box">
-                                    <h4 class="title"><a href="page-project-details.html">Marketing webdesign</a></h4>
-                                </div>
-                            </div>
-                            <div class="overlay-content">
-                                <div class="info-box">
-                                    <h4 class="title"><a href="page-project-details.html">Marketing webdesign</a></h4>
-                                    <div class="text">The Human Rights and Democracy Study Visa Programms</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Block-->
-                    <div class="project-block-two">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image"><a href="page-project-details.html"><img
-                                            src="images/resource/project-8.jpg" alt=""></a>
-                                </figure>
-                                <a href="page-project-details.html" class="read-more"><i
-                                        class="fa fa-long-arrow-alt-right"></i></a>
-                                <div class="info-box">
-                                    <h4 class="title"><a href="page-project-details.html">Marketing webdesign</a></h4>
-                                </div>
-                            </div>
-                            <div class="overlay-content">
-                                <div class="info-box">
-                                    <h4 class="title"><a href="page-project-details.html">Marketing webdesign</a></h4>
-                                    <div class="text">The Human Rights and Democracy Study Visa Programms</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @empty
+                    <h6>Pas des oeuvres pour le moment</h6>
+                    @endforelse
 
                 </div>
             </div>
@@ -545,10 +421,9 @@
                 <!-- Title Column -->
                 <div class="title-column col-xl-3 col-lg-12">
                     <div class="sec-title">
-                        <span class="sub-title">our feedbacks</span>
-                        <h2>what they’re <br>talking?</h2>
-                        <div class="text">Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean solldin, lorem
-                            is simply free text quis bibendum.</div>
+                        <span class="sub-title">Reviews</span>
+                        <h2>Clients Testimonials</h2>
+                        <div class="text"></div>
                     </div>
                 </div>
 
@@ -560,61 +435,28 @@
                         <div class="testimonial-carousel owl-carousel owl-theme">
 
                             <!-- Testimonial Block -->
-                            <div class="testimonial-block-two">
-                                <div class="inner-box">
-                                    <div class="content-box">
-                                        <div class="thumb"><img src="images/resource/testi-thumb-2.png" alt="">
-                                        </div>
-                                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                                class="fa fa-star"></i></div>
-                                        <div class="text">Lorem ipsum is simply free text dolor not sit amet, notted
-                                            adipisicing elit sed do eiusmod incididunt labore et dolore text.</div>
-                                    </div>
-                                    <div class="info-box">
-                                        <h6 class="name">Sarah Albert</h6>
-                                        <span class="designation">Designer</span>
-                                    </div>
-                                </div>
-                            </div>
+                            @forelse($temoin as $tem)
 
-                            <!-- Testimonial Block -->
                             <div class="testimonial-block-two">
                                 <div class="inner-box">
                                     <div class="content-box">
-                                        <div class="thumb"><img src="images/resource/testi-thumb-1.png" alt="">
+                                        <div class="thumb"><img src="{{ asset('storage/'.$tem->photo) }}" alt="">
                                         </div>
                                         <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                                                 class="fa fa-star"></i><i class="fa fa-star"></i><i
                                                 class="fa fa-star"></i></div>
-                                        <div class="text">Lorem ipsum is simply free text dolor not sit amet, notted
-                                            adipisicing elit sed do eiusmod incididunt labore et dolore text.</div>
+                                        <div class="text">{{ $tem->description}}</div>
                                     </div>
                                     <div class="info-box">
-                                        <h6 class="name">david cooper</h6>
-                                        <span class="designation">Designer</span>
+                                        <h6 class="name">{{ $tem->prenom.' - '.$tem->nom }}</h6>
+                                        <span class="designation">{{ $tem->profession }}</span>
                                     </div>
                                 </div>
                             </div>
+                            @empty
+                            <p><q>Aucun témoignage pour l'instant</q></p>
+                            @endforelse
 
-                            <!-- Testimonial Block -->
-                            <div class="testimonial-block-two">
-                                <div class="inner-box">
-                                    <div class="content-box">
-                                        <div class="thumb"><img src="images/resource/testi-thumb-3.png" alt="">
-                                        </div>
-                                        <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                                class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                                class="fa fa-star"></i></div>
-                                        <div class="text">Lorem ipsum is simply free text dolor not sit amet, notted
-                                            adipisicing elit sed do eiusmod incididunt labore et dolore text.</div>
-                                    </div>
-                                    <div class="info-box">
-                                        <h6 class="name">christine eve</h6>
-                                        <span class="designation">Designer</span>
-                                    </div>
-                                </div>
-                            </div>
 
                         </div>
                     </div>
@@ -627,127 +469,48 @@
 	<section class="team-section" id="team">
 		<div class="auto-container">
 			<div class="sec-title text-center">
-				<span class="sub-title">our team members</span>
+				<span class="sub-title">Management Team</span>
 				<h2>Meet the experts</h2>
 			</div>
 
 			<div class="row">
 				<!-- Team block -->
-				<div class="team-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                @forelse  ($t1 as $t)
+                    <div class="team-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
 					<div class="inner-box">
 						<div class="image-box">
-							<figure class="image"><a href="page-team-details.html"><img src="{{ asset('common/newimg/022.jpg')}}" alt=""></a></figure>
+							<figure class="image"><a href="#"><img src="{{ asset('storage/'.$t->photo) }}" alt=""></a></figure>
 							<div class="social-links">
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-facebook"></i></a>
-								<a href="#"><i class="fab fa-pinterest-p"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
+                                @empty(!$t->facebook)
+                                        <a target="_blank" href="{{$t->facebook}}">
+                                        <i class="fab fa-facebook-f"></i></a>
+                                    @endempty
+                                    @empty(!$t->instagram)
+                                          <a target="_blank" href="{{$t->instagram}}">
+                                        <i class="fab fa-instagram"></i></a>
+                                    @endempty
+                                    @empty(!$t->tweeter)
+                                        <a target="_blank" href="{{$t->tweeter}}">
+                                        <i class="fab fa-twitter"></i></a>
+                                    @endempty
+                                    @empty(!$t->likedin)
+                                        <a target="_blank" href="{{$t->likedin}}">
+                                        <i class="fab fa-linkedin-in"></i></a>
+                                    @endempty
 							</div>
 							<span class="share-icon fa fa-share-alt"></span>
 						</div>
 						<div class="info-box">
-							<h5 class="name"><a href="page-team-details.html">Mike Hardson</a></h5>
-							<span class="designation">Designer</span>
+							<h5 class="name"><a href="#">{{$t->prenom.' '.$t->nom}}</a></h5>
+							<span class="designation">{{$t->poste}}</span>
 						</div>
 					</div>
 				</div>
+                @empty
 
-				<!-- Team block -->
-				<div class="team-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-					<div class="inner-box">
-						<div class="image-box">
-							<figure class="image"><a href="page-team-details.html"><img src="{{ asset('common/newimg/028.jpg')}}" alt=""></a></figure>
-							<div class="social-links">
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-facebook"></i></a>
-								<a href="#"><i class="fab fa-pinterest-p"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-							</div>
-							<span class="share-icon fa fa-share-alt"></span>
-						</div>
-						<div class="info-box">
-							<h5 class="name"><a href="page-team-details.html">Aleesha brown</a></h5>
-							<span class="designation">Designer</span>
-						</div>
-					</div>
-				</div>
-                <!-- Team block -->
-				<div class="team-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
-					<div class="inner-box">
-						<div class="image-box">
-							<figure class="image"><a href="page-team-details.html"><img src="{{ asset('common/newimg/030.jpg')}}" alt=""></a></figure>
-							<div class="social-links">
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-facebook"></i></a>
-								<a href="#"><i class="fab fa-pinterest-p"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-							</div>
-							<span class="share-icon fa fa-share-alt"></span>
-						</div>
-						<div class="info-box">
-							<h5 class="name"><a href="page-team-details.html">michale smith</a></h5>
-							<span class="designation">Designer</span>
-						</div>
-					</div>
-				</div>
-                <!-- Team block -->
-				<div class="team-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1200ms">
-					<div class="inner-box">
-						<div class="image-box">
-							<figure class="image"><a href="page-team-details.html"><img src="{{ asset('common/newimg/027.jpeg')}}" alt=""></a></figure>
-							<div class="social-links">
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-facebook"></i></a>
-								<a href="#"><i class="fab fa-pinterest-p"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-							</div>
-							<span class="share-icon fa fa-share-alt"></span>
-						</div>
-						<div class="info-box">
-							<h5 class="name"><a href="page-team-details.html">michale smith</a></h5>
-							<span class="designation">Designer</span>
-						</div>
-					</div>
-				</div>
-				<!-- Team block -->
-				<div class="team-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1600ms">
-					<div class="inner-box">
-						<div class="image-box">
-							<figure class="image"><a href="page-team-details.html"><img src="{{ asset('common/newimg/024.jpeg')}}" alt=""></a></figure>
-							<div class="social-links">
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-facebook"></i></a>
-								<a href="#"><i class="fab fa-pinterest-p"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-							</div>
-							<span class="share-icon fa fa-share-alt"></span>
-						</div>
-						<div class="info-box">
-							<h5 class="name"><a href="page-team-details.html">michale smith</a></h5>
-							<span class="designation">Designer</span>
-						</div>
-					</div>
-				</div>
+                @endforelse
 
-                <!-- Team block -->
-				<div class="team-block-two col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="2000ms">
-					<div class="inner-box">
-						<div class="image-box">
-							<figure class="image"><a href="page-team-details.html"><img src="{{ asset('common/newimg/025.jpeg')}}" alt=""></a></figure>
-							<div class="social-links">
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-facebook"></i></a>
-								<a href="#"><i class="fab fa-pinterest-p"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-							</div>
-							<span class="share-icon fa fa-share-alt"></span>
-						</div>
-						<div class="info-box">
-							<h5 class="name"><a href="page-team-details.html">michale smith</a></h5>
-							<span class="designation">Designer</span>
-						</div>
-					</div>
-				</div>
+
 			</div>
 		</div>
 	</section>

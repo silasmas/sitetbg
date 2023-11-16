@@ -169,7 +169,7 @@
         <div class="outer-box">
             <a href="tel:+92(8800)9806" class="info-btn">
                 <i class="icon fa fa-phone"></i>
-                <strong class="text">+92 (8800) 6890</strong>
+                <strong class="text">(+243) 824859415</strong>
             </a>
 
             <!-- Mobile Nav toggler -->
@@ -179,6 +179,50 @@
                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     <span>Fr</span>
                 </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    {{-- @foreach ($available_locales as $locale_name => $available_locale)
+                    @if ($available_locale === $current_locale)
+                    <li>
+                        <a class="dropdown-item disabled d-flex align-items-center"
+                            href="#">
+                            @switch($available_locale)
+                            @case('en')
+                            <span class="fi fi-us me-2 align-middle"></span>
+                            @break
+                            @case('ln')
+                            <span class="fi fi-cd me-2 align-middle"></span>
+                            @break
+                            @default
+                            <span class="fi fi-be me-2 align-middle"></span>
+
+                            @endswitch
+                            {{ $locale_name }}
+                        </a>
+                    </li>
+                    @else
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center"
+                            href="{{ route('change_language', ['locale' => $available_locale]) }}">
+                            @switch($available_locale)
+                            @case('en')
+                            <span class="fi fi-us me-2 align-middle"></span>
+                            @break
+
+                            @case('ln')
+                            <span class="fi fi-cd me-2 align-middle"></span>
+                            @break
+
+                            @default
+                            <span class="fi fi-be me-2 align-middle"></span>
+
+                            @endswitch
+
+                            {{ $locale_name }}
+                        </a>
+                    </li>
+                    @endif
+                    @endforeach --}}
+                </ul>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <li class="active"><a class="dropdown-item" href="#">Français</a></li>
                     <li><a class="dropdown-item" href="#">Anglais</a></li>

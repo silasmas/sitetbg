@@ -2,17 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\team;
+use App\Models\clientregister;
 use App\Models\images;
-use App\Models\register;
-use Illuminate\View\View;
 use App\Models\portofolio;
+use App\Models\register;
+use App\Models\team;
 use App\Models\temoignage;
 use Illuminate\Http\Request;
-use App\Models\clientregister;
+use Illuminate\View\View;
 
 class PortofolioController extends Controller
 {
+    public function changeLanguage($locale)
+    {
+        app()->setLocale($locale);
+        session()->put('locale', $locale);
+
+        return redirect()->back();
+    }
     /**
      * Display a listing of the resource.
      *
@@ -36,7 +43,7 @@ class PortofolioController extends Controller
         $travail = portofolio::inRandomOrder()
             ->take(10)
             ->get();
-        $t1 = team::where('niveau', '1')->get();
+        $t1 = team::all();
         $t2 = team::where('niveau', '2')->get();
         $t3 = team::where('niveau', '3')->get();
 
@@ -151,7 +158,7 @@ class PortofolioController extends Controller
      * @param  \App\Models\portofolio  $portofolio
      * @return \Illuminate\Http\Response
      */
-    public function show($id):View 
+    public function show($id): View
     {
         // dd("ok");
         // $img = portofolio::findOrFail($id);
