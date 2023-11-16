@@ -135,10 +135,9 @@
             </div>
         </div>
         <ul class="social-links">
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://youtube.com/channel/UC3lltuUYIdE-i_bfkLUB3UQ"><i class="fab fa-youtube"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/TBGentreprise?mibextid=9R9pXO"><i class="fab fa-facebook"></i></a></li>
+            <li><a target="_blank" href="https://instagram.com/thebestgroupdrc?igshid=NzZlODBkYWE4Ng=="><i class="fab fa-instagram"></i></a></li>
         </ul>
     </section>
     <!-- End Main Slider-->
@@ -398,7 +397,7 @@
                             <div class="overlay-content">
                                 <div class="info-box">
                                     <h4 class="title"><a href="{{ route('showPortfolio',["id"=>$port->id]) }}">{{ $port->titre }}</a></h4>
-                                    <div class="text">{{ $port->description }}</div>
+                                    <div class="text">{{Str::limit($port->description, 100,'...')}}  </div>
                                 </div>
                             </div>
                         </div>
@@ -491,10 +490,10 @@
                                     @endempty
                                     @empty(!$t->tweeter)
                                         <a target="_blank" href="{{$t->tweeter}}">
-                                        <i class="fab fa-twitter"></i></a>
+                                        <i class="fa-brands fa-x-twitter"></i></a>
                                     @endempty
-                                    @empty(!$t->likedin)
-                                        <a target="_blank" href="{{$t->likedin}}">
+                                    @empty(!$t->linkedin)
+                                        <a target="_blank" href="{{$t->linkedin}}">
                                         <i class="fab fa-linkedin-in"></i></a>
                                     @endempty
 							</div>
@@ -524,7 +523,7 @@
 				<div class="title-column col-lg-6 col-md-12">
 					<div class="inner-column">
 						<div class="sec-title">
-							<span class="sub-title">contact with us</span>
+							<span class="sub-title">Pour nous contacter</span>
 							<h2>let’s work together?</h2>
 							<div class="text">Sed ut perspiciatis unde omnis natus error sit voluptatem accusa ntium doloremque laudantium totam rem.</div>
 						</div>
@@ -533,8 +532,8 @@
 						<div class="contact-info-block">
 							<div class="inner">
 								<i class="icon fa fa-phone"></i>
-								<h6 class="title">Have any question?</h6>
-								<div class="text">Free <a href="tel:230009850">+23 (000)-9850</a></div>
+								<h6 class="title">Pour toutes vos questions?</h6>
+								<div class="text"><a href="tel:+243824859415">(+243) 824859415</a></div>
 							</div>
 						</div>
 
@@ -543,8 +542,8 @@
 						<div class="contact-info-block">
 							<div class="inner">
 								<i class="icon fa fa-envelope"></i>
-								<h6 class="title">Send email</h6>
-								<div class="text"><a href="mailto:needhelp@company.com">needhelp@company.com</a></div>
+								<h6 class="title">Ecrivez-nous</h6>
+								<div class="text"><a href="mailto: Contact@thebestgroup.org"> Contact@thebestgroup.org</a></div>
 							</div>
 						</div>
 
@@ -552,8 +551,8 @@
 						<div class="contact-info-block">
 							<div class="inner">
 								<i class="icon fa fa-map-marker-alt"></i>
-								<h6 class="title">Visit anytime</h6>
-								<div class="text">30 broklyn golden street. New York</div>
+								<h6 class="title">Notre adresse</h6>
+								<div class="text">16, avenue de la paix, Kinshasa-Gombe, <br> Réf : Pressing 5 à sec.</div>
 							</div>
 						</div>
 					</div>

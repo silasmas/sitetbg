@@ -20,6 +20,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@700&display=swap" rel="stylesheet"> --}}
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="{{ asset('common/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('common/plugins/revolution/css/settings.css') }}" rel="stylesheet" type="text/css">
     <!-- REVOLUTION SETTINGS STYLES -->

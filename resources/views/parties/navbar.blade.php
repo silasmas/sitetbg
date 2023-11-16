@@ -167,7 +167,7 @@
         <!-- Main Menu End-->
 
         <div class="outer-box">
-            <a href="tel:+92(8800)9806" class="info-btn">
+            <a href="tel:+243824859415" class="info-btn">
                 <i class="icon fa fa-phone"></i>
                 <strong class="text">(+243) 824859415</strong>
             </a>
@@ -256,34 +256,33 @@
                     <!-- Contact Info Box -->
                     <div class="contact-info-box">
                         <i class="icon lnr-icon-phone-handset"></i>
-                        <span class="title">Call Now</span>
-                        <a href="tel:+92880098670">+92 (8800) - 98670</a>
+                        <span class="title">Applez-nous</span>
+                        <a href="tel:+243824859415">(+243) 824859415</a>
                     </div>
                 </li>
                 <li>
                     <!-- Contact Info Box -->
                     <div class="contact-info-box">
                         <span class="icon lnr-icon-envelope1"></span>
-                        <span class="title">Send Email</span>
-                        <a href="mailto:help@company.com">help@company.com</a>
+                        <span class="title">Ecrivez-nous</span>
+                        <a href="mailto:Contact@thebestgroup.org">Contact@thebestgroup.org</a>
                     </div>
                 </li>
                 <li>
                     <!-- Contact Info Box -->
                     <div class="contact-info-box">
                         <span class="icon lnr-icon-clock"></span>
-                        <span class="title">Send Email</span>
-                        Mon - Sat 8:00 - 6:30, Sunday - CLOSED
+                        <span class="title">Notre horaire</span>
+                        Lun - Ven: 8:00 - 16:00 / Fermé le weekend
                     </div>
                 </li>
             </ul>
 
 
             <ul class="social-links">
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://web.facebook.com/TBGentreprise/"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://youtube.com/channel/UC3lltuUYIdE-i_bfkLUB3UQ"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://instagram.com/thebestgroupdrc?igshid=q9yqj3mr3bn5"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </nav>
     </div><!-- End Mobile Menu -->
