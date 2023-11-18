@@ -180,7 +180,7 @@
                     <span>Fr</span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    {{-- @foreach ($available_locales as $locale_name => $available_locale)
+                    @foreach ($available_locales as $locale_name => $available_locale)
                     @if ($available_locale === $current_locale)
                     <li>
                         <a class="dropdown-item disabled d-flex align-items-center"
@@ -221,7 +221,7 @@
                         </a>
                     </li>
                     @endif
-                    @endforeach --}}
+                    @endforeach
                 </ul>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <li class="active"><a class="dropdown-item" href="#">Français</a></li>

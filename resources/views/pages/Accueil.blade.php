@@ -164,7 +164,7 @@
                 <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <span class="count">01</span>
-                        <h6 class="title"><a href="page-service-details.html">Edition <br>des livres</a></h6>
+                        <h6 class="title"><a href="#">Edition <br>des livres</a></h6>
                         <i class="icon flaticon-digital-services"></i>
                         <div class="text">Nous réalisons votre rêve en éditant vos livres, concevant couverture et mise en
                             page, jusqu'à sa sortie officielle</div>
@@ -175,7 +175,7 @@
                 <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
                     <div class="inner-box">
                         <span class="count">02</span>
-                        <h6 class="title"><a href="page-service-details.html">Conception et<br> Management des projets</a></h6>
+                        <h6 class="title"><a href="#">Conception et<br> Management des projets</a></h6>
                         <i class="icon flaticon-graphic-design"></i>
                         <div class="text">Nous concevons et mettons à exécution les projets, nous les faisons naître et nous
                             les voyons grandir.
@@ -188,7 +188,7 @@
                 <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
                     <div class="inner-box">
                         <span class="count">03</span>
-                        <h6 class="title"><a href="page-service-details.html">Evénementiel <br></a></h6>
+                        <h6 class="title"><a href="#">Evénementiel <br></a></h6>
                         <i class="icon flaticon-technology"></i>
                         <div class="text">Une fois votre event conçu, nous passons à l'action en mettant à exécution, le projet
                             dans son entièreté.</div>
@@ -200,7 +200,7 @@
                 <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
                     <div class="inner-box">
                         <span class="count">04</span>
-                        <h6 class="title"><a href="page-service-details.html">Formation indoor  <br>et outdoor du personnel</a></h6>
+                        <h6 class="title"><a href="#">Formation indoor  <br>et outdoor du personnel</a></h6>
                         <i class="icon flaticon-mobile-app"></i>
                         <div class="text">Nous apportons notre expertise auprès de vous et dans le soucis de vous mettre dans
                             les meilleures conditions, nous choisissons un cadre meilleur ou mieux, nous venons
@@ -210,7 +210,7 @@
                 <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
                     <div class="inner-box">
                         <span class="count">05</span>
-                        <h6 class="title"><a href="page-service-details.html">Stratégie et<br>plan de communication</a></h6>
+                        <h6 class="title"><a href="#">Stratégie et<br>plan de communication</a></h6>
                         <i class="icon flaticon-mobile-app"></i>
                         <div class="text">Nous mettons en place, tous les moyens possibles pour atteindre notre cible en
                             élaborant un plan de communication sur mesure, et la stratégie adéquate.</div>
@@ -219,7 +219,7 @@
                 <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
                     <div class="inner-box">
                         <span class="count">06</span>
-                        <h6 class="title"><a href="page-service-details.html">Campagne <br> médiatique</a></h6>
+                        <h6 class="title"><a href="#">Campagne <br> médiatique</a></h6>
                         <i class="icon flaticon-mobile-app"></i>
                         <div class="text">Le monde d'aujourd'hui étant devenu très médiatique, nous assurons selon le profil
                             du client, une communication médiatique et utilisant tous les supports possibles afin
