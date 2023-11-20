@@ -19,8 +19,7 @@
                             data-voffset="['-20','-15','-15','-30']" data-x="['center','center','center','center']"
                             data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']"
                             data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <h1>At TBG<br> We shape your
-                                events</h1>
+                            <h1>@lang("infos.slides.at") TBG<br>@lang("infos.slides.link_1")</h1>
                         </div>
 
                         <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -41,10 +40,8 @@
                             data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']"
                             data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
                             <div class="btn-box">
-                                <a href="#services" class="theme-btn btn-style-one"><span class="btn-title">Nos
-                                        services</span></a>
-                                <a href="#about" class="theme-btn btn-style-one light-bg"><span class="btn-title">Qui
-                                        sommes-nous</span></a>
+                                <a href="#services" class="theme-btn btn-style-one"><span class="btn-title">@lang("infos.slides.btn1")</span></a>
+                                <a href="#about" class="theme-btn btn-style-one light-bg"><span class="btn-title">@lang("infos.slides.btn2")</span></a>
                             </div>
                         </div>
                     </li>
@@ -61,8 +58,7 @@
                             data-voffset="['-20','-15','-15','-30']" data-x="['center','center','center','center']"
                             data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']"
                             data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <h1>At TBG <br>We design your
-                                dream</h1>
+                            <h1>@lang("infos.slides.at") TBG<br>@lang("infos.slides.link_2")</h1>
                         </div>
 
                         <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -83,10 +79,8 @@
                             data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']"
                             data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
                             <div class="btn-box">
-                                <a href="#services" class="theme-btn btn-style-one"><span class="btn-title">Nos
-                                    services</span></a>
-                            <a href="#about" class="theme-btn btn-style-one light-bg"><span class="btn-title">Qui
-                                    sommes-nous</span></a>
+                                <a href="#services" class="theme-btn btn-style-one"><span class="btn-title">@lang("infos.slides.btn1")</span></a>
+                                <a href="#about" class="theme-btn btn-style-one light-bg"><span class="btn-title">@lang("infos.slides.btn2")</span></a>
                             </div>
                         </div>
                     </li>
@@ -102,8 +96,7 @@
                             data-voffset="['-20','-15','-15','-30']" data-x="['center','center','center','center']"
                             data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']"
                             data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <h1>At TBG<br>We equip your
-                                people</h1>
+                            <h1>@lang("infos.slides.at") TBG<br>@lang("infos.slides.link_")</h1>
                         </div>
 
                         <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -124,10 +117,8 @@
                             data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']"
                             data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
                             <div class="btn-box">
-                                <a href="#services" class="theme-btn btn-style-one"><span class="btn-title">Nos
-                                    services</span></a>
-                            <a href="#about" class="theme-btn btn-style-one light-bg"><span class="btn-title">Qui
-                                    sommes-nous</span></a>
+                                <a href="#services" class="theme-btn btn-style-one"><span class="btn-title">@lang("infos.slides.btn1")</span></a>
+                                <a href="#about" class="theme-btn btn-style-one light-bg"><span class="btn-title">@lang("infos.slides.btn2")</span></a>
                             </div>
                         </div>
                     </li>
@@ -149,11 +140,11 @@
             <div class="sec-title light">
                 <div class="row">
                     <div class="col-lg-7">
-                        <span class="sub-title">Nos Services</span>
-                        <h2>Services we offer</h2>
+                        <span class="sub-title">@lang("infos.slides.btn1")</span>
+                        <h2>@lang("infos.services.subtitle")</h2>
                     </div>
                     <div class="col-lg-5">
-                        <div class="text">Le professionnalisme dans nos <br> services est de rigueur</div>
+                        <div class="text">@lang("infos.services.description")</div>
                     </div>
                 </div>
             </div>
@@ -164,10 +155,9 @@
                 <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <span class="count">01</span>
-                        <h6 class="title"><a href="#">Edition <br>des livres</a></h6>
+                        <h6 class="title"><a href="#">@lang("infos.services.title1")</a></h6>
                         <i class="icon flaticon-digital-services"></i>
-                        <div class="text">Nous réalisons votre rêve en éditant vos livres, concevant couverture et mise en
-                            page, jusqu'à sa sortie officielle</div>
+                        <div class="text">@lang("infos.services.description1")</div>
                     </div>
                 </div>
 
@@ -175,12 +165,9 @@
                 <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
                     <div class="inner-box">
                         <span class="count">02</span>
-                        <h6 class="title"><a href="#">Conception et<br> Management des projets</a></h6>
+                        <h6 class="title"><a href="#">@lang("infos.services.title2")</a></h6>
                         <i class="icon flaticon-graphic-design"></i>
-                        <div class="text">Nous concevons et mettons à exécution les projets, nous les faisons naître et nous
-                            les voyons grandir.
-                            Les projets non conçus par notre équipe ne sont pas un frein, nous nous identifions à
-                            cela comme s'ils portaient déjà notre ADN.</div>
+                        <div class="text">@lang("infos.services.description2")</div>
                     </div>
                 </div>
 
@@ -188,10 +175,9 @@
                 <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
                     <div class="inner-box">
                         <span class="count">03</span>
-                        <h6 class="title"><a href="#">Evénementiel <br></a></h6>
+                        <h6 class="title"><a href="#">@lang("infos.services.title3")</a></h6>
                         <i class="icon flaticon-technology"></i>
-                        <div class="text">Une fois votre event conçu, nous passons à l'action en mettant à exécution, le projet
-                            dans son entièreté.</div>
+                        <div class="text">@lang("infos.services.description3")</div>
                     </div>
                 </div>
 
@@ -200,30 +186,25 @@
                 <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
                     <div class="inner-box">
                         <span class="count">04</span>
-                        <h6 class="title"><a href="#">Formation indoor  <br>et outdoor du personnel</a></h6>
+                        <h6 class="title"><a href="#">@lang("infos.services.title4")</a></h6>
                         <i class="icon flaticon-mobile-app"></i>
-                        <div class="text">Nous apportons notre expertise auprès de vous et dans le soucis de vous mettre dans
-                            les meilleures conditions, nous choisissons un cadre meilleur ou mieux, nous venons
-                            dans vos bureaux.</div>
+                        <div class="text">@lang("infos.services.description4")</div>
                     </div>
                 </div>
                 <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
                     <div class="inner-box">
                         <span class="count">05</span>
-                        <h6 class="title"><a href="#">Stratégie et<br>plan de communication</a></h6>
+                        <h6 class="title"><a href="#">@lang("infos.services.title5")</a></h6>
                         <i class="icon flaticon-mobile-app"></i>
-                        <div class="text">Nous mettons en place, tous les moyens possibles pour atteindre notre cible en
-                            élaborant un plan de communication sur mesure, et la stratégie adéquate.</div>
+                        <div class="text">@lang("infos.services.description5")</div>
                     </div>
                 </div>
                 <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
                     <div class="inner-box">
                         <span class="count">06</span>
-                        <h6 class="title"><a href="#">Campagne <br> médiatique</a></h6>
+                        <h6 class="title"><a href="#">@lang("infos.services.title6")</a></h6>
                         <i class="icon flaticon-mobile-app"></i>
-                        <div class="text">Le monde d'aujourd'hui étant devenu très médiatique, nous assurons selon le profil
-                            du client, une communication médiatique et utilisant tous les supports possibles afin
-                            d'assurer une présence digitale du client mais aussi hors médias.</div>
+                        <div class="text">@lang("infos.services.description6")</div>
                     </div>
                 </div>
             </div>

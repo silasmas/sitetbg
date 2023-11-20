@@ -155,12 +155,12 @@
         <div class="nav-outer">
             <nav class="nav main-menu">
                 <ul class="navigation">
-                    <li class="current"><a href="#home">Accueil</a></li>
-                    <li><a href="#about">A propos</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="current"><a href="#home">@lang("infos.main_menu.home")</a></li>
+                    <li><a href="#about">@lang("infos.main_menu.about")</a></li>
+                    <li><a href="#services">@lang("infos.main_menu.services")</a></li>
+                    <li><a href="#portfolio">@lang("infos.main_menu.portfolio")</a></li>
+                    <li><a href="#team">@lang("infos.main_menu.team")</a></li>
+                    <li><a href="#contact">@lang("infos.main_menu.contact")</a></li>
                 </ul>
             </nav>
         </div>
@@ -177,7 +177,7 @@
             <div class="dropdown order-1">
                 <button class="btn btn-secondary btn-language dropdown-toggle ms-lg-4 ms-3" type="button"
                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span>Fr</span>
+                    <span>{{  $current_locale }}</span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     @foreach ($available_locales as $locale_name => $available_locale)
@@ -189,7 +189,7 @@
                             @case('en')
                             <span class="fi fi-us me-2 align-middle"></span>
                             @break
-                            @case('ln')
+                            @case('fr')
                             <span class="fi fi-cd me-2 align-middle"></span>
                             @break
                             @default
@@ -208,7 +208,7 @@
                             <span class="fi fi-us me-2 align-middle"></span>
                             @break
 
-                            @case('ln')
+                            @case('fr')
                             <span class="fi fi-cd me-2 align-middle"></span>
                             @break
 
@@ -223,10 +223,10 @@
                     @endif
                     @endforeach
                 </ul>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                {{-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <li class="active"><a class="dropdown-item" href="#">Français</a></li>
                     <li><a class="dropdown-item" href="#">Anglais</a></li>
-                </ul>
+                </ul> --}}
             </div>
         </div>
     </div>
@@ -330,11 +330,51 @@
                     <div class="dropdown order-1">
                         <button class="btn btn-secondary btn-language dropdown-toggle ms-lg-5 ms-3" type="button"
                             id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span>Fr</span>
+                            <span>{{  $current_locale }}</span>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li class="active"><a class="dropdown-item" href="#">Français</a></li>
-                            <li><a class="dropdown-item" href="#">Anglais</a></li>
+                            @foreach ($available_locales as $locale_name => $available_locale)
+                            @if ($available_locale === $current_locale)
+                            <li>
+                                <a class="dropdown-item disabled d-flex align-items-center"
+                                    href="#">
+                                    @switch($available_locale)
+                                    @case('en')
+                                    <span class="fi fi-us me-2 align-middle"></span>
+                                    @break
+                                    @case('fr')
+                                    <span class="fi fi-cd me-2 align-middle"></span>
+                                    @break
+                                    @default
+                                    <span class="fi fi-be me-2 align-middle"></span>
+
+                                    @endswitch
+                                    {{ $locale_name }}
+                                </a>
+                            </li>
+                            @else
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center"
+                                    href="{{ route('change_language', ['locale' => $available_locale]) }}">
+                                    @switch($available_locale)
+                                    @case('en')
+                                    <span class="fi fi-us me-2 align-middle"></span>
+                                    @break
+
+                                    @case('fr')
+                                    <span class="fi fi-cd me-2 align-middle"></span>
+                                    @break
+
+                                    @default
+                                    <span class="fi fi-be me-2 align-middle"></span>
+
+                                    @endswitch
+
+                                    {{ $locale_name }}
+                                </a>
+                            </li>
+                            @endif
+                            @endforeach
                         </ul>
                     </div>
                     <div class="mobile-nav-toggler order-2"><span class="icon lnr-icon-bars"></span></div>
