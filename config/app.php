@@ -42,8 +42,8 @@ return [
     |
     */
     'available_locales' => [
-        'English' => 'en',
         'Français' => 'fr',
+        'English' => 'en',
         // 'Lingala' => 'ln'
     ],
     'debug' => (bool) env('APP_DEBUG', false),
@@ -87,7 +87,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'fr',
 
     /*
     |--------------------------------------------------------------------------
@@ -100,7 +100,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'fr',
 
     /*
     |--------------------------------------------------------------------------
@@ -113,7 +113,7 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    'faker_locale' => 'fr_FR',
 
     /*
     |--------------------------------------------------------------------------
