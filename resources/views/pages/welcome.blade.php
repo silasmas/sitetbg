@@ -30,8 +30,8 @@
     <!-- REVOLUTION NAVIGATION STYLES -->
     <link href="{{ asset('common/css/style.css') }}" rel="stylesheet">
 
-    <link rel="shortcut icon" href="{{ asset('common/newimg/logo.ico') }}" type="image/x-icon">
-    <link rel="icon" href="{{ asset('common/newimg/logo.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('common/newimg/tbg-rond.gif') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('common/newimg/tbg-rond.gif') }}" type="image/x-icon">
 
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

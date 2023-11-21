@@ -19,7 +19,7 @@
                             data-voffset="['-20','-15','-15','-30']" data-x="['center','center','center','center']"
                             data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']"
                             data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <h1>@lang("infos.slides.at") TBG<br>@lang("infos.slides.link_1")</h1>
+                            <h1><br>@lang("infos.slides.link_1")</h1>
                         </div>
 
                         <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -58,7 +58,7 @@
                             data-voffset="['-20','-15','-15','-30']" data-x="['center','center','center','center']"
                             data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']"
                             data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <h1>@lang("infos.slides.at") TBG<br>@lang("infos.slides.link_2")</h1>
+                            <h1><br>@lang("infos.slides.link_2")</h1>
                         </div>
 
                         <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -96,7 +96,7 @@
                             data-voffset="['-20','-15','-15','-30']" data-x="['center','center','center','center']"
                             data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']"
                             data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
-                            <h1>@lang("infos.slides.at") TBG<br>@lang("infos.slides.link_")</h1>
+                            <h1><br>@lang("infos.slides.link_3")</h1>
                         </div>
 
                         <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -156,7 +156,7 @@
                     <div class="inner-box">
                         <span class="count">01</span>
                         <h6 class="title"><a href="#">@lang("infos.services.title1")</a></h6>
-                        <i class="icon flaticon-digital-services"></i>
+                        <i class="icon flaticon-event"></i>
                         <div class="text">@lang("infos.services.description1")</div>
                     </div>
                 </div>
@@ -220,48 +220,32 @@
                         data-wow-delay="600ms">
                         <div class="inner-column">
                             <div class="sec-title">
-                                <span class="sub-title">Qui Sommes-Nous ?</span>
-                                <h2>Conseiller - Concevoir - Réaliser</h2>
-                                <h4>The professional approach to development.</h4>
-                                <div class="text">Nous conseillons par la formation et le coaching, nous concevons des projets de développement
-                                    d'entreprise et des plans de communication et nous réalisons les évènements internes ainsi
-                                    qu'externes des entreprises et personnes de notoriétés.</div>
+                                <span class="sub-title">@lang("infos.main_menu.about")?</span>
+                                <h2>@lang("infos.idea") </h2>
+                                {{-- <h4>The professional approach to development.</h4> --}}
+                                <div class="text">@lang("infos.descAbout")</div>
                             </div>
 
                             <!--Skills-->
-                            <div class="skills">
+                            {{-- <div class="skills">
                                 <!--Skill Item-->
                                 <div class="skill-item">
                                     <div class="skill-header">
-                                        <h6 class="skill-title">At TBG, We</h6>
+                                        <h6 class="skill-title">@lang("infos.slides.at") TBG,</h6>
                                     </div>
-                                    {{-- <div class="skill-bar">
-                                        <div class="bar-inner">
-                                            <div class="bar progress-line" data-width="90">
-                                                <div class="skill-percentage">
-                                                    <div class="count-box"><span class="count-text" data-speed="3000"
-                                                            data-stop="99">0</span>%</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> --}}
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <ul class="list-style-one">
-                                <li><i class="fa fa-check-circle"></i> Design your dream </li>
-                                <li><i class="fa fa-check-circle"></i> Share tour event</li>
-                                <li><i class="fa fa-check-circle"></i> Share tour event</li>
+                                <li><i class="fa fa-check-circle"></i> @lang("infos.slides.link_1") </li>
+                                <li><i class="fa fa-check-circle"></i>@lang("infos.slides.link_2")</li>
+                                <li><i class="fa fa-check-circle"></i>@lang("infos.slides.link_3")</li>
                             </ul>
 
                             <div class="bottom-box">
-                                {{-- <a href="page-about.html" class="theme-btn btn-style-one hvr-dark"><span
-                                        class="btn-title">Discover More</span></a> --}}
-
-                                <!-- Founder Info -->
                                 <div class="exp-box">
                                     <h2 class="count"><i class="icon flaticon-experience"></i> +10</h2>
-                                    <span class="txt">Years of Experience</span>
+                                    <span class="txt">@lang('infos.years')</span>
                                 </div>
                             </div>
                         </div>
@@ -295,7 +279,7 @@
                     <div class="title-column col-lg-4 col-md-12 col-sm-12">
                         <div class="inner-column">
                             <div class="sec-title light">
-                                <h3>Let’s Start Your Project with Digima</h3>
+                                <h3>@lang("infos.stat")</h3>
                             </div>
                         </div>
                     </div>
@@ -310,8 +294,8 @@
                                         <div class="content">
                                             <i class="icon flaticon-checking"></i>
                                             <div class="count-box counted"><span class="count-text" data-speed="3000"
-                                                    data-stop="6420">6420</span></div>
-                                            <h6 class="counter-title">Projects Completed</h6>
+                                                    data-stop="6420">10</span></div>
+                                            <h6 class="counter-title">@lang('infos.projetop')</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -324,8 +308,8 @@
                                         <div class="content">
                                             <i class="icon flaticon-recommend"></i>
                                             <div class="count-box counted"><span class="count-text" data-speed="3000"
-                                                    data-stop="9280">9280</span></div>
-                                            <h6 class="counter-title">Satisfied Clients</h6>
+                                                    data-stop="9280">4000</span></div>
+                                            <h6 class="counter-title">@lang('infos.participant')</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -338,8 +322,8 @@
                                         <div class="content">
                                             <i class="icon flaticon-consulting"></i>
                                             <div class="count-box counted"><span class="count-text" data-speed="3000"
-                                                    data-stop="380">380</span></div>
-                                            <h6 class="counter-title">Expert Teams</h6>
+                                                    data-stop="380">20</span></div>
+                                            <h6 class="counter-title">@lang('infos.client')</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -354,8 +338,8 @@
     <section class="projects-section-two pt-5" id="portfolio">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <span class="sub-title">Projets</span>
-                <h2>Recent Case Studies</h2>
+                <span class="sub-title">@lang('infos.projet')</span>
+                <h2>@lang('infos.projetRessent')</h2>
             </div>
 
             <div class="carousel-outer">
@@ -401,8 +385,8 @@
                 <!-- Title Column -->
                 <div class="title-column col-xl-3 col-lg-12">
                     <div class="sec-title">
-                        <span class="sub-title">Reviews</span>
-                        <h2>Clients Testimonials</h2>
+                        <span class="sub-title">@lang('infos.review')</span>
+                        <h2>@lang('infos.temoignage')</h2>
                         <div class="text"></div>
                     </div>
                 </div>
@@ -449,8 +433,8 @@
 	<section class="team-section" id="team">
 		<div class="auto-container">
 			<div class="sec-title text-center">
-				<span class="sub-title">Management Team</span>
-				<h2>Meet the experts</h2>
+				{{-- <span class="sub-title">Management Team</span> --}}
+				<h2>@lang("infos.team")</h2>
 			</div>
 
 			<div class="row">
@@ -504,16 +488,15 @@
 				<div class="title-column col-lg-6 col-md-12">
 					<div class="inner-column">
 						<div class="sec-title">
-							<span class="sub-title">Pour nous contacter</span>
-							<h2>let’s work together?</h2>
-							<div class="text">Sed ut perspiciatis unde omnis natus error sit voluptatem accusa ntium doloremque laudantium totam rem.</div>
+							{{-- <span class="sub-title"></span> --}}
+							<h2>@lang("infos.txtContact")</h2>
 						</div>
 
 						<!-- Contact block -->
 						<div class="contact-info-block">
 							<div class="inner">
 								<i class="icon fa fa-phone"></i>
-								<h6 class="title">Pour toutes vos questions?</h6>
+								<h6 class="title">@lang("infos.allquestion")</h6>
 								<div class="text"><a href="tel:+243824859415">(+243) 824859415</a></div>
 							</div>
 						</div>
@@ -523,7 +506,7 @@
 						<div class="contact-info-block">
 							<div class="inner">
 								<i class="icon fa fa-envelope"></i>
-								<h6 class="title">Ecrivez-nous</h6>
+								<h6 class="title">@lang("infos.writeus")</h6>
 								<div class="text"><a href="mailto: Contact@thebestgroup.org"> Contact@thebestgroup.org</a></div>
 							</div>
 						</div>
@@ -532,8 +515,8 @@
 						<div class="contact-info-block">
 							<div class="inner">
 								<i class="icon fa fa-map-marker-alt"></i>
-								<h6 class="title">Notre adresse</h6>
-								<div class="text">16, avenue de la paix, Kinshasa-Gombe, <br> Réf : Pressing 5 à sec.</div>
+								<h6 class="title">@lang("infos.add")    </h6>
+								<div class="text">16, avenue de la paix, Kinshasa-Gombe, <br> @lang("infos.ref") : Pressing 5 à sec.</div>
 							</div>
 						</div>
 					</div>
@@ -544,7 +527,7 @@
 					<div class="inner-column">
 						<!-- Contact Form -->
 						<div class="contact-form wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-							<h2 class="title">Contact us</h2>
+							<h2 class="title">@lang("infos.contact")</h2>
 
 							<!--Contact Form-->
 							<form method="post" action="get" id="contact-form">
