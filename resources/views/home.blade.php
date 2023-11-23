@@ -602,7 +602,7 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
-                                    <div class="ibox ">
+                                    <div class="ibox">
 
                                         <div class="ibox-content">
                                             <div class="tab-content">
@@ -623,7 +623,7 @@
                                                         <div class="full-height-scroll">
 
                                                             <strong>Detail de l'agent</strong>
-                                                            <form role="form" id="updatTeam" method="POST"
+                                                            <form role="form" id="form-{{ $se->id}}" method="POST" name="{{ $se->id }}"
                                                                 action="{{route('teamUpdate')}}" class='form-group'
                                                                 enctype="multipart/form-data">
                                                                 @csrf
@@ -746,7 +746,7 @@
                                                                 </div>
 
                                                                 <div class="col-md-12 mt-10" style="margin-top: 30px;">
-                                                                    <button id="btnUpdateTeam"
+                                                                    <button id="btnUpdateTeam" name="form-{{ $se->id }}"
                                                                         class="btn btn-sm btn-primary pull-right m-t-n-xs"
                                                                         type="submit">
                                                                         <strong>Modifiers</strong>
@@ -1293,6 +1293,13 @@
             var id = $(this).attr("href");
             deleteTemoignage(id, 'destroy_portofolio');
         });
+        $(document).on("submit", "#btnUpdateTeamo", function (e) {
+            e.preventDefault();
+            var id = $(this).attr("name");
+            var f=id;
+            //  alert(id);
+            update(id);
+        });
     });
 
     function switcheEvent(id,etat, idLoad) {
@@ -1382,6 +1389,64 @@
         });
     }
 
+    function update(id) {
+       // Get the form.
+	var form = $("#"+id);
+	var btn = document.querySelector('#btnUpdateTeam');
+	// Set up an event listener for the contact form.
+	$(form).submit(function(e) {
+        // Stop the browser from submitting the form.
+		//e.preventDefault();
+        alert(form);
+		// Serialize the form data.
+		// var formData = $(form).serialize();
+        alert($(form).attr('action'));
+
+		btn.setAttribute('disabled', 'true');
+        btn.innerHTML = "En cour d'envoi";
+		// Submit the form using AJAX.
+		$.ajax({
+			type: 'POST',
+            contentType: false,
+            processData:false,
+			url: $(form).attr('action'),
+			data:new FormData(this)
+		})
+			.done(function(response) {
+				btn.removeAttribute('disabled');
+				btn.innerHTML = "Modifier";
+				if (response.reponse) {
+					swal({
+						title: response.msg,
+						icon: 'success'
+					});
+					// Clear the form.
+					location.reload();
+				} else {
+					swal({
+						title: response.msg,
+						icon: 'error'
+					});
+				}
+			})
+			.fail(function(data) {
+				btn.removeAttribute('disa   led');
+				btn.innerHTML = "Modifier";
+				// Set the message text.
+				if (data.responseText !== '') {
+					swal({
+						title: response.msg,
+						icon: 'error'
+					});
+				} else {
+					swal({
+						title: response.msg,
+						icon: "Oops! Une erreur s'est produite et votre message n'a pas pu être envoyé."
+					});
+				}
+			});
+	});
+    }
     function actualiser() {
         location.reload();
     }

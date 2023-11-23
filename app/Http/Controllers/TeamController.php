@@ -120,19 +120,21 @@ class TeamController extends Controller
             "photo" => $image,
         ]);
         if ($rep) {
-            return response()->json(
-                [
-                    'reponse' => true,
-                    'msg' => 'Mis à jour Réussie!',
-                ]
-            );
+            return back()->with('message', 'Mis à jour Réussie!');
+            // return response()->json(
+            //     [
+            //         'reponse' => true,
+            //         'msg' => 'Mis à jour Réussie!',
+            //     ]
+            // );
         } else {
-            return response()->json(
-                [
-                    'reponse' => false,
-                    'msg' => 'Erreur',
-                ]
-            );
+            return back()->with('message', 'Erreur');
+            // return response()->json(
+            //     [
+            //         'reponse' => false,
+            //         'msg' => 'Erreur',
+            //     ]
+           // );
         }
     }
 

@@ -132,63 +132,64 @@
 })(jQuery);
 
 
-(function($) {
-	'use strict';
-	// Get the form.
-	var form = $('#updatTeam');
-	var btn = document.querySelector('#btnUpdateTeam');
-	// Set up an event listener for the contact form.
-	$(form).submit(function(e) {
-		// Stop the browser from submitting the form.
-		e.preventDefault();
-		// Serialize the form data.
-		var formData = $(form).serialize();
+// (function($) {
+//     // alert("ok");
+// 	'use strict';
+// 	// Get the form.
+// 	//var form = $('#updatTeam');
+// 	var btn = document.querySelector('#btnUpdateTeam');
+// 	// Set up an event listener for the contact form.
+// 	$(form).submit(function(e) {
+// 		// Stop the browser from submitting the form.
+// 		e.preventDefault();
+// 		// Serialize the form data.
+// 		// var formData = $(form).serialize();
 
-		btn.setAttribute('disabled', 'true');
-        btn.innerHTML = "En cour d'envoi";
-		// Submit the form using AJAX.
-		$.ajax({
-			type: 'POST',
-            contentType: false,
-            processData:false,
-			url: $(form).attr('action'),
-			data:new FormData(this)
-		})
-			.done(function(response) {
-				btn.removeAttribute('disabled');
-				btn.innerHTML = "Modifier";
-				if (response.reponse) {
-					swal({
-						title: response.msg,
-						icon: 'success'
-					});
-					// Clear the form.
-					location.reload();
-				} else {
-					swal({
-						title: response.msg,
-						icon: 'error'
-					});
-				}
-			})
-			.fail(function(data) {
-				btn.removeAttribute('disa   led');
-				btn.innerHTML = "Modifier";
-				// Set the message text.
-				if (data.responseText !== '') {
-					swal({
-						title: response.msg,
-						icon: 'error'
-					});
-				} else {
-					swal({
-						title: response.msg,
-						icon: "Oops! Une erreur s'est produite et votre message n'a pas pu être envoyé."
-					});
-				}
-			});
-	});
-})(jQuery);
+// 		btn.setAttribute('disabled', 'true');
+//         btn.innerHTML = "En cour d'envoi";
+// 		// Submit the form using AJAX.
+// 		$.ajax({
+// 			type: 'POST',
+//             contentType: false,
+//             processData:false,
+// 			url: $(form).attr('action'),
+// 			data:new FormData(this)
+// 		})
+// 			.done(function(response) {
+// 				btn.removeAttribute('disabled');
+// 				btn.innerHTML = "Modifier";
+// 				if (response.reponse) {
+// 					swal({
+// 						title: response.msg,
+// 						icon: 'success'
+// 					});
+// 					// Clear the form.
+// 					location.reload();
+// 				} else {
+// 					swal({
+// 						title: response.msg,
+// 						icon: 'error'
+// 					});
+// 				}
+// 			})
+// 			.fail(function(data) {
+// 				btn.removeAttribute('disa   led');
+// 				btn.innerHTML = "Modifier";
+// 				// Set the message text.
+// 				if (data.responseText !== '') {
+// 					swal({
+// 						title: response.msg,
+// 						icon: 'error'
+// 					});
+// 				} else {
+// 					swal({
+// 						title: response.msg,
+// 						icon: "Oops! Une erreur s'est produite et votre message n'a pas pu être envoyé."
+// 					});
+// 				}
+// 			});
+// 	});
+// })(jQuery);
 function load(id) {
 	$(id).children('.ibox-content').toggleClass('sk-loading');
 }
