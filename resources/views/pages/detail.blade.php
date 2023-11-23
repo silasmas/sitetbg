@@ -531,6 +531,33 @@
                 </div>
             </div>
         </div>
+        <section class="features-section pb-0">
+            <div class="row">
+
+                <!-- Feature Block -->
+                <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                    <div class="inner-box ">
+                        <div class="image-box">
+                            <figure class="image"><img src="{{asset('common/newimg/p.jpg')}}" alt=""></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                    <div class="inner-box ">
+                        <div class="image-box">
+                            <figure class="image"><img src="{{asset('common/newimg/p.jpg')}}" alt=""></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                    <div class="inner-box ">
+                        <div class="image-box">
+                            <figure class="image"><img src="{{asset('common/newimg/p.jpg')}}" alt=""></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <div class="row">
             <div class="col-xl-12">
                 <div class="project-details__pagination-box">

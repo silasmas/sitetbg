@@ -138,6 +138,7 @@
 </header> --}}
 <!-- Main Header-->
 <header id="home" class="main-header header-style-one">
+
     <!-- Main box -->
     <div class="main-box">
         <div class="logo-box">
@@ -153,7 +154,26 @@
 
         <!--Nav Box-->
         <div class="nav-outer">
-            <nav class="nav main-menu">
+            <nav class="navbar main-menu nav" >
+                <ul class="navigation">
+                    {{-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li> --}}
+                    <li><a href="#home" class="nav-link active" aria-current="page">Accueil</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">A propos</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#team" class="nav-link">Team</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            {{-- <nav class="nav main-menu" id="navbar-1">
                 <ul class="navigation">
                     <li class="current"><a href="#home">Accueil</a></li>
                     <li><a href="#about">A propos</a></li>
@@ -162,7 +182,7 @@
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
+            </nav> --}}
         </div>
         <!-- Main Menu End-->
 
@@ -275,7 +295,7 @@
                 <!--Right Col-->
                 <div class="nav-outer ms-auto d-flex align-items-center">
                     <!-- Main Menu -->
-                    <nav class="main-menu">
+                    <nav class="main-menu navbar" id="navbar">
                         <div class="navbar-collapse show collapse clearfix">
                             <ul class="navigation clearfix">
                                 <!--Keep This Empty / Menu will come through Javascript-->

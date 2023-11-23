@@ -27,7 +27,7 @@
     <link href="{{ asset('css/summernote/summernote.css') }}" rel="stylesheet">
     @yield("autres_style")
 </head>
-<body class="">
+<body class="" >
         <div id="wrapper">
                 <nav class="navbar-default navbar-static-side" role="navigation">
                     <div class="sidebar-collapse">

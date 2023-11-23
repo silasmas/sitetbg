@@ -37,7 +37,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" class="position-relative" data-bs-offset="0">
     <div class="page-wrapper">
         <!-- Preloader -->
         <div class="preloader"></div>
@@ -48,7 +48,7 @@
     <!-- Scroll To Top -->
     <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
     <script src="{{ asset('common/js/jquery.js') }}"></script>
-    <script src="{{ asset('common/js/popper.min.js') }}"></script>
+    {{-- <script src="{{ asset('common/js/popper.min.js') }}"></script> --}}
     <!--Revolution Slider-->
     <script src="{{ asset('common/plugins/revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
     <script src="{{ asset('common/plugins/revolution/js/jquery.themepunch.tools.min.js') }}"></script>
@@ -64,7 +64,10 @@
     <script src="{{ asset('common/plugins/revolution/js/extensions/revolution.extension.video.min.js') }}"></script>
     <script src="{{ asset('common/js/main-slider-script.js') }}"></script>
     <!--Revolution Slider-->
-    <script src="{{ asset('common/js/bootstrap.min.js') }}"></script>
+    {{-- <script src="{{ asset('common/js/bootstrap.min.js') }}"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
     <script src="{{ asset('common/js/jquery.fancybox.js') }}"></script>
     <script src="{{ asset('common/js/jquery-ui.js') }}"></script>
     <script src="{{ asset('common/js/wow.js') }}"></script>
@@ -73,7 +76,17 @@
     <script src="{{ asset('common/js/swiper.min.js') }}"></script>
     <script src="{{ asset('common/js/owl.js') }}"></script>
     <script src="{{ asset('common/js/script.js') }}"></script>
+    <script>
 
+        //  $(document).ready(function(){
+        //    $('#navbar-1 .navigation li').click(function(){
+        //         $('#navbar-1 .navigation li').removeClass('current')
+        //         $(this).addClass('current')
+        //         console.log($(this).length);
+        //    })
+        //  })
+
+    </script>
 </body>
 
 </html>
