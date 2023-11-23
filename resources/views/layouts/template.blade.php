@@ -15,7 +15,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="icon" href="{{ asset('assets/images/logo.ico') }}" type="image/rdp-icon">
+    <link rel="shortcut icon" href="{{ asset('common/newimg/tbg-rond.gif') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('common/newimg/tbg-rond.gif') }}" type="image/x-icon">
 
      <!-- Styles -->
 
