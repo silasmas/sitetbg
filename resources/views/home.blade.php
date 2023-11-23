@@ -623,12 +623,43 @@
                                                         <div class="full-height-scroll">
 
                                                             <strong>Detail de l'agent</strong>
-                                                            <form role="form" id="formTemoignage" method="POST"
-                                                                action="{{route('add.temoignage')}}" class='form-group'
+                                                            <form role="form" id="updatTeam" method="POST"
+                                                                action="{{route('teamUpdate')}}" class='form-group'
                                                                 enctype="multipart/form-data">
                                                                 @csrf
                                                                 <div class="col-md-12">
+                                                                    <label>Photo</label>
+                                                                    <div class=" fileinput fileinput-new input-group"
+                                                                        data-provides="fileinput">
+                                                                        <div class="form-control"
+                                                                            data-trigger="fileinput">
+                                                                            <i
+                                                                                class="glyphicon glyphicon-file fileinput-exists"></i>
+                                                                            <span class="fileinput-filename"></span>
+                                                                        </div>
+                                                                        <span
+                                                                            class="input-group-addon btn btn-default btn-file"><span
+                                                                                class="fileinput-new">Selectioner une
+                                                                                photo</span>
+                                                                            <span class="fileinput-exists">Changer</span>
+                                                                            <input type="file" value="{{$se->photo}}"
+                                                                                name="photoTeam"></span>
+                                                                        <a href="{{$se->photo}}"
+                                                                            class="input-group-addon btn btn-default fileinput-exists"
+                                                                            data-dismiss="fileinput">Supprimer</a>
+                                                                    </div>
+                                                                    @if ($errors->has('photoTeam'))
+
+                                                                    <span class="invalid-feedback" role="alert">
+                                                                        <strong>{{ $errors->first('photoTeam')}}</strong>
+                                                                    </span>
+
+                                                                    @endif
+                                                                </div>
+                                                                <div class="col-md-12">
                                                                     <label>Nom</label>
+                                                                    <input type="text" name='id' value="{{ $se->id }}"
+                                                                        class="form-control hidden">
                                                                     <input type="text" placeholder="Enter le nom"
                                                                         name='nom' value="{{ $se->nom }}"
                                                                         class="form-control">
@@ -661,8 +692,61 @@
 
                                                                     @endif
                                                                 </div>
+                                                                <div class="col-md-12 ">
+                                                                    <label>Facebook</label>
+                                                                    <input type="text" name='facebook'
+                                                                        placeholder="Facebook"
+                                                                        value='{{ $se->facebook}}' class="form-control">
+                                                                    @if ($errors->has('facebook'))
+                                                                    <span class="invalid-feedback" role="alert">
+                                                                        <strong>{{ $errors->first('facebook')
+                                                                            }}</strong>
+                                                                    </span>
+
+                                                                    @endif
+                                                                </div>
+                                                                <div class="col-md-12 ">
+                                                                    <label>Tweeter</label>
+                                                                    <input type="text" name='tweeter'
+                                                                        placeholder="tweeter" value='{{ $se->tweeter}}'
+                                                                        class="form-control">
+                                                                    @if ($errors->has('tweeter'))
+                                                                    <span class="invalid-feedback" role="alert">
+                                                                        <strong>{{ $errors->first('tweeter') }}</strong>
+                                                                    </span>
+
+                                                                    @endif
+                                                                </div>
+                                                                <div class="col-md-12 ">
+                                                                    <label>Instagram</label>
+                                                                    <input type="text" name='instagram'
+                                                                        placeholder="instagram"
+                                                                        value='{{ $se->instagram}}'
+                                                                        class="form-control">
+                                                                    @if ($errors->has('instagram'))
+                                                                    <span class="invalid-feedback" role="alert">
+                                                                        <strong>{{ $errors->first('instagram')
+                                                                            }}</strong>
+                                                                    </span>
+
+                                                                    @endif
+                                                                </div>
+                                                                <div class="col-md-12 ">
+                                                                    <label>Linkedin</label>
+                                                                    <input type="text" name='linkedin'
+                                                                        placeholder="linkedin"
+                                                                        value='{{ $se->linkedin}}' class="form-control">
+                                                                    @if ($errors->has('linkedin'))
+                                                                    <span class="invalid-feedback" role="alert">
+                                                                        <strong>{{ $errors->first('linkedin')
+                                                                            }}</strong>
+                                                                    </span>
+
+                                                                    @endif
+                                                                </div>
+
                                                                 <div class="col-md-12 mt-10" style="margin-top: 30px;">
-                                                                    <button
+                                                                    <button id="btnUpdateTeam"
                                                                         class="btn btn-sm btn-primary pull-right m-t-n-xs"
                                                                         type="submit">
                                                                         <strong>Modifiers</strong>
@@ -980,7 +1064,8 @@
                                                                         <td>{{$t->fullname}}</td>
                                                                         <td>{{$t->email}} </td>
                                                                         <td>{{$t->message}}</td>
-                                                                        <td> {{\Carbon\Carbon::parse($t->created_at)->isoFormat('LLL') }}</td>
+                                                                        <td> {{\Carbon\Carbon::parse($t->created_at)->isoFormat('LLL')
+                                                                            }}</td>
                                                                     </tr>
                                                                     @empty
                                                                     <div class='wrapper-content  animated fadeInRight'>
@@ -1023,7 +1108,8 @@
                                         <div class="ibox-content">
                                             <h2> Liste des abonnements</h2>
                                             <p>
-                                                vous trouverez ci-dessous les personnes qui ce sont enregistrer pour la newsletter
+                                                vous trouverez ci-dessous les personnes qui ce sont enregistrer pour la
+                                                newsletter
                                             </p>
                                             <div class="clients-list">
                                                 <div id="tabcleint-2" class="tab-pane ">
@@ -1042,7 +1128,8 @@
                                                                     @forelse ($newsletters as $t )
                                                                     <tr class="gradeX">
                                                                         <td>{{$t->email}}</td>
-                                                                        <td>{{\Carbon\Carbon::parse($t->created_at)->isoFormat('LLL') }} </td>
+                                                                        <td>{{\Carbon\Carbon::parse($t->created_at)->isoFormat('LLL')
+                                                                            }} </td>
 
                                                                     </tr>
                                                                     @empty
@@ -1090,6 +1177,7 @@
 <script src="{{asset('js/bootstrap-markdown/bootstrap-markdown.js')}}"></script>
 <script src="{{asset('js/bootstrap-markdown/markdown.js')}}"></script>
 <script src="{{asset('js/dataTables/datatables.min.js')}}"></script>
+<script src="{{ asset('js/contact.form.js') }}"></script>
 <script>
     $(document).ready(function () {
         $(document).ready(function () {

@@ -26,6 +26,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('js/sweetalert/sweetalert.css') }}" rel="stylesheet">
     <link href="{{ asset('css/summernote/summernote.css') }}" rel="stylesheet">
+
     @yield("autres_style")
 </head>
 <body class="" >

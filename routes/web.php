@@ -73,10 +73,8 @@ Route::middleware(['auth'])->group(function () {
         PortofolioController::class,
         'store_galeri',
     ])->name('add.galeri');
-    Route::post('/add.team', [
-        TeamController::class,
-        'store',
-    ])->name('add.team');
+    Route::post('/add.team', [TeamController::class, 'store'])->name('add.team');
+    Route::post('/teamUpdate', [TeamController::class, 'update'])->name('teamUpdate');
 
     Route::post('/add.temoignage', [
         TemoignageController::class,

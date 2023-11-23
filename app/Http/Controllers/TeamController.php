@@ -88,9 +88,52 @@ class TeamController extends Controller
      * @param  \App\Models\team  $team
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, team $team)
+    public function update(Request $request, Team $event)
     {
-        //
+        $events = $event::find($request->id);
+        $nom = $request->nom == $events->nom ? $events->nom : $request->nom;
+        $prenom = $request->prenom == $events->prenom ? $events->prenom : $request->prenom;
+        $poste = $request->poste == $events->poste ? $events->poste : $request->poste;
+        $linkedin = $request->linkedin == $events->linkedin ? $events->linkedin : $request->linkedin;
+        $tweeter = $request->tweeter == $events->tweeter ? $events->tweeter : $request->tweeter;
+        $facebook = $request->facebook == $events->facebook ? $events->facebook : $request->facebook;
+        $instagram = $request->instagram == $events->instagram ? $events->instagram : $request->instagram;
+        $image = "";
+
+        if ($request->file("photoTeam") != null) {
+            $photo = public_path() . '/storage/team/' . $events->photo;
+            file_exists($photo) ? unlink($photo) : '';
+            $image = 'team/' . time() . '.' . $request->file("photoTeam")->getClientOriginalName();
+            $request->file("photoTeam")->move('storage/team', $image);
+        } else {
+            $image = $events->photo;
+        }
+        // dd($rap);
+        $rep = $events->update([
+            "nom" => $nom,
+            "prenom" => $prenom,
+            "poste" => $poste,
+            "facebook" => $facebook,
+            "linkedin" => $linkedin,
+            "tweeter" => $tweeter,
+            "instagram" => $instagram,
+            "photo" => $image,
+        ]);
+        if ($rep) {
+            return response()->json(
+                [
+                    'reponse' => true,
+                    'msg' => 'Mis à jour Réussie!',
+                ]
+            );
+        } else {
+            return response()->json(
+                [
+                    'reponse' => false,
+                    'msg' => 'Erreur',
+                ]
+            );
+        }
     }
 
     /**
