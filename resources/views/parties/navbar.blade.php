@@ -175,21 +175,21 @@
             </nav>
             {{-- <nav class="nav main-menu" id="navbar-1">
                 <ul class="navigation">
-                    <li class="current"><a href="#home">Accueil</a></li>
-                    <li><a href="#about">A propos</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="current"><a href="#home">@lang("infos.main_menu.home")</a></li>
+                    <li><a href="#about">@lang("infos.main_menu.about")</a></li>
+                    <li><a href="#services">@lang("infos.main_menu.services")</a></li>
+                    <li><a href="#portfolio">@lang("infos.main_menu.portfolio")</a></li>
+                    <li><a href="#team">@lang("infos.main_menu.team")</a></li>
+                    <li><a href="#contact">@lang("infos.main_menu.contact")</a></li>
                 </ul>
             </nav> --}}
         </div>
         <!-- Main Menu End-->
 
         <div class="outer-box">
-            <a href="tel:+92(8800)9806" class="info-btn">
+            <a href="tel:+243824859415" class="info-btn">
                 <i class="icon fa fa-phone"></i>
-                <strong class="text">+92 (8800) 6890</strong>
+                <strong class="text">(+243) 824859415</strong>
             </a>
 
             <!-- Mobile Nav toggler -->
@@ -197,12 +197,56 @@
             <div class="dropdown order-1">
                 <button class="btn btn-secondary btn-language dropdown-toggle ms-lg-4 ms-3" type="button"
                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span>Fr</span>
+                    <span>{{  $current_locale }}</span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    @foreach ($available_locales as $locale_name => $available_locale)
+                    @if ($available_locale === $current_locale)
+                    <li>
+                        <a class="dropdown-item disabled d-flex align-items-center"
+                            href="#">
+                            @switch($available_locale)
+                            @case('en')
+                            <span class="fi fi-us me-2 align-middle"></span>
+                            @break
+                            @case('fr')
+                            <span class="fi fi-cd me-2 align-middle"></span>
+                            @break
+                            @default
+                            <span class="fi fi-be me-2 align-middle"></span>
+
+                            @endswitch
+                            {{ $locale_name }}
+                        </a>
+                    </li>
+                    @else
+                    <li>
+                        <a class="dropdown-item d-flex align-items-center"
+                            href="{{ route('change_language', ['locale' => $available_locale]) }}">
+                            @switch($available_locale)
+                            @case('en')
+                            <span class="fi fi-us me-2 align-middle"></span>
+                            @break
+
+                            @case('fr')
+                            <span class="fi fi-cd me-2 align-middle"></span>
+                            @break
+
+                            @default
+                            <span class="fi fi-be me-2 align-middle"></span>
+
+                            @endswitch
+
+                            {{ $locale_name }}
+                        </a>
+                    </li>
+                    @endif
+                    @endforeach
+                </ul>
+                {{-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <li class="active"><a class="dropdown-item" href="#">Français</a></li>
                     <li><a class="dropdown-item" href="#">Anglais</a></li>
-                </ul>
+                </ul> --}}
             </div>
         </div>
     </div>
@@ -232,34 +276,33 @@
                     <!-- Contact Info Box -->
                     <div class="contact-info-box">
                         <i class="icon lnr-icon-phone-handset"></i>
-                        <span class="title">Call Now</span>
-                        <a href="tel:+92880098670">+92 (8800) - 98670</a>
+                        <span class="title">Applez-nous</span>
+                        <a href="tel:+243824859415">(+243) 824859415</a>
                     </div>
                 </li>
                 <li>
                     <!-- Contact Info Box -->
                     <div class="contact-info-box">
                         <span class="icon lnr-icon-envelope1"></span>
-                        <span class="title">Send Email</span>
-                        <a href="mailto:help@company.com">help@company.com</a>
+                        <span class="title">Ecrivez-nous</span>
+                        <a href="mailto:Contact@thebestgroup.org">Contact@thebestgroup.org</a>
                     </div>
                 </li>
                 <li>
                     <!-- Contact Info Box -->
                     <div class="contact-info-box">
                         <span class="icon lnr-icon-clock"></span>
-                        <span class="title">Send Email</span>
-                        Mon - Sat 8:00 - 6:30, Sunday - CLOSED
+                        <span class="title">Notre horaire</span>
+                        Lun - Ven: 8:00 - 16:00 / Fermé le weekend
                     </div>
                 </li>
             </ul>
 
 
             <ul class="social-links">
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://web.facebook.com/TBGentreprise/"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://youtube.com/channel/UC3lltuUYIdE-i_bfkLUB3UQ"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://instagram.com/thebestgroupdrc?igshid=q9yqj3mr3bn5"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </nav>
     </div><!-- End Mobile Menu -->
@@ -307,11 +350,51 @@
                     <div class="dropdown order-1">
                         <button class="btn btn-secondary btn-language dropdown-toggle ms-lg-5 ms-3" type="button"
                             id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span>Fr</span>
+                            <span>{{  $current_locale }}</span>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li class="active"><a class="dropdown-item" href="#">Français</a></li>
-                            <li><a class="dropdown-item" href="#">Anglais</a></li>
+                            @foreach ($available_locales as $locale_name => $available_locale)
+                            @if ($available_locale === $current_locale)
+                            <li>
+                                <a class="dropdown-item disabled d-flex align-items-center"
+                                    href="#">
+                                    @switch($available_locale)
+                                    @case('en')
+                                    <span class="fi fi-us me-2 align-middle"></span>
+                                    @break
+                                    @case('fr')
+                                    <span class="fi fi-cd me-2 align-middle"></span>
+                                    @break
+                                    @default
+                                    <span class="fi fi-be me-2 align-middle"></span>
+
+                                    @endswitch
+                                    {{ $locale_name }}
+                                </a>
+                            </li>
+                            @else
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center"
+                                    href="{{ route('change_language', ['locale' => $available_locale]) }}">
+                                    @switch($available_locale)
+                                    @case('en')
+                                    <span class="fi fi-us me-2 align-middle"></span>
+                                    @break
+
+                                    @case('fr')
+                                    <span class="fi fi-cd me-2 align-middle"></span>
+                                    @break
+
+                                    @default
+                                    <span class="fi fi-be me-2 align-middle"></span>
+
+                                    @endswitch
+
+                                    {{ $locale_name }}
+                                </a>
+                            </li>
+                            @endif
+                            @endforeach
                         </ul>
                     </div>
                     <div class="mobile-nav-toggler order-2"><span class="icon lnr-icon-bars"></span></div>

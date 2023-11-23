@@ -13,20 +13,20 @@
 
     <div class='row'>
         @if (session()->has('message'))
-        <div class="col-md-6 col-md-offset-3" >
+        <div class="col-md-6 col-md-offset-3">
             <div class="alert alert-success alert-dismissable">
                 <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
                 {{session()->get('message')}}
             </div>
-     </div>
-     @endif
-     @if (session()->has('erreur'))
-        <div class="col-md-6 col-md-offset-3" >
+        </div>
+        @endif
+        @if (session()->has('erreur'))
+        <div class="col-md-6 col-md-offset-3">
             <div class="alert alert-danger alert-dismissable">
                 <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
                 {{session()->get('erreur')}}
             </div>
-     </div>
+        </div>
         @endif
         <div class="col-lg-12">
             <div id="tab-all" class="tabs-container">
@@ -37,6 +37,8 @@
                     <li class=""><a data-toggle="tab" href="#team">Teams</a></li>
                     <li class=""><a data-toggle="tab" href="#event">Evenements</a></li>
                     <li class=""><a data-toggle="tab" href="#reservation">Réservation</a></li>
+                    <li class=""><a data-toggle="tab" href="#messagetab">Messages</a></li>
+                    <li class=""><a data-toggle="tab" href="#newsletter">Newsletter</a></li>
                 </ul>
                 <div class="tab-content">
 
@@ -136,15 +138,15 @@
                                                             <strong>Detail</strong>
                                                             <div class="row m-b-lg">
                                                                 {{-- {{ images::find($se->id)->each(function($city)
-                                                                    {
-                                                                        echo $city->image.'<br>';
-                                                                    });
+                                                                {
+                                                                echo $city->image.'<br>';
+                                                                });
                                                                 }} --}}
                                                                 <div class="col-lg-12 text-left">
                                                                     <div class="m-b-sm">
-                                                                        {{--  <img alt="image" class=""
-                                                                    src="{{asset('storage/'.$se->images->image)}}"
-                                                                        style="width: 100px"> --}}
+                                                                        {{-- <img alt="image" class=""
+                                                                            src="{{asset('storage/'.$se->images->image)}}"
+                                                                            style="width: 100px"> --}}
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -195,7 +197,7 @@
                                                             <div class="table-responsive">
                                                                 <table class="table table-striped table-hover">
                                                                     <tbody>
-                                                                        @forelse ($temoignage as$tem )
+                                                                        @forelse ($temoignage as $tem )
                                                                         <tr>
                                                                             <td class="client-avatar">
                                                                                 <a data-toggle="tab"
@@ -219,7 +221,6 @@
                                                                                             class="fa fa-trash-o"></i></span></a>
                                                                             </td>
                                                                         </tr>
-
                                                                         @empty
 
                                                                         @endforelse
@@ -293,7 +294,8 @@
                                                                         class="form-control">
                                                                     @if ($errors->has('profession'))
                                                                     <span class="invalid-feedback" role="alert">
-                                                                        <strong>{{ $errors->first('profession') }}</strong>
+                                                                        <strong>{{ $errors->first('profession')
+                                                                            }}</strong>
                                                                     </span>
 
                                                                     @endif
@@ -338,7 +340,8 @@
                                                                     @if ($errors->has('description'))
 
                                                                     <span class="invalid-feedback" role="alert">
-                                                                        <strong>{{ $errors->first('description') }}</strong>
+                                                                        <strong>{{ $errors->first('description')
+                                                                            }}</strong>
                                                                     </span>
 
                                                                     @endif
@@ -401,7 +404,7 @@
                                                             <div class="table-responsive">
                                                                 <table class="table table-striped table-hover">
                                                                     <tbody>
-                                                                        @forelse ($user as$tem )
+                                                                        @forelse ($user as $tem )
                                                                         <tr>
                                                                             <td class="client-avatar">
                                                                                 <a data-toggle="tab"
@@ -497,7 +500,8 @@
                                                                         value='{{ $se->fonction}}' class="form-control">
                                                                     @if ($errors->has('fonction'))
                                                                     <span class="invalid-feedback" role="alert">
-                                                                        <strong>{{ $errors->first('fonction') }}</strong>
+                                                                        <strong>{{ $errors->first('fonction')
+                                                                            }}</strong>
                                                                     </span>
 
                                                                     @endif
@@ -724,6 +728,7 @@
                                                                                 <th>Options</th>
                                                                             </tr>
                                                                         </thead>
+
                                                                     <tbody>
                                                                         @forelse ($register as $tem )
                                                                         <tr>
@@ -747,7 +752,8 @@
                                                                             <td class="client-status">
 
                                                                                 <label
-                                                                                    class='label label-{{ $tem->etat=="active"?"success":"danger" }}'>{{ $tem->etat }}</label>
+                                                                                    class='label label-{{ $tem->etat=="active"?"success":"danger" }}'>{{
+                                                                                    $tem->etat }}</label>
                                                                             </td>
                                                                         </tr>
 
@@ -787,31 +793,37 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-lg-9">
-                                                             @if ($se->etat==='active')
-                                                            <form id="suspenduForme" action="{{ route('switcheEvent') }}" method="POST">
+                                                            @if ($se->etat==='active')
+                                                            <form id="suspenduForme"
+                                                                action="{{ route('switcheEvent') }}" method="POST">
                                                                 @csrf
-                                                                <input hidden type="text" name="etat" value="cloturer"/>
-                                                                <input hidden type="text" name="id" value="{{ $se->id }}"/>
-                                                                <button type="submit" id='btnChangeSuspendre' class="btn btn-warning btn-sm btn-block"><i
+                                                                <input hidden type="text" name="etat"
+                                                                    value="cloturer" />
+                                                                <input hidden type="text" name="id"
+                                                                    value="{{ $se->id }}" />
+                                                                <button type="submit" id='btnChangeSuspendre'
+                                                                    class="btn btn-warning btn-sm btn-block"><i
                                                                         class="fa fa-lock"></i> Cloturer
                                                                 </button>
                                                             </form>
-                                                             @else
-                                                            <form id="suspenduForme" action="{{ route('switcheEvent') }}" method="POST">
-                                                                    @csrf
-                                                                    <input hidden type="text" name="etat" value="active"/>
-                                                                    <input hidden type="text" name="id" value="{{ $se->id }}"/>
-                                                                    <button type="submit" id='btnChangeSuspendre' class="btn btn-success btn-sm btn-block"><i
-                                                                            class="fa fa-unlock"></i> Publier
-                                                                    </button>
-                                                                </form>
+                                                            @else
+                                                            <form id="suspenduForme"
+                                                                action="{{ route('switcheEvent') }}" method="POST">
+                                                                @csrf
+                                                                <input hidden type="text" name="etat" value="active" />
+                                                                <input hidden type="text" name="id"
+                                                                    value="{{ $se->id }}" />
+                                                                <button type="submit" id='btnChangeSuspendre'
+                                                                    class="btn btn-success btn-sm btn-block"><i
+                                                                        class="fa fa-unlock"></i> Publier
+                                                                </button>
+                                                            </form>
                                                             @endif
                                                         </div><br>
                                                         <div class="col-lg-9 mt-5" style="margin-top: 10px">
                                                             <a href="{{$se->id}}" id='deleteEvent'>
                                                                 <span class="btn btn-danger btn-sm btn-block">
-                                                                    <i
-                                                                        class="fa fa-trash-o"></i>Supprimer</span></a>
+                                                                    <i class="fa fa-trash-o"></i>Supprimer</span></a>
                                                         </div>
                                                     </div>
                                                     <div class="client-detail">
@@ -893,8 +905,7 @@
                                                                         <td>{{$t->grandtitre.' ('.$t->titre.')'}}
                                                                         </td>
                                                                         <td class="client-status">
-                                                                            <a href="{{$t->id}}"
-                                                                                id='deleteClient'><span
+                                                                            <a href="{{$t->id}}" id='deleteClient'><span
                                                                                     class="label label-danger"><i
                                                                                         class="fa fa-trash-o"></i></span></a>
 
@@ -925,6 +936,133 @@
                                                                         <th>Secteur</th>
                                                                         <th>Event</th>
                                                                         <th>Options</th>
+                                                                    </tr>
+                                                                </tfoot>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="messagetab" class="tab-pane">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="ibox">
+                                        <div class="ibox-content">
+                                            <h2> Liste des messages envoyé par les visiteurs sur le site</h2>
+                                            <p>
+                                                vous trouverez ci-dessous les messages envoyé et leurs dates d'envoie
+                                            </p>
+                                            <div class="clients-list">
+                                                <div id="tabcleint-2" class="tab-pane ">
+                                                    <div class="full-height-scroll">
+                                                        <div class="table-responsive">
+                                                            <table
+                                                                class="table table-striped  table-hover dataTables-example">
+
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Nom</th>
+                                                                        <th>Email</th>
+                                                                        <th>Message</th>
+                                                                        <th>Date</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    @forelse ($messages as $t )
+                                                                    <tr class="gradeX">
+                                                                        <td>{{$t->fullname}}</td>
+                                                                        <td>{{$t->email}} </td>
+                                                                        <td>{{$t->message}}</td>
+                                                                        <td> {{\Carbon\Carbon::parse($t->created_at)->isoFormat('LLL') }}</td>
+                                                                    </tr>
+                                                                    @empty
+                                                                    <div class='wrapper-content  animated fadeInRight'>
+                                                                        <div class="row mt-5">
+                                                                            <div
+                                                                                class='col-lg-6 col-md-push-1 col-sm-12'>
+                                                                                <p
+                                                                                    class="center small text-center  badge badge-danger">
+                                                                                    Aucune information disponible
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    @endforelse
+                                                                </tbody>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <th>Nom</th>
+                                                                        <th>Email</th>
+                                                                        <th>Message</th>
+                                                                        <th>Date</th>
+                                                                    </tr>
+                                                                </tfoot>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="newsletter" class="tab-pane">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="ibox">
+                                        <div class="ibox-content">
+                                            <h2> Liste des abonnements</h2>
+                                            <p>
+                                                vous trouverez ci-dessous les personnes qui ce sont enregistrer pour la newsletter
+                                            </p>
+                                            <div class="clients-list">
+                                                <div id="tabcleint-2" class="tab-pane ">
+                                                    <div class="full-height-scroll">
+                                                        <div class="table-responsive">
+                                                            <table
+                                                                class="table table-striped  table-hover dataTables-example">
+
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Email</th>
+                                                                        <th>Date</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    @forelse ($newsletters as $t )
+                                                                    <tr class="gradeX">
+                                                                        <td>{{$t->email}}</td>
+                                                                        <td>{{\Carbon\Carbon::parse($t->created_at)->isoFormat('LLL') }} </td>
+
+                                                                    </tr>
+                                                                    @empty
+                                                                    <div class='wrapper-content  animated fadeInRight'>
+                                                                        <div class="row mt-5">
+                                                                            <div
+                                                                                class='col-lg-6 col-md-push-1 col-sm-12'>
+                                                                                <p
+                                                                                    class="center small text-center  badge badge-danger">
+                                                                                    Aucune information disponible
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    @endforelse
+                                                                </tbody>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <th>Email</th>
+                                                                        <th>Date</th>
                                                                     </tr>
                                                                 </tfoot>
                                                             </table>

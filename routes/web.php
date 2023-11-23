@@ -1,8 +1,13 @@
 <?php
 
 use App\Http\Controllers\ClientregisterController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MessageController;
+use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\PortofolioController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\TeamController;
+use App\Http\Controllers\TemoignageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,12 +20,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
  */
+// Language
+Route::get('/language/{locale}', [PortofolioController::class, 'changeLanguage'])->name('change_language');
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', [PortofolioController::class, 'accueil',
-])->name('accueil');
+Route::get('/', [PortofolioController::class, 'accueil'])->name('accueil');
 
 Route::get('showPortfolio/{id}', [PortofolioController::class, 'show'])->name('showPortfolio');
 
@@ -28,6 +34,8 @@ Route::get('enregistrer/{id}', [PortofolioController::class, 'showRegister'])->n
 
 Route::post('detailgraphique', [ClientregisterController::class, 'detailgraphique'])->name('detailgraphique');
 Route::post('addreservation', [ClientregisterController::class, 'store'])->name('addreservation');
+Route::post('sendMsg', [MessageController::class, 'store'])->name('sendMsg');
+Route::post('sendNewslestter', [NewsletterController::class, 'store'])->name('sendNewslestter');
 
 //Admin
 Route::middleware(['auth'])->group(function () {
@@ -112,8 +120,6 @@ Route::middleware(['auth'])->group(function () {
     ])->name('destroy_client');
 
 });
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])
+Route::get('/dashboard', [HomeController::class, 'index'])->middleware(['auth'])
     ->name('dashboard');
 require __DIR__ . '/auth.php';

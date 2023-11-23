@@ -20,6 +20,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@700&display=swap" rel="stylesheet"> --}}
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="{{ asset('common/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('common/plugins/revolution/css/settings.css') }}" rel="stylesheet" type="text/css">
     <!-- REVOLUTION SETTINGS STYLES -->
@@ -29,9 +30,9 @@
     <!-- REVOLUTION NAVIGATION STYLES -->
     <link href="{{ asset('common/css/style.css') }}" rel="stylesheet">
 
-    <link rel="shortcut icon" href="{{ asset('common/newimg/logo.ico') }}" type="image/x-icon">
-    <link rel="icon" href="{{ asset('common/newimg/logo.ico') }}" type="image/x-icon">
-
+    <link rel="shortcut icon" href="{{ asset('common/newimg/tbg-rond.gif') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('common/newimg/tbg-rond.gif') }}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{ asset('js/sweetalert/sweetalert.css') }}" >
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -76,17 +77,8 @@
     <script src="{{ asset('common/js/swiper.min.js') }}"></script>
     <script src="{{ asset('common/js/owl.js') }}"></script>
     <script src="{{ asset('common/js/script.js') }}"></script>
-    <script>
-
-        //  $(document).ready(function(){
-        //    $('#navbar-1 .navigation li').click(function(){
-        //         $('#navbar-1 .navigation li').removeClass('current')
-        //         $(this).addClass('current')
-        //         console.log($(this).length);
-        //    })
-        //  })
-
-    </script>
+    <script src="{{ asset('js/contact.form.js') }}"></script>
+    <script src="{{ asset('js/sweetalert/sweetalert.min.js') }}"></script>
 </body>
 
 </html>
