@@ -530,22 +530,23 @@
 							<h2 class="title">@lang("infos.contact")</h2>
 
 							<!--Contact Form-->
-							<form method="post" action="get" id="contact-form">
+							<form method="post" action="{{ route('sendMsg') }}" id="contact-form">
+                                @csrf
 								<div class="row">
 									<div class="form-group col-lg-12">
-										<input type="text" name="full_name" placeholder="Your Name" required="">
+										<input type="text" name="full_name" placeholder="@lang("infos.contactform.name")" required="">
 									</div>
 
 									<div class="form-group col-lg-12">
-										<input type="email" name="Email" placeholder="Email Address" required="">
+										<input type="email" name="email" placeholder="@lang("infos.contactform.email")" required="">
 									</div>
 
 									<div class="form-group col-lg-12">
-										<textarea name="message" placeholder="Comment" required=""></textarea>
+										<textarea name="message" placeholder="@lang("infos.contactform.msg")" required=""></textarea>
 									</div>
 
 									<div class="form-group col-lg-12">
-										<button class="theme-btn btn-style-one hvr-dark" type="submit" name="submit-form"><span class="btn-title">Write a Message</span></button>
+										<button class="theme-btn btn-style-one hvr-dark" id="btnmsg" type="submit" name="submit-form"><span class="btn-title">@lang("infos.contactform.btn")</span></button>
 									</div>
 								</div>
 							</form>
@@ -565,12 +566,12 @@
 				<ul class="clients-carousel owl-carousel owl-theme">
 					<li class="slide-item">
                         <div class="img">
-                            <img src="{{asset('common/images/logo-client/biy.png')}}" alt="">
+                            <img src="{{asset('assets/images/partenaire/fonarev_rdc_logo.jpg')}}" alt="">
                         </div>
                     </li>
 					<li class="slide-item">
                         <div class="img">
-                            <img src="{{asset('common/images/logo-client/gael.png')}}" alt="">
+                            <img src="{{asset('assets/images/partenaire/NOEL-POUR-TOUS.png')}}" alt="">
                         </div>
                     </li>
 					<li class="slide-item">

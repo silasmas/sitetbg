@@ -51,6 +51,13 @@ return [
         'reference' => 'Reference',
         'city' => 'City',
     ],
+    'contactform' => [
+        'name' => 'Your Name',
+        'email' => 'Your Email Address',
+        'msg' => 'Your Message',
+        'btn' => 'Send a Message',
+        'info' => 'Subscribe to be informed about our next news',
+    ],
 
     // ===== TIME COUNT
     'on_date' => 'on',
@@ -62,7 +69,6 @@ return [
     'today' => 'today',
     'yesterday' => 'yesterday',
     'before_yesterday' => 'before yesterday',
-
 
     'month_singular' => 'month',
     'month_plural' => 'months',

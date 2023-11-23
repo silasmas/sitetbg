@@ -37,6 +37,8 @@
                     <li class=""><a data-toggle="tab" href="#team">Teams</a></li>
                     <li class=""><a data-toggle="tab" href="#event">Evenements</a></li>
                     <li class=""><a data-toggle="tab" href="#reservation">Réservation</a></li>
+                    <li class=""><a data-toggle="tab" href="#messagetab">Messages</a></li>
+                    <li class=""><a data-toggle="tab" href="#newsletter">Newsletter</a></li>
                 </ul>
                 <div class="tab-content">
 
@@ -934,6 +936,133 @@
                                                                         <th>Secteur</th>
                                                                         <th>Event</th>
                                                                         <th>Options</th>
+                                                                    </tr>
+                                                                </tfoot>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="messagetab" class="tab-pane">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="ibox">
+                                        <div class="ibox-content">
+                                            <h2> Liste des messages envoyé par les visiteurs sur le site</h2>
+                                            <p>
+                                                vous trouverez ci-dessous les messages envoyé et leurs dates d'envoie
+                                            </p>
+                                            <div class="clients-list">
+                                                <div id="tabcleint-2" class="tab-pane ">
+                                                    <div class="full-height-scroll">
+                                                        <div class="table-responsive">
+                                                            <table
+                                                                class="table table-striped  table-hover dataTables-example">
+
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Nom</th>
+                                                                        <th>Email</th>
+                                                                        <th>Message</th>
+                                                                        <th>Date</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    @forelse ($messages as $t )
+                                                                    <tr class="gradeX">
+                                                                        <td>{{$t->fullname}}</td>
+                                                                        <td>{{$t->email}} </td>
+                                                                        <td>{{$t->message}}</td>
+                                                                        <td> {{\Carbon\Carbon::parse($t->created_at)->isoFormat('LLL') }}</td>
+                                                                    </tr>
+                                                                    @empty
+                                                                    <div class='wrapper-content  animated fadeInRight'>
+                                                                        <div class="row mt-5">
+                                                                            <div
+                                                                                class='col-lg-6 col-md-push-1 col-sm-12'>
+                                                                                <p
+                                                                                    class="center small text-center  badge badge-danger">
+                                                                                    Aucune information disponible
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    @endforelse
+                                                                </tbody>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <th>Nom</th>
+                                                                        <th>Email</th>
+                                                                        <th>Message</th>
+                                                                        <th>Date</th>
+                                                                    </tr>
+                                                                </tfoot>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="newsletter" class="tab-pane">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="ibox">
+                                        <div class="ibox-content">
+                                            <h2> Liste des abonnements</h2>
+                                            <p>
+                                                vous trouverez ci-dessous les personnes qui ce sont enregistrer pour la newsletter
+                                            </p>
+                                            <div class="clients-list">
+                                                <div id="tabcleint-2" class="tab-pane ">
+                                                    <div class="full-height-scroll">
+                                                        <div class="table-responsive">
+                                                            <table
+                                                                class="table table-striped  table-hover dataTables-example">
+
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Email</th>
+                                                                        <th>Date</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    @forelse ($newsletters as $t )
+                                                                    <tr class="gradeX">
+                                                                        <td>{{$t->email}}</td>
+                                                                        <td>{{\Carbon\Carbon::parse($t->created_at)->isoFormat('LLL') }} </td>
+
+                                                                    </tr>
+                                                                    @empty
+                                                                    <div class='wrapper-content  animated fadeInRight'>
+                                                                        <div class="row mt-5">
+                                                                            <div
+                                                                                class='col-lg-6 col-md-push-1 col-sm-12'>
+                                                                                <p
+                                                                                    class="center small text-center  badge badge-danger">
+                                                                                    Aucune information disponible
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    @endforelse
+                                                                </tbody>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <th>Email</th>
+                                                                        <th>Date</th>
                                                                     </tr>
                                                                 </tfoot>
                                                             </table>

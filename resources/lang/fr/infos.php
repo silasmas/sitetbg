@@ -59,6 +59,13 @@ return [
         'reference' => 'Référence',
         'city' => 'Ville',
     ],
+    'contactform' => [
+        'name' => 'Votre nom au complet',
+        'email' => 'Votre Adresse mail',
+        'msg' => 'Votre Message',
+        'btn' => 'Envoyer le Message',
+        'info' => 'Abonnez-vous pour être informé sur nos prochaines actualités',
+    ],
     'descAbout' => "Nous conseillons par la formation et le coaching, nous concevons des projets de développement
     d'entreprise et des plans de communication et nous réalisons les évènements internes ainsi
     qu'externes des entreprises et personnes de notoriétés.",
@@ -144,7 +151,7 @@ return [
 
     // Inner pages
     'inner_page' => [
-       
+
         // Contact
         'contact' => [
             'title' => 'Nous sommes impatients de vous rencontrer !',
@@ -213,6 +220,6 @@ return [
                 'other' => 'Autres projets',
             ],
         ],
-        
+
     ],
 ];

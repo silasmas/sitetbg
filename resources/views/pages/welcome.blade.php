@@ -32,7 +32,7 @@
 
     <link rel="shortcut icon" href="{{ asset('common/newimg/tbg-rond.gif') }}" type="image/x-icon">
     <link rel="icon" href="{{ asset('common/newimg/tbg-rond.gif') }}" type="image/x-icon">
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('js/sweetalert/sweetalert.css') }}" >
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -74,7 +74,8 @@
     <script src="{{ asset('common/js/swiper.min.js') }}"></script>
     <script src="{{ asset('common/js/owl.js') }}"></script>
     <script src="{{ asset('common/js/script.js') }}"></script>
-
+    <script src="{{ asset('js/contact.form.js') }}"></script>
+    <script src="{{ asset('js/sweetalert/sweetalert.min.js') }}"></script>
 </body>
 
 </html>

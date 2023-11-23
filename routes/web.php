@@ -1,12 +1,14 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\TeamController;
-use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\PortofolioController;
-use App\Http\Controllers\TemoignageController;
 use App\Http\Controllers\ClientregisterController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MessageController;
+use App\Http\Controllers\NewsletterController;
+use App\Http\Controllers\PortofolioController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\TeamController;
+use App\Http\Controllers\TemoignageController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +34,8 @@ Route::get('enregistrer/{id}', [PortofolioController::class, 'showRegister'])->n
 
 Route::post('detailgraphique', [ClientregisterController::class, 'detailgraphique'])->name('detailgraphique');
 Route::post('addreservation', [ClientregisterController::class, 'store'])->name('addreservation');
+Route::post('sendMsg', [MessageController::class, 'store'])->name('sendMsg');
+Route::post('sendNewslestter', [NewsletterController::class, 'store'])->name('sendNewslestter');
 
 //Admin
 Route::middleware(['auth'])->group(function () {
@@ -116,6 +120,6 @@ Route::middleware(['auth'])->group(function () {
     ])->name('destroy_client');
 
 });
-Route::get('/dashboard', [HomeController::class,'index',])->middleware(['auth'])
+Route::get('/dashboard', [HomeController::class, 'index'])->middleware(['auth'])
     ->name('dashboard');
 require __DIR__ . '/auth.php';
