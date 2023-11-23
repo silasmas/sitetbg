@@ -13,20 +13,20 @@
 
     <div class='row'>
         @if (session()->has('message'))
-        <div class="col-md-6 col-md-offset-3" >
+        <div class="col-md-6 col-md-offset-3">
             <div class="alert alert-success alert-dismissable">
                 <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
                 {{session()->get('message')}}
             </div>
-     </div>
-     @endif
-     @if (session()->has('erreur'))
-        <div class="col-md-6 col-md-offset-3" >
+        </div>
+        @endif
+        @if (session()->has('erreur'))
+        <div class="col-md-6 col-md-offset-3">
             <div class="alert alert-danger alert-dismissable">
                 <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
                 {{session()->get('erreur')}}
             </div>
-     </div>
+        </div>
         @endif
         <div class="col-lg-12">
             <div id="tab-all" class="tabs-container">
@@ -136,15 +136,15 @@
                                                             <strong>Detail</strong>
                                                             <div class="row m-b-lg">
                                                                 {{-- {{ images::find($se->id)->each(function($city)
-                                                                    {
-                                                                        echo $city->image.'<br>';
-                                                                    });
+                                                                {
+                                                                echo $city->image.'<br>';
+                                                                });
                                                                 }} --}}
                                                                 <div class="col-lg-12 text-left">
                                                                     <div class="m-b-sm">
-                                                                        {{--  <img alt="image" class=""
-                                                                    src="{{asset('storage/'.$se->images->image)}}"
-                                                                        style="width: 100px"> --}}
+                                                                        {{-- <img alt="image" class=""
+                                                                            src="{{asset('storage/'.$se->images->image)}}"
+                                                                            style="width: 100px"> --}}
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -195,7 +195,7 @@
                                                             <div class="table-responsive">
                                                                 <table class="table table-striped table-hover">
                                                                     <tbody>
-                                                                        @forelse ($temoignage as$tem )
+                                                                        @forelse ($temoignage as $tem )
                                                                         <tr>
                                                                             <td class="client-avatar">
                                                                                 <a data-toggle="tab"
@@ -219,7 +219,6 @@
                                                                                             class="fa fa-trash-o"></i></span></a>
                                                                             </td>
                                                                         </tr>
-
                                                                         @empty
 
                                                                         @endforelse
@@ -293,7 +292,8 @@
                                                                         class="form-control">
                                                                     @if ($errors->has('profession'))
                                                                     <span class="invalid-feedback" role="alert">
-                                                                        <strong>{{ $errors->first('profession') }}</strong>
+                                                                        <strong>{{ $errors->first('profession')
+                                                                            }}</strong>
                                                                     </span>
 
                                                                     @endif
@@ -338,7 +338,8 @@
                                                                     @if ($errors->has('description'))
 
                                                                     <span class="invalid-feedback" role="alert">
-                                                                        <strong>{{ $errors->first('description') }}</strong>
+                                                                        <strong>{{ $errors->first('description')
+                                                                            }}</strong>
                                                                     </span>
 
                                                                     @endif
@@ -401,7 +402,7 @@
                                                             <div class="table-responsive">
                                                                 <table class="table table-striped table-hover">
                                                                     <tbody>
-                                                                        @forelse ($user as$tem )
+                                                                        @forelse ($user as $tem )
                                                                         <tr>
                                                                             <td class="client-avatar">
                                                                                 <a data-toggle="tab"
@@ -497,7 +498,8 @@
                                                                         value='{{ $se->fonction}}' class="form-control">
                                                                     @if ($errors->has('fonction'))
                                                                     <span class="invalid-feedback" role="alert">
-                                                                        <strong>{{ $errors->first('fonction') }}</strong>
+                                                                        <strong>{{ $errors->first('fonction')
+                                                                            }}</strong>
                                                                     </span>
 
                                                                     @endif
@@ -724,6 +726,7 @@
                                                                                 <th>Options</th>
                                                                             </tr>
                                                                         </thead>
+
                                                                     <tbody>
                                                                         @forelse ($register as $tem )
                                                                         <tr>
@@ -747,7 +750,8 @@
                                                                             <td class="client-status">
 
                                                                                 <label
-                                                                                    class='label label-{{ $tem->etat=="active"?"success":"danger" }}'>{{ $tem->etat }}</label>
+                                                                                    class='label label-{{ $tem->etat=="active"?"success":"danger" }}'>{{
+                                                                                    $tem->etat }}</label>
                                                                             </td>
                                                                         </tr>
 
@@ -787,31 +791,37 @@
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-lg-9">
-                                                             @if ($se->etat==='active')
-                                                            <form id="suspenduForme" action="{{ route('switcheEvent') }}" method="POST">
+                                                            @if ($se->etat==='active')
+                                                            <form id="suspenduForme"
+                                                                action="{{ route('switcheEvent') }}" method="POST">
                                                                 @csrf
-                                                                <input hidden type="text" name="etat" value="cloturer"/>
-                                                                <input hidden type="text" name="id" value="{{ $se->id }}"/>
-                                                                <button type="submit" id='btnChangeSuspendre' class="btn btn-warning btn-sm btn-block"><i
+                                                                <input hidden type="text" name="etat"
+                                                                    value="cloturer" />
+                                                                <input hidden type="text" name="id"
+                                                                    value="{{ $se->id }}" />
+                                                                <button type="submit" id='btnChangeSuspendre'
+                                                                    class="btn btn-warning btn-sm btn-block"><i
                                                                         class="fa fa-lock"></i> Cloturer
                                                                 </button>
                                                             </form>
-                                                             @else
-                                                            <form id="suspenduForme" action="{{ route('switcheEvent') }}" method="POST">
-                                                                    @csrf
-                                                                    <input hidden type="text" name="etat" value="active"/>
-                                                                    <input hidden type="text" name="id" value="{{ $se->id }}"/>
-                                                                    <button type="submit" id='btnChangeSuspendre' class="btn btn-success btn-sm btn-block"><i
-                                                                            class="fa fa-unlock"></i> Publier
-                                                                    </button>
-                                                                </form>
+                                                            @else
+                                                            <form id="suspenduForme"
+                                                                action="{{ route('switcheEvent') }}" method="POST">
+                                                                @csrf
+                                                                <input hidden type="text" name="etat" value="active" />
+                                                                <input hidden type="text" name="id"
+                                                                    value="{{ $se->id }}" />
+                                                                <button type="submit" id='btnChangeSuspendre'
+                                                                    class="btn btn-success btn-sm btn-block"><i
+                                                                        class="fa fa-unlock"></i> Publier
+                                                                </button>
+                                                            </form>
                                                             @endif
                                                         </div><br>
                                                         <div class="col-lg-9 mt-5" style="margin-top: 10px">
                                                             <a href="{{$se->id}}" id='deleteEvent'>
                                                                 <span class="btn btn-danger btn-sm btn-block">
-                                                                    <i
-                                                                        class="fa fa-trash-o"></i>Supprimer</span></a>
+                                                                    <i class="fa fa-trash-o"></i>Supprimer</span></a>
                                                         </div>
                                                     </div>
                                                     <div class="client-detail">
@@ -893,8 +903,7 @@
                                                                         <td>{{$t->grandtitre.' ('.$t->titre.')'}}
                                                                         </td>
                                                                         <td class="client-status">
-                                                                            <a href="{{$t->id}}"
-                                                                                id='deleteClient'><span
+                                                                            <a href="{{$t->id}}" id='deleteClient'><span
                                                                                     class="label label-danger"><i
                                                                                         class="fa fa-trash-o"></i></span></a>
 
