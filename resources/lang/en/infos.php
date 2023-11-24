@@ -105,7 +105,7 @@ return [
         'link_2' => 'We design your dream',
         'link_3' => 'We equip your people',
         'btn1' => 'Our services',
-        'btn2' => 'Who are we',
+        'btn2' => 'View more',
     ],
 
     // ===== FOOTER CONTENT

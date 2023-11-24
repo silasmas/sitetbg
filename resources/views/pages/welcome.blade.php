@@ -78,6 +78,7 @@
     <script src="{{ asset('common/js/owl.js') }}"></script>
     <script src="{{ asset('common/js/script.js') }}"></script>
     <script src="{{ asset('js/sweetalert/sweetalert.min.js') }}"></script>
+    <script src="{{ asset('js/contact.form.js') }}"></script>
 </body>
 
 </html>

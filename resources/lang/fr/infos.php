@@ -119,7 +119,7 @@ return [
         'link_2' => 'We design your dream',
         'link_3' => 'We equip your people',
         'btn1' => 'Nos services',
-        'btn2' => 'Qui sommes-nous',
+        'btn2' => 'Voir plus',
     ],
 
     'services' => [
