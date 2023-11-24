@@ -79,7 +79,7 @@ return [
 
     // ===== HEADER CONTENT
     // Top bar
-    'idea' => 'Advisor - Design - Realize',
+    'idea' => 'Consulting - Designing - Realising',
     // Main menu
     'main_menu' => [
         'home' => 'Home',
@@ -88,7 +88,7 @@ return [
         'portfolio' => 'Portfolio',
         'team' => 'Team',
         'contact' => 'Contact',
-
+        'back' => "Back to home",
         'news' => 'News',
         'testimonials' => [
             'title' => 'Testimonials',

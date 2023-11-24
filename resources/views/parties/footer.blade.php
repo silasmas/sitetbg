@@ -7,7 +7,7 @@
             <div class="row">
                 <!--  -->
                 <div class="contact-info logo-box col-lg-4 col-md-12 wow fadeInUp text-center">
-                    <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
+                    <div class="logo"><a href="#"><img src="{{ asset('common/newimg/logoWhite.png') }}" width="150" alt=""></a></div>
                 </div>
 
                 <!-- Contact Info -->

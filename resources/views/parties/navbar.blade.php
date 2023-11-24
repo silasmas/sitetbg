@@ -156,33 +156,18 @@
         <div class="nav-outer">
             <nav class="navbar main-menu nav" >
                 <ul class="navigation">
-                    {{-- <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li> --}}
-                    <li><a href="#home" class="nav-link active" aria-current="page">Accueil</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#about" class="nav-link">A propos</a></li>
-                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li><a href="#team" class="nav-link">Team</a></li>
-                    <li><a href="#contact'" class="nav-link">Contact</a></li>
+                    @if (Route::current()->getName()=="accueil")
+                    <li><a href="#home" class="nav-link active" aria-current="page">@lang("infos.main_menu.home")</a></li>
+                    <li><a href="#services" class="nav-link">@lang("infos.main_menu.services")</a></li>
+                    <li><a href="#about" class="nav-link">@lang("infos.main_menu.about")</a></li>
+                    <li><a href="#portfolio" class="nav-link">@lang("infos.main_menu.portfolio")</a></li>
+                    <li><a href="#team" class="nav-link">@lang("infos.main_menu.team")</a></li>
+                    <li><a href="#contact" class="nav-link">@lang("infos.main_menu.contact")</a></li>
+                    @else
+                    <li><a href="{{ route('accueil') }}" class="nav-link">@lang("infos.main_menu.back")</a></li>
+                    @endif
                 </ul>
             </nav>
-            {{-- <nav class="nav main-menu" id="navbar-1">
-                <ul class="navigation">
-                    <li class="current"><a href="#home">@lang("infos.main_menu.home")</a></li>
-                    <li><a href="#about">@lang("infos.main_menu.about")</a></li>
-                    <li><a href="#services">@lang("infos.main_menu.services")</a></li>
-                    <li><a href="#portfolio">@lang("infos.main_menu.portfolio")</a></li>
-                    <li><a href="#team">@lang("infos.main_menu.team")</a></li>
-                    <li><a href="#contact">@lang("infos.main_menu.contact")</a></li>
-                </ul>
-            </nav> --}}
         </div>
         <!-- Main Menu End-->
 
@@ -276,7 +261,7 @@
                     <!-- Contact Info Box -->
                     <div class="contact-info-box">
                         <i class="icon lnr-icon-phone-handset"></i>
-                        <span class="title">Applez-nous</span>
+                        <span class="title">@lang("infos.allquestion")</span>
                         <a href="tel:+243824859415">(+243) 824859415</a>
                     </div>
                 </li>
@@ -284,7 +269,7 @@
                     <!-- Contact Info Box -->
                     <div class="contact-info-box">
                         <span class="icon lnr-icon-envelope1"></span>
-                        <span class="title">Ecrivez-nous</span>
+                        <span class="title">@lang("infos.writeus")</span>
                         <a href="mailto:Contact@thebestgroup.org">Contact@thebestgroup.org</a>
                     </div>
                 </li>

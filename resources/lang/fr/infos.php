@@ -80,6 +80,7 @@ return [
         'portfolio' => 'Portfolio',
         'team' => 'Notre equipe',
         'contact' => 'Contact',
+        'back' => "Retour à l'accueil",
 
         'news' => 'Actualités',
         'testimonials' => [
