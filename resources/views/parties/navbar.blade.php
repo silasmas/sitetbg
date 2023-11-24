@@ -165,12 +165,12 @@
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li> --}}
-                    <li><a href="{{ route('accueil/') }}#home" class="nav-link active" aria-current="page">Accueil</a></li>
-                    <li><a href="{{ route('accueil/') }}#services" class="nav-link">Services</a></li>
-                    <li><a href="{{ route('accueil/') }}#about" class="nav-link">A propos</a></li>
-                    <li><a href="{{ route('accueil/') }}#portfolio" class="nav-link">Portfolio</a></li>
-                    <li><a href="{{ route('accueil/') }}#team" class="nav-link">Team</a></li>
-                    <li><a href="{{ route('accueil/') }}#contact'" class="nav-link">Contact</a></li>
+                    <li><a href="#home" class="nav-link active" aria-current="page">Accueil</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">A propos</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#team" class="nav-link">Team</a></li>
+                    <li><a href="#contact'" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
             {{-- <nav class="nav main-menu" id="navbar-1">
