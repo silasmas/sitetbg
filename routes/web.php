@@ -80,6 +80,10 @@ Route::middleware(['auth'])->group(function () {
         TemoignageController::class,
         'store',
     ])->name('add.temoignage');
+    Route::post('/update.temoignage', [
+        TemoignageController::class,
+        'update',
+    ])->name('update.temoignage');
     Route::get('/add_register', [
         RegisterController::class,
         'create',

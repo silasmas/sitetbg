@@ -110,13 +110,9 @@ class PortofolioController extends Controller
         $por = request()->validate([
             'titre' => 'required|min:3',
             'slogant' => 'required|min:3',
-            'formateur' => 'required|min:3',
             'description' => 'required|min:3',
-            'profession_formateur' => 'required|min:3',
             'date' => 'required|date|min:3',
-            'video' => 'min:3',
             'cover' => 'required|sometimes',
-            'photo_formateur' => 'required|sometimes',
         ]);
 
         // $portofolio = portofolio::create($por);
@@ -140,14 +136,21 @@ class PortofolioController extends Controller
         $filenameformateur = time() . '.' . $file2->getClientOriginalName();
         $file2->move('storage/img_formateur', $filenameformateur);
 
-        $portofolio = portofolio::create($por);
+        $portofolio = portofolio::create([
+            'titre' => ['fr' => $request->titre, 'en' => $request->titre_en],
+            'slogant' => $request->slogant,
+            'description' => ['fr' => $request->description, 'en' => $request->description_en],
+            'date' => $request->date,
+            'cover' => 'cover/' . $filenamecover,
+            'photo_formateur' => 'img_formateur/' . $filenameformateur,
+        ]);
 
-        if (request('cover') && request('photo_formateur')) {
-            $portofolio->update([
-                'cover' => 'cover/' . $filenamecover,
-                'photo_formateur' => 'img_formateur/' . $filenameformateur,
-            ]);
-        }
+        // if (request('cover') && request('photo_formateur')) {
+        //     $portofolio->update([
+        //         'cover' => 'cover/' . $filenamecover,
+        //         'photo_formateur' => 'img_formateur/' . $filenameformateur,
+        //     ]);
+        // }
         //return redirect('admin.add_portofolio')->with('message','portofolio bien enregistrer');
         return back()->with('message', 'Portofolio bien enregistrer');
     }
@@ -161,11 +164,12 @@ class PortofolioController extends Controller
     public function show($id): View
     {
         // dd("ok");
-        // $img = portofolio::findOrFail($id);
-        // $sim = portofolio::where('slogant', $img->slogant)->get();
-        // $img->load('images');
-        return view('pages.detail');
-        // return view('pages.detail', compact('img', 'sim'));
+        $img = portofolio::findOrFail($id);
+        $sim = portofolio::where('slogant', $img->slogant)->get();
+        $img->load('images');
+        // dd($img);
+        // return view('pages.detail');
+        return view('pages.detail', compact('img', 'sim'));
     }
     public function showRegister($id)
     {
@@ -213,10 +217,10 @@ class PortofolioController extends Controller
      */
     public function destroy($id)
     {
-        $img = images::findOrFail($id);
+        $img = images::where("portofolio_id", $id);
         if ($img) {
             foreach ($img as $v) {
-                $pat = public_path() . '/galeri/' . $v->image;
+                $pat = public_path() . 'storage/' . $v->image;
                 unlink($pat);
             }
             $delimg = $img->delete();

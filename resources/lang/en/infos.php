@@ -58,6 +58,12 @@ return [
         'btn' => 'Send a Message',
         'info' => 'Subscribe to be informed about our next news',
     ],
+    'portfolio' => [
+        'voir' => 'Review',
+        'enImge' => 'Image',
+        'p1' => 'recent portfolio',
+        'p2' => 'Our Recent work',
+    ],
 
     // ===== TIME COUNT
     'on_date' => 'on',

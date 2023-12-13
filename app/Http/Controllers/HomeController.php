@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\clientregister;
+use App\Models\images;
 use App\Models\message;
 use App\Models\newsletter;
 use App\Models\portofolio;
@@ -43,9 +44,11 @@ class HomeController extends Controller
             ->get();
         // dd($client);
         $portofolio = portofolio::with('images')->get();
+        $images = images::get();
+        // dd($portofolio);
         return view(
             'home',
-            compact('temoignage', 'user', 'team', 'portofolio', 'register', 'client', 'messages', 'newsletters')
+            compact('images', 'temoignage', 'user', 'team', 'portofolio', 'register', 'client', 'messages', 'newsletters')
         );
     }
 }

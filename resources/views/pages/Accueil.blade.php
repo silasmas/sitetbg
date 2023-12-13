@@ -400,7 +400,7 @@
                         <div class="inner-box">
                             <div class="image-box">
                                 <figure class="image"><a href="{{ route('showPortfolio',["id"=>$port->id]) }}"><img
-                                            src="{{ asset('storage'. $port->cover) }}" alt=""></a>
+                                            src="{{ asset('storage/'. $port->cover) }}" alt=""></a>
                                 </figure>
                                 <a href="{{ route('showPortfolio',["id"=>$port->id]) }}" class="read-more"><i
                                         class="fa fa-long-arrow-alt-right"></i></a>
@@ -453,7 +453,7 @@
                             <div class="testimonial-block-two">
                                 <div class="inner-box">
                                     <div class="content-box">
-                                        <div class="thumb"><img src="{{ asset('storage/'.$tem->photo) }}" alt="">
+                                        <div class="thumb"><img src="{{ asset('storage/'.$tem->photo) }}" alt="" width="100">
                                         </div>
                                         <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                                                 class="fa fa-star"></i><i class="fa fa-star"></i><i

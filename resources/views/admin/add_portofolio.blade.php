@@ -37,8 +37,12 @@
                                                  <form role="form" id="formPortofolio"  method="POST" action="{{route('add.porto')}}" class='form-group' enctype="multipart/form-data">
                                                         @csrf
                                                  <div class="col-md-12">
-                                                        <label>Titre</label>
+                                                        <label>Titre (FR)</label>
                                                         <input type="text" placeholder="Enter le titre" name='titre' class="form-control">
+                                                 </div>
+                                                 <div class="col-md-12">
+                                                        <label>Titre (EN)</label>
+                                                        <input type="text" placeholder="Enter le titre" name='titre_en' class="form-control">
                                                  </div>
                                                  <div class=" col-md-12"><label>Slogant (cadre)</label>
                                                         <select name='slogant' class="select2_demo_1 form-control">
@@ -98,8 +102,13 @@
                                                         </div>
                                                  </div>
                                                  <div class="col-md-12">
-                                                        <label>Descriptions</label>
+                                                        <label>Descriptions (FR)</label>
                                                         <textarea name="description" class="summernote" rows="10">
+                                                        </textarea>
+                                                 </div>
+                                                 <div class="col-md-12">
+                                                        <label>Descriptions (EN)</label>
+                                                        <textarea name="description_en" class="summernote" rows="10">
                                                         </textarea>
                                                  </div>
                                                  <div class="col-md-12 mt-10" style="margin-top: 30px;">

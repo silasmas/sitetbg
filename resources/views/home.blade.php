@@ -7,6 +7,7 @@
 <link href="{{asset('css/dropzone/basic.css')}}" rel="stylesheet">
 <link href="{{asset('css/dropzone/dropzone.css')}}" rel="stylesheet">
 <link href="{{ asset('css/dataTables/datatables.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/blueimp/css/blueimp-gallery.min.css') }}" rel="stylesheet">
 @endsection
 @section('content')
 <div class="row wrapper wrapper-content animated fadeInRight">
@@ -107,7 +108,27 @@
                                                         </div>
                                                     </div>
                                                     <div id="tab-2" class="tab-pane ">
+                                                        <div class="lightBoxGallery">
+                                                            @forelse ($images as $im)
 
+                                                            <a href="{{ asset('storage/'.$im->image) }}" title=""
+                                                                data-gallery=""><img src="{{ asset('storage/'.$im->image) }}" width="100" height="100"></a>
+                                                            @empty
+
+                                                            @endforelse
+
+                                                            <!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+                                                            <div id="blueimp-gallery" class="blueimp-gallery">
+                                                                <div class="slides"></div>
+                                                                <h3 class="title"></h3>
+                                                                <a class="prev">‹</a>
+                                                                <a class="next">›</a>
+                                                                <a class="close">×</a>
+                                                                <a class="play-pause"></a>
+                                                                <ol class="indicator"></ol>
+                                                            </div>
+
+                                                        </div>
                                                     </div>
                                                 </div>
 
@@ -260,10 +281,13 @@
 
                                                             <strong>Detail témoignage</strong>
                                                             <form role="form" id="formTemoignage" method="POST"
-                                                                action="{{route('add.temoignage')}}" class='form-group'
+                                                                action="{{route('update.temoignage')}}" class='form-group'
                                                                 enctype="multipart/form-data">
                                                                 @csrf
                                                                 <div class="col-md-12">
+                                                                    <input type="text"
+                                                                        name='id' value="{{ $se->id }}"
+                                                                        class="form-control hidden" hidden>
                                                                     <label>Nom</label>
                                                                     <input type="text" placeholder="Enter le nom"
                                                                         name='nom' value="{{ $se->nom }}"
@@ -332,10 +356,25 @@
                                                                     @endif
                                                                 </div>
                                                                 <div class="col-md-12">
-                                                                    <label>Contenue du temoignage</label>
+                                                                    <label>Contenue du temoignage (FR)</label>
                                                                     <textarea name="description" data-provide="markdown"
                                                                         rows="10">
-                                                                    {{ $se->description }}
+                                                                    {{ $se->getTranslation("description",'fr') }}
+                                                            </textarea>
+                                                                    @if ($errors->has('description'))
+
+                                                                    <span class="invalid-feedback" role="alert">
+                                                                        <strong>{{ $errors->first('description')
+                                                                            }}</strong>
+                                                                    </span>
+
+                                                                    @endif
+                                                                </div>
+                                                                <div class="col-md-12">
+                                                                    <label>Contenue du temoignage (EN)</label>
+                                                                    <textarea name="description" data-provide="markdown"
+                                                                        rows="10">
+                                                                        {{ $se->getTranslation("description",'en') }}
                                                             </textarea>
                                                                     @if ($errors->has('description'))
 
@@ -623,9 +662,9 @@
                                                         <div class="full-height-scroll">
 
                                                             <strong>Detail de l'agent</strong>
-                                                            <form role="form" id="form-{{ $se->id}}" method="POST" name="{{ $se->id }}"
-                                                                action="{{route('teamUpdate')}}" class='form-group'
-                                                                enctype="multipart/form-data">
+                                                            <form role="form" id="form-{{ $se->id}}" method="POST"
+                                                                name="{{ $se->id }}" action="{{route('teamUpdate')}}"
+                                                                class='form-group' enctype="multipart/form-data">
                                                                 @csrf
                                                                 <div class="col-md-12">
                                                                     <label>Photo</label>
@@ -641,7 +680,8 @@
                                                                             class="input-group-addon btn btn-default btn-file"><span
                                                                                 class="fileinput-new">Selectioner une
                                                                                 photo</span>
-                                                                            <span class="fileinput-exists">Changer</span>
+                                                                            <span
+                                                                                class="fileinput-exists">Changer</span>
                                                                             <input type="file" value="{{$se->photo}}"
                                                                                 name="photoTeam"></span>
                                                                         <a href="{{$se->photo}}"
@@ -651,7 +691,8 @@
                                                                     @if ($errors->has('photoTeam'))
 
                                                                     <span class="invalid-feedback" role="alert">
-                                                                        <strong>{{ $errors->first('photoTeam')}}</strong>
+                                                                        <strong>{{
+                                                                            $errors->first('photoTeam')}}</strong>
                                                                     </span>
 
                                                                     @endif
@@ -1174,6 +1215,7 @@
 @section('autres_script')
 <script src="{{asset('js/jasny/jasny-bootstrap.min.js')}}"></script>
 <script src="{{asset('js/jasny/jasny-bootstrap.min.js')}}"></script>
+<script src="{{ asset('js/blueimp/jquery.blueimp-gallery.min.js') }}"></script>
 <script src="{{asset('js/bootstrap-markdown/bootstrap-markdown.js')}}"></script>
 <script src="{{asset('js/bootstrap-markdown/markdown.js')}}"></script>
 <script src="{{asset('js/dataTables/datatables.min.js')}}"></script>

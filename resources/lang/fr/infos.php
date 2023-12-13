@@ -66,6 +66,12 @@ return [
         'btn' => 'Envoyer le Message',
         'info' => 'Abonnez-vous pour être informé sur nos prochaines actualités',
     ],
+    'portfolio' => [
+        'voir' => 'Revoir',
+        'enImge' => 'En image',
+        'p1' => 'Recent portfolio',
+        'p2' => 'Nos recentes réalisation',
+    ],
     'descAbout' => "Nous conseillons par la formation et le coaching, nous concevons des projets de développement
     d'entreprise et des plans de communication et nous réalisons les évènements internes ainsi
     qu'externes des entreprises et personnes de notoriétés.",

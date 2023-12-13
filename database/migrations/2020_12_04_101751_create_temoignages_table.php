@@ -19,7 +19,7 @@ class CreateTemoignagesTable extends Migration
             $table->string('prenom')->nullable();
             $table->string('profession')->nullable();
             $table->string('photo')->nullable();
-            $table->text('description')->nullable();
+            $table->json('description')->nullable();
             $table->timestamps();
         });
     }

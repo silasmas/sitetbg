@@ -66,12 +66,18 @@ class TemoignageController extends Controller
         $filename = time() . '.' . $file->getClientOriginalName();
         $file->move('storage/temoin', $filename);
 
-        $temoignage = temoignage::create($por);
-        if (request('photo')) {
-            $temoignage->update([
-                'photo' => 'temoin/' . $filename,
-            ]);
-        }
+        $temoignage = temoignage::create([
+            'nom' => $request->nom,
+            'prenom' => $request->prenom,
+            'profession' => $request->profession,
+            'description' => ["fr" => $request->description, 'en' => $request->description_en],
+            'photo' => 'temoin/' . $filename,
+        ]);
+        // if (request('photo')) {
+        //     $temoignage->update([
+        //         'photo' => 'temoin/' . $filename,
+        //     ]);
+        // }
         return back()->with('message', 'Temoignage bien enregistrer');
     }
 
@@ -104,9 +110,34 @@ class TemoignageController extends Controller
      * @param  \App\Models\temoignage  $temoignage
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, temoignage $temoignage)
+    public function update(Request $request)
     {
-        //
+        $temoignage = temoignage::find($request->id);
+        if ($temoignage) {
+            $file = $request->file('photo');
+
+            if ($file !=null) {
+                $path = public_path() . '/storage/' . $temoignage->photo;
+                if (file_exists($path)) {
+                    unlink($path);
+                }
+                $filename = time() . '.' . $file->getClientOriginalName();
+                $file->move('storage/temoin', $filename);
+
+            }
+
+            $temoignage->update([
+                'nom' => $request->nom,
+                'prenom' => $request->prenom,
+                'profession' => $request->profession,
+                'description' => ["fr" => $request->description, 'en' => $request->description_en],
+                'photo' => $file!=null?'temoin/' . $filename:$temoignage->photo,
+            ]);
+            return back()->with('message', 'Temoignage mis à jour');
+        } else {
+            return back()->with('message', 'erreur');
+        }
+
     }
 
     /**
