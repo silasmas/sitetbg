@@ -156,16 +156,16 @@
         <div class="nav-outer">
             <nav class="navbar main-menu nav" >
                 <ul class="navigation">
-                    @if (Route::current()->getName()=="accueil")
-                    <li><a href="#home" class="nav-link active" aria-current="page">@lang("infos.main_menu.home")</a></li>
-                    <li><a href="#services" class="nav-link">@lang("infos.main_menu.services")</a></li>
-                    <li><a href="#about" class="nav-link">@lang("infos.main_menu.about")</a></li>
-                    <li><a href="#portfolio" class="nav-link">@lang("infos.main_menu.portfolio")</a></li>
-                    <li><a href="#team" class="nav-link">@lang("infos.main_menu.team")</a></li>
-                    <li><a href="#contact" class="nav-link">@lang("infos.main_menu.contact")</a></li>
-                    @else
+                    {{-- @if (Route::current()->getName()=="accueil") --}}
+                    <li><a href="{{Route::current()->getName()=="accueil"?"#home":route('accueil') }}" class="nav-link active" aria-current="page">@lang("infos.main_menu.home")</a></li>
+                    <li><a href="{{Route::current()->getName()=="accueil"?"#services":route('accueil') }}" class="nav-link">@lang("infos.main_menu.services")</a></li>
+                    <li><a href="{{Route::current()->getName()=="accueil"?"#about":route('accueil') }}" class="nav-link">@lang("infos.main_menu.about")</a></li>
+                    <li><a href="{{Route::current()->getName()=="accueil"?"#portfolio":route('accueil') }}" class="nav-link">@lang("infos.main_menu.portfolio")</a></li>
+                    <li><a href="{{Route::current()->getName()=="accueil"?"#team":route('accueil') }}" class="nav-link">@lang("infos.main_menu.team")</a></li>
+                    <li><a href="{{Route::current()->getName()=="accueil"?"#contact":route('accueil') }}" class="nav-link">@lang("infos.main_menu.contact")</a></li>
+                    {{-- @else
                     <li><a href="{{ route('accueil') }}" class="nav-link">@lang("infos.main_menu.back")</a></li>
-                    @endif
+                    @endif --}}
                 </ul>
             </nav>
         </div>

@@ -72,6 +72,9 @@ return [
     // ===== HEADER CONTENT
     // Top bar
     'idea' => 'Conseiller - Concevoir - Réaliser',
+    's1' => 'Conseiller',
+    's2' => 'Concevoir',
+    's3' => 'Réaliser',
     // Main menu
     'main_menu' => [
         'home' => 'Accueil',

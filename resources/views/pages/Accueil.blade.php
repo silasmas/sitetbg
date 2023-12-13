@@ -132,7 +132,9 @@
         </ul>
     </section>
     <!-- End Main Slider-->
+<!-- Features Section -->
 
+<!-- End Features Section -->
     <!-- Services Section -->
     <section id="services" class="services-section">
         <div class="bg bg-pattern-1"></div>
@@ -151,39 +153,86 @@
 
 
             <div class="row">
+                <section class="features-section pt-0">
+                    <div class="auto-container">
+                        <div class="row">
+                            <!-- Feature Block -->
+                            <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                                <div class="inner-box ">
+                                    <div class="image-box">
+                                        <figure class="image"><a href="#"><img src="{{ asset('assets/images/services/feature-1.jpg') }}" alt=""></a></figure>
+                                        <i class="icon flaticon-design"></i>
+                                    </div>
+                                    <div class="content-box">
+                                        <h5 class="title"><a href="#">@lang("infos.s1")</a></h5>
+                                        <a href="#" class="read-more"><i class="lnr-icon-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature Block -->
+                            <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
+                                <div class="inner-box ">
+                                    <div class="image-box">
+                                        <figure class="image"><a href="#"><img src="{{ asset('assets/images/services/feature-2.jpg') }}" alt=""></a></figure>
+                                        <i class="icon flaticon-research-and-development"></i>
+                                    </div>
+                                    <div class="content-box">
+                                        <h5 class="title"><a href="#">@lang("infos.s2")</a></h5>
+                                        <a href="#" class="read-more"><i class="lnr-icon-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Feature Block -->
+                            <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
+                                <div class="inner-box ">
+                                    <div class="image-box">
+                                        <figure class="image"><a href="#"><img src="{{ asset('assets/images/services/feature-3.jpg') }}" alt=""></a></figure>
+                                        <i class="icon flaticon-sharing"></i>
+                                    </div>
+                                    <div class="content-box">
+                                        <h5 class="title"><a href="#">@lang("infos.s3")</a></h5>
+                                        <a href="#" class="read-more"><i class="lnr-icon-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <!-- Service Block -->
-                <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                {{-- <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                     <div class="inner-box">
                         <span class="count">01</span>
                         <h6 class="title"><a href="#">@lang("infos.services.title1")</a></h6>
                         <i class="icon flaticon-event"></i>
                         <div class="text">@lang("infos.services.description1")</div>
                     </div>
-                </div>
+                </div> --}}
 
                 <!-- Service Block -->
-                <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
+                {{-- <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
                     <div class="inner-box">
                         <span class="count">02</span>
                         <h6 class="title"><a href="#">@lang("infos.services.title2")</a></h6>
                         <i class="icon flaticon-graphic-design"></i>
                         <div class="text">@lang("infos.services.description2")</div>
                     </div>
-                </div>
+                </div> --}}
 
                 <!-- Service Block -->
-                <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
+                {{-- <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
                     <div class="inner-box">
                         <span class="count">03</span>
                         <h6 class="title"><a href="#">@lang("infos.services.title3")</a></h6>
                         <i class="icon flaticon-technology"></i>
                         <div class="text">@lang("infos.services.description3")</div>
                     </div>
-                </div>
+                </div> --}}
 
 
                 <!-- Service Block -->
-                <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
+                {{-- <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
                     <div class="inner-box">
                         <span class="count">04</span>
                         <h6 class="title"><a href="#">@lang("infos.services.title4")</a></h6>
@@ -206,7 +255,7 @@
                         <i class="icon flaticon-mobile-app"></i>
                         <div class="text">@lang("infos.services.description6")</div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

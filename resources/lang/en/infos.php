@@ -80,6 +80,9 @@ return [
     // ===== HEADER CONTENT
     // Top bar
     'idea' => 'Consulting - Designing - Realising',
+    's1' => 'Consulting',
+    's2' => 'Designing',
+    's3' => 'Realising',
     // Main menu
     'main_menu' => [
         'home' => 'Home',
