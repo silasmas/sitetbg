@@ -400,8 +400,11 @@
                     <div class="project-block-two">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a href="{{ route('showPortfolio',["id"=>$port->id]) }}"><img
+                                <figure class="image">
+                                    <a href="{{ route('showPortfolio',["id"=>$port->id]) }}">
+                                        <img
                                             src="{{ asset('storage/'. $port->cover) }}" alt=""></a>
+                                    <img src="{{asset('common/images/logo-book-session-web-ok.png')}}" alt="image logo porfolios" class="img-logo-portfolios">
                                 </figure>
                                 <a href="{{ route('showPortfolio',["id"=>$port->id]) }}" class="read-more"><i
                                         class="fa fa-long-arrow-alt-right"></i></a>

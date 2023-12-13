@@ -143,7 +143,7 @@
     <div class="main-box">
         <div class="logo-box">
             <div class="logo">
-                <a href="index.html">
+                <a href="/">
                     <img src="{{ asset('common/newimg/logoWhite.png') }}" alt="The best group" title="The best group">
                 </a>
             </div>
@@ -245,7 +245,7 @@
         <nav class="menu-box">
             <div class="upper-box">
                 <div class="nav-logo">
-                    <a href="index.html">
+                    <a href="/">
                         <img src="{{ asset('common/newimg/logoWhite.png') }}" alt="The best group"
                             title="The best group">
                     </a>
