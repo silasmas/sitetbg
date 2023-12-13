@@ -325,15 +325,19 @@
             <div class="outer-box">
                 <div class="bg"></div>
                 <div class="row">
-                    <div class="title-column col-lg-4 col-md-12 col-sm-12">
-                        <div class="inner-column">
+                    <div class="title-column col-lg-12 col-md-12 col-sm-12">
+                        <div class="sec-title text-center">
+                            <span class="sub-title">@lang('infos.projet')</span>
+                            <h2>@lang('infos.projetRessent')</h2>
+                        </div>
+                        {{-- <div class="inner-column">
                             <div class="sec-title light">
                                 <h3>@lang("infos.stat")</h3>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
 
-                    <div class="column col-lg-8 col-md-8 col-md-12 col-sm-12">
+                    {{-- <div class="column col-lg-8 col-md-8 col-md-12 col-sm-12">
                         <div class="fact-counter">
                             <div class="row">
                                 <!-- Counter block-->
@@ -378,7 +382,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -386,10 +390,7 @@
     <!-- Projects Section Two-->
     <section class="projects-section-two pt-5" id="portfolio">
         <div class="auto-container">
-            <div class="sec-title text-center">
-                <span class="sub-title">@lang('infos.projet')</span>
-                <h2>@lang('infos.projetRessent')</h2>
-            </div>
+
 
             <div class="carousel-outer">
                 <div class="projects-carousel-two owl-carousel owl-theme default-navs">
