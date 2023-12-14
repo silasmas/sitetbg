@@ -160,7 +160,7 @@
                             <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                                 <div class="inner-box ">
                                     <div class="image-box">
-                                        <figure class="image"><a href="#"><img src="{{ asset('assets/images/services/feature-1.jpg') }}" alt=""></a></figure>
+                                        <figure class="image"><a href="/detail-service"><img src="{{ asset('assets/images/services/feature-1.jpg') }}" alt=""></a></figure>
                                         <i class="icon flaticon-design"></i>
                                     </div>
                                     <div class="content-box">
@@ -174,7 +174,7 @@
                             <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
                                 <div class="inner-box ">
                                     <div class="image-box">
-                                        <figure class="image"><a href="#"><img src="{{ asset('assets/images/services/feature-2.jpg') }}" alt=""></a></figure>
+                                        <figure class="image"><a href="/detail-service"><img src="{{ asset('assets/images/services/feature-2.jpg') }}" alt=""></a></figure>
                                         <i class="icon flaticon-research-and-development"></i>
                                     </div>
                                     <div class="content-box">
@@ -188,7 +188,7 @@
                             <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
                                 <div class="inner-box ">
                                     <div class="image-box">
-                                        <figure class="image"><a href="#"><img src="{{ asset('assets/images/services/feature-3.jpg') }}" alt=""></a></figure>
+                                        <figure class="image"><a href="/detail-service"><img src="{{ asset('assets/images/services/feature-3.jpg') }}" alt=""></a></figure>
                                         <i class="icon flaticon-sharing"></i>
                                     </div>
                                     <div class="content-box">
