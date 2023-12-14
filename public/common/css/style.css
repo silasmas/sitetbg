@@ -13345,7 +13345,8 @@ Page Title
   position: relative;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
-  display: block;
+  display: flex;
+  align-items: center;
   background-color: #f5faff;
   border-radius: 15px;
   padding: 19px 40px;
@@ -13354,19 +13355,12 @@ Page Title
   color: var(--theme-color2);
 }
 .sidebar-service-list li a:hover i {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   color: #fff;
   background-color: var(--theme-color2);
 }
 .sidebar-service-list li a i {
   height: 32px;
   width: 45px;
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   color: #191825;
@@ -13388,8 +13382,6 @@ Page Title
   color: var(--theme-color2);
 }
 .sidebar-service-list li.current a i {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   color: #fff;
   background-color: var(--theme-color2);
 }

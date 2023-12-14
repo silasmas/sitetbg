@@ -23,9 +23,9 @@ use Illuminate\Support\Facades\Route;
 // Language
 Route::get('/language/{locale}', [PortofolioController::class, 'changeLanguage'])->name('change_language');
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/detail-service', function () {
+    return view('pages.detail-service');
+});
 Route::get('/', [PortofolioController::class, 'accueil'])->name('accueil');
 
 Route::get('showPortfolio/{id}', [PortofolioController::class, 'show'])->name('showPortfolio');
