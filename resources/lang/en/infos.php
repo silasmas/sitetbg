@@ -58,6 +58,44 @@ return [
         'btn' => 'Send a Message',
         'info' => 'Subscribe to be informed about our next news',
     ],
+    'service' => [
+        's1' => [
+            "titre" => 'MasterClass',
+            "description" => 'Une formation personnelle adaptée aux besoins réels du client après évaluation de compétence, mais aussi une formation ouverte à tout type de participant remplissant le profil.',
+        ],
+        's2' => [
+            "titre" => 'Kickoff',
+            "description" => 'Une formation personnelle adaptée aux besoins réels du client après évaluation de compétence, mais aussi une formation ouverte à tout type de participant remplissant le profil.',
+        ],
+        's3' => [
+            "titre" => 'Nkento',
+            "description" => 'Une formation personnelle adaptée aux besoins réels du client après évaluation de compétence, mais aussi une formation ouverte à tout type de participant remplissant le profil.',
+        ],
+        's4' => [
+            "titre" => 'Closer',
+            "description" => 'Une formation personnelle adaptée aux besoins réels du client après évaluation de compétence, mais aussi une formation ouverte à tout type de participant remplissant le profil.',
+        ],
+        's5' => [
+            "titre" => '8Think',
+            "description" => 'Un laboratoire d’idée sur des plans d’affaires et des concepts commerciaux basés sur l’étude du marché que nous proposons à des auteurs et compositeurs ainsi qu’aux entreprises et entrepreneurs de tout genre.',
+        ],
+        's6' => [
+            "titre" => 'Creative mind',
+            "description" => 'Une formation personnelle adaptée aux besoins réels du client après évaluation de compétence, mais aussi une formation ouverte à tout type de participant remplissant le profil.',
+        ],
+        's7' => [
+            "titre" => 'TBG grafik',
+            "description" => "L’équipe d’infographes, web master, social manager et réalisateur vidéo prête à rendre tous travaux de conception, réalisation, montage, courte vidéo d’annonce, publicité, émission, générique et gestion des réseaux sociaux.",
+        ],
+        's8' => [
+            "titre" => 'TBG publishing',
+            "description" => "Est une branche de TBG (The Best Group) qui est chargée de la publication des oeuvres littéraires. Elle a comme objectif celui de fournir aux penseurs, écrivains et chercheurs d'Afrique et de la diaspora, un espace de création et une caisse de résonance permettant à leurs productions littéraires et scientifiques, de connaître de meilleures conditions de diffusion et d'accessibilité à travers le monde.",
+        ],
+        's9' => [
+            "titre" => 'Book session',
+            "description" => 'Un live talk-show organisé pour présenter le livre et l’auteur à travers plusieurs arts du spectacle pour une meilleure compréhension de son ouvrage et de sa philosophie du sujet.',
+        ],
+    ],
     'portfolio' => [
         'voir' => 'Review',
         'enImge' => 'Image',
@@ -86,9 +124,18 @@ return [
     // ===== HEADER CONTENT
     // Top bar
     'idea' => 'Consulting - Designing - Realising',
-    's1' => 'Consulting',
-    's2' => 'Designing',
-    's3' => 'Realising',
+    's1' => [
+        "titre" => 'Consulting',
+        "description" => 'Un live talk-show organisé pour présenter le livre et l’auteur à travers plusieurs arts du spectacle pour une meilleure compréhension de son ouvrage et de sa philosophie du sujet.',
+    ],
+    's2' => [
+        "titre" => 'Designing',
+        "description" => 'Un live talk-show organisé pour présenter le livre et l’auteur à travers plusieurs arts du spectacle pour une meilleure compréhension de son ouvrage et de sa philosophie du sujet.',
+    ],
+    's3' => [
+        "titre" => 'Realising',
+        "description" => 'Un live talk-show organisé pour présenter le livre et l’auteur à travers plusieurs arts du spectacle pour une meilleure compréhension de son ouvrage et de sa philosophie du sujet.',
+    ],
     // Main menu
     'main_menu' => [
         'home' => 'Home',

@@ -137,40 +137,7 @@
             <h2>@lang("infos.portfolio.p2")</h2>
         </div>
 
-        <div class="carousel-outer">
-            <div class="projects-carousel-two owl-carousel owl-theme default-navs">
-                <!-- Project Block-->
-                @forelse ($sim as $p)
-                <div class="project-block-two">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><a href="{{ route('showPortfolio',['id'=>$p->id]) }}"><img
-                                        src="{{asset('storage/'.$p->cover)}}" alt=""></a>
-                            </figure>
-                            <a href="{{ route('showPortfolio',['id'=>$p->id]) }}" class="read-more"><i
-                                    class="fa fa-long-arrow-alt-right"></i></a>
-                            <div class="info-box">
-                                <h4 class="title"><a href="{{ route('showPortfolio',['id'=>$p->id]) }}">{{ $p->titre
-                                        }}</a></h4>
-                            </div>
-                        </div>
-                        <div class="overlay-content">
-                            <div class="info-box">
-                                <h4 class="title"><a href="{{ route('showPortfolio',['id'=>$p->id]) }}">{{ $p->titre
-                                        }}</a></h4>
-                                <div class="text">{{ Str::limit($p->description, 50, '...') }}</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @empty
-
-                @endforelse
-
-
-
-            </div>
-        </div>
+        @include("parties.slideService")
     </div>
 </section>
 <!-- End Projects Section Two -->

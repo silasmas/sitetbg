@@ -160,12 +160,12 @@
                             <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
                                 <div class="inner-box ">
                                     <div class="image-box">
-                                        <figure class="image"><a href="/detail-service"><img src="{{ asset('assets/images/services/feature-1.jpg') }}" alt=""></a></figure>
+                                        <figure class="image"><a href="{{ route('detail-service',['id'=>"conseiller"]) }}"><img src="{{ asset('assets/images/services/feature-1.jpg') }}" alt=""></a></figure>
                                         <i class="icon flaticon-design"></i>
                                     </div>
                                     <div class="content-box">
-                                        <h5 class="title"><a href="#">@lang("infos.s1")</a></h5>
-                                        <a href="#" class="read-more"><i class="lnr-icon-arrow-right"></i></a>
+                                        <h5 class="title"><a href="{{ route('detail-service',['id'=>"conseiller"]) }}">@lang("infos.s1.titre")</a></h5>
+                                        <a href="{{ route('detail-service',['id'=>"conseiller"]) }}" class="read-more"><i class="lnr-icon-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -174,12 +174,12 @@
                             <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
                                 <div class="inner-box ">
                                     <div class="image-box">
-                                        <figure class="image"><a href="/detail-service"><img src="{{ asset('assets/images/services/feature-2.jpg') }}" alt=""></a></figure>
+                                        <figure class="image"><a href="{{ route('detail-service',['id'=>"concevoir"]) }}"><img src="{{ asset('assets/images/services/feature-2.jpg') }}" alt=""></a></figure>
                                         <i class="icon flaticon-research-and-development"></i>
                                     </div>
                                     <div class="content-box">
-                                        <h5 class="title"><a href="#">@lang("infos.s2")</a></h5>
-                                        <a href="#" class="read-more"><i class="lnr-icon-arrow-right"></i></a>
+                                        <h5 class="title"><a href="{{ route('detail-service',['id'=>"concevoir"]) }}">@lang("infos.s2.titre")</a></h5>
+                                        <a href="{{ route('detail-service',['id'=>"concevoir"]) }}" class="read-more"><i class="lnr-icon-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -188,12 +188,12 @@
                             <div class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
                                 <div class="inner-box ">
                                     <div class="image-box">
-                                        <figure class="image"><a href="/detail-service"><img src="{{ asset('assets/images/services/feature-3.jpg') }}" alt=""></a></figure>
+                                        <figure class="image"><a href="{{ route('detail-service',['id'=>'realiser']) }}"><img src="{{ asset('assets/images/services/feature-3.jpg') }}" alt=""></a></figure>
                                         <i class="icon flaticon-sharing"></i>
                                     </div>
                                     <div class="content-box">
-                                        <h5 class="title"><a href="#">@lang("infos.s3")</a></h5>
-                                        <a href="#" class="read-more"><i class="lnr-icon-arrow-right"></i></a>
+                                        <h5 class="title"><a href="{{ route('detail-service',['id'=>'realiser']) }}">@lang("infos.s3.titre")</a></h5>
+                                        <a href="{{ route('detail-service',['id'=>'realiser']) }}" class="read-more"><i class="lnr-icon-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -284,19 +284,12 @@
                                     </div>
                                 </div>
                             </div> --}}
-
+{{--
                             <ul class="list-style-one">
                                 <li><i class="fa fa-check-circle"></i> @lang("infos.slides.link_1") </li>
                                 <li><i class="fa fa-check-circle"></i>@lang("infos.slides.link_2")</li>
                                 <li><i class="fa fa-check-circle"></i>@lang("infos.slides.link_3")</li>
-                            </ul>
-
-                            <div class="bottom-box">
-                                <div class="exp-box">
-                                    <h2 class="count"><i class="icon flaticon-experience"></i> +10</h2>
-                                    <span class="txt">@lang('infos.years')</span>
-                                </div>
-                            </div>
+                            </ul> --}}
                         </div>
                     </div>
 
@@ -390,42 +383,7 @@
     <!-- Projects Section Two-->
     <section class="projects-section-two pt-5" id="portfolio">
         <div class="auto-container">
-
-
-            <div class="carousel-outer">
-                <div class="projects-carousel-two owl-carousel owl-theme default-navs">
-                    <!-- Project Block-->
-                    @forelse ($travail as $port)
-
-                    <div class="project-block-two">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure class="image">
-                                    <a href="{{ route('showPortfolio',["id"=>$port->id]) }}">
-                                        <img
-                                            src="{{ asset('storage/'. $port->cover) }}" alt=""></a>
-                                    <img src="{{asset('common/images/logo-book-session-web-ok.png')}}" alt="image logo porfolios" class="img-logo-portfolios">
-                                </figure>
-                                <a href="{{ route('showPortfolio',["id"=>$port->id]) }}" class="read-more"><i
-                                        class="fa fa-long-arrow-alt-right"></i></a>
-                                <div class="info-box">
-                                    <h4 class="title"><a href="{{ route('showPortfolio',["id"=>$port->id]) }}">{{ $port->titre }}</a></h4>
-                                </div>
-                            </div>
-                            <div class="overlay-content">
-                                <div class="info-box">
-                                    <h4 class="title"><a href="{{ route('showPortfolio',["id"=>$port->id]) }}">{{ $port->titre }}</a></h4>
-                                    <div class="text">{{Str::limit($port->description, 100,'...')}}  </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    @empty
-                    <h6>Pas des oeuvres pour le moment</h6>
-                    @endforelse
-
-                </div>
-            </div>
+            @include('parties.slideService')
         </div>
     </section>
     <!-- End Projects Section Two -->

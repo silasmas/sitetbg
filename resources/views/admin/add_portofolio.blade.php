@@ -44,7 +44,14 @@
                                                         <label>Titre (EN)</label>
                                                         <input type="text" placeholder="Enter le titre" name='titre_en' class="form-control">
                                                  </div>
-                                                 <div class=" col-md-12"><label>Slogant (cadre)</label>
+                                                 <div class=" col-md-12"><label>Service</label>
+                                                        <select name='service' class="select2_demo_1 form-control">
+                                                               <option value="Conseil">Conseil</option>
+                                                               <option value="Concevoir">Concevoir</option>
+                                                               <option value="Realiser">Realiser</option>
+                                                        </select>
+                                                 </div>
+                                                 <div class=" col-md-12"><label>Produit</label>
                                                         <select name='slogant' class="select2_demo_1 form-control">
                                                                <option value="logo-book-session-web-ok.png">Book session</option>
                                                                <option value="logo-closer.web.png">Closer</option>
@@ -53,6 +60,14 @@
                                                                <option value="logo-8-fing.web.png">we fink</option>
                                                                <option value="logo tbg grafik web.jpg">Grafik</option>
                                                         </select>
+                                                 </div>
+                                                 <div class="col-md-12">
+                                                        <label>Adresse</label>
+                                                        <input type="text" name='adresse' placeholder="Lieu de l'evenement" class="form-control">
+                                                 </div>
+                                                 <div class="col-md-6">
+                                                        <label>Client (Cible)</label>
+                                                        <input type="text" name='cble' placeholder="Client (Cible)" class="form-control">
                                                  </div>
                                                  <div class="col-md-6 ">
                                                         <label>Nom animateur</label>
@@ -70,6 +85,15 @@
                                                  </div>
                                                  <div class="col-md-6 "><label>Lien de la video</label>
                                                         <input type="text" name="video" placeholder="Lien de la video" class="form-control">
+                                                 </div>
+                                                 <div class="col-md-6 "><label>Facebook</label>
+                                                        <input type="text" name="facebook" placeholder="Facebook" class="form-control">
+                                                 </div>
+                                                 <div class="col-md-6 "><label>Instragram</label>
+                                                        <input type="text" name="instagram" placeholder="Instragram" class="form-control">
+                                                 </div>
+                                                 <div class="col-md-6 "><label>Youtube</label>
+                                                        <input type="text" name="youtube" placeholder="Youtube" class="form-control">
                                                  </div>
                                                  <div class="col-md-12">
                                                         <label>Photo animateur</label>

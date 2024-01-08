@@ -115,19 +115,6 @@ class PortofolioController extends Controller
             'cover' => 'required|sometimes',
         ]);
 
-        // $portofolio = portofolio::create($por);
-        // //  dd($portofolio->cover);
-        // if (request('cover') && request('photo_formateur')) {
-        //     // $p = new portofolio();
-        //     $portofolio->update([
-        //         'cover' => request('cover')->store('cover', 'public'),
-        //         'photo_formateur' => request('photo_formateur')->store(
-        //             'img_formateur',
-        //             'public'
-        //         ),
-        //     ]);
-        // }
-
         $file = $request->file('cover');
         $file2 = $request->file('photo_formateur');
         $filenamecover = time() . '.' . $file->getClientOriginalName();
@@ -139,19 +126,19 @@ class PortofolioController extends Controller
         $portofolio = portofolio::create([
             'titre' => ['fr' => $request->titre, 'en' => $request->titre_en],
             'slogant' => $request->slogant,
+            'type' => $request->service,
+            'adresse' => $request->adresse,
+            'cible' => $request->cble,
+            'facebook' => $request->facebook,
+            'instagram' => $request->instagram,
+            'youtube' => $request->youtube,
+            'formateur' => $request->formateur,
             'description' => ['fr' => $request->description, 'en' => $request->description_en],
             'date' => $request->date,
             'cover' => 'cover/' . $filenamecover,
             'photo_formateur' => 'img_formateur/' . $filenameformateur,
         ]);
 
-        // if (request('cover') && request('photo_formateur')) {
-        //     $portofolio->update([
-        //         'cover' => 'cover/' . $filenamecover,
-        //         'photo_formateur' => 'img_formateur/' . $filenameformateur,
-        //     ]);
-        // }
-        //return redirect('admin.add_portofolio')->with('message','portofolio bien enregistrer');
         return back()->with('message', 'Portofolio bien enregistrer');
     }
 
@@ -161,15 +148,25 @@ class PortofolioController extends Controller
      * @param  \App\Models\portofolio  $portofolio
      * @return \Illuminate\Http\Response
      */
+    public function detail($id): View
+    {
+        // dd($id);
+        $type = $id;
+        $travail = portofolio::get();
+        $travails = portofolio::where('type', $id)->get();
+
+        return view('pages.detail-service', compact('type', 'travail', "travails"));
+    }
     public function show($id): View
     {
         // dd("ok");
         $img = portofolio::findOrFail($id);
-        $sim = portofolio::where('slogant', $img->slogant)->get();
+        $travail = portofolio::get();
+        // $travail = portofolio::where('slogant', $img->slogant)->get();
         $img->load('images');
         // dd($img);
         // return view('pages.detail');
-        return view('pages.detail', compact('img', 'sim'));
+        return view('pages.detail', compact('img', 'travail'));
     }
     public function showRegister($id)
     {
