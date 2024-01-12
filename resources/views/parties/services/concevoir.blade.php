@@ -76,7 +76,6 @@
                                     <span class="sub-title">@lang('infos.portfolio.p1')</span>
                                     <h2>@lang('infos.portfolio.p2')</h2>
                                 </div>
-
                                 @include("parties.slideService")
                             </div>
                         </section>

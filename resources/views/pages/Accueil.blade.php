@@ -47,7 +47,7 @@
                     </li>
 
                     <!-- Slide 2 -->
-                    <li data-index="rs-2" data-transition="zoomout">
+                    {{-- <li data-index="rs-2" data-transition="zoomout">
                         <!-- MAIN IMAGE -->
                         <img src="{{ asset('common/slides/EVENT.jpeg') }}" alt="" class="rev-slidebg">
 
@@ -83,7 +83,7 @@
                                 <a href="#about" class="theme-btn btn-style-one light-bg"><span class="btn-title">@lang("infos.slides.btn2")</span></a>
                             </div>
                         </div>
-                    </li>
+                    </li> --}}
                     <li data-index="rs-2" data-transition="zoomout">
                         <!-- MAIN IMAGE -->
                         <img src="{{ asset('common/newimg/07.jpeg') }}" alt="" class="rev-slidebg">

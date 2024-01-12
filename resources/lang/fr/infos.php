@@ -51,6 +51,7 @@ return [
     'entries' => 'entrées',
     'error_label' => 'Erreur :',
     'message_label' => 'Message :',
+    'more' => 'Description',
     'address' => [
         'number' => 'Numéro',
         'street' => 'Avenue',
@@ -58,6 +59,17 @@ return [
         'area' => 'Commune',
         'reference' => 'Référence',
         'city' => 'Ville',
+    ],
+    'produits' => [
+        'kickoff' => "Est un cadre de renforcement des capacités qui réunit plusieurs intervenants de différents secteurs ciblés afin de donner une nouvelle impulsion à la carrière professionnelle.",
+        '8fink' => "Un laboratoire d’idée sur des plans d’affaires et des concepts commerciaux basés sur l’étude du marché que nous proposons à des auteurs et compositeurs ainsi qu’aux entreprises et entrepreneurs de tout genre.",
+        'nkento' => "Est un magazine spécialement dédié aux femmes en vue de partager des expériences inspirantes, éveiller la conscience, encourager, et promouvoir le genre féminin dans plusieurs domaines.",
+        'masterclass' => "Une formation personnelle adaptée aux besoins réels du client après évaluation de compétence, mais aussi une formation ouverte à tout type de participant remplissant le profil.",
+        'closer' => "Closer est un programme de rapprochement entre le mentor et les mentorés, une sorte de talktable constructive autour des différents sujets qui seront evoqués pendant les différents échanges et une diversité de sujets",
+        'creativemind' => "Un cursus de renforcement des capacités certifié par le ministère de l’enseignement professionnel et l’INPP. Des ateliers pratiques en management, développement de leadership, outil infographique et gestion du changement et de l’innovation. Un coaching professionnel sur mesure des employés sur site ou à nos bureaux pour un meilleur rendement.",
+        'tbgpub' => "Est une branche de TBG (The Best Group) qui est chargée de la publication des oeuvres littéraires. Elle a comme objectif celui de fournir aux penseurs, écrivains et chercheurs d'Afrique et de la diaspora, un espace de création et une caisse de résonance permettant à leurs productions littéraires et scientifiques, de connaître de meilleures conditions de diffusion et d'accessibilité à travers le monde.",
+        'booksession' => "Un live talk-show organisé pour présenter le livre et l’auteur à travers plusieurs arts du spectacle pour une meilleure compréhension de son ouvrage et de sa philosophie du sujet.",
+        'tbggrafik' => "L’équipe d’infographes, web master, social manager et réalisateur vidéo prête à rendre tous travaux de conception, réalisation, montage, courte vidéo d’annonce, publicité, émission, générique et gestion des réseaux sociaux...",
     ],
     'contactform' => [
         'name' => 'Votre nom au complet',
