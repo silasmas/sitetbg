@@ -118,15 +118,15 @@ return [
     'idea' => 'Conseiller - Concevoir - Réaliser',
     's1' => [
         "titre" => 'Conseiller',
-        "description" => 'Un live talk-show organisé pour présenter le livre et l’auteur à travers plusieurs arts du spectacle pour une meilleure compréhension de son ouvrage et de sa philosophie du sujet.',
+        "description" => 'Nous conseillons par la formation et le coaching',
     ],
     's2' => [
         "titre" => 'Concevoir',
-        "description" => 'Un live talk-show organisé pour présenter le livre et l’auteur à travers plusieurs arts du spectacle pour une meilleure compréhension de son ouvrage et de sa philosophie du sujet.',
+        "description" => 'Nous concevons des projets de développement d\'entreprise et des plans de communication.',
     ],
     's3' => [
         "titre" => 'Réaliser',
-        "description" => 'Un live talk-show organisé pour présenter le livre et l’auteur à travers plusieurs arts du spectacle pour une meilleure compréhension de son ouvrage et de sa philosophie du sujet.',
+        "description" => 'nous réalisons les évènements internes ainsi qu\'externes des entreprises et personnes de notoriétés.',
     ],
     // Main menu
     'main_menu' => [

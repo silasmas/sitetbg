@@ -49,6 +49,43 @@
                     <!-- Slide 2 -->
                     <li data-index="rs-2" data-transition="zoomout">
                         <!-- MAIN IMAGE -->
+                        <img src="{{ asset('common/slides/EVENT.jpeg') }}" alt="" class="rev-slidebg">
+
+                        <div class="tp-caption" data-paddingbottom="[10,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
+                            data-type="text" data-height="none" data-width="['900','800','600','500']"
+                            data-whitespace="normal" data-hoffset="['0','0','0','0']"
+                            data-voffset="['-20','-15','-15','-30']" data-x="['center','center','center','center']"
+                            data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']"
+                            data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                            <h1><br>@lang("infos.slides.link_2")</h1>
+                        </div>
+
+                        <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
+                            data-type="text" data-height="none" data-width="['750','750','750','450']"
+                            data-whitespace="normal" data-hoffset="['0','0','0','0']" data-voffset="['105','90','90','70']"
+                            data-x="['center','center','center','center']" data-y="['middle','middle','middle','middle']"
+                            data-textalign="['top','top','top','top']"
+                            data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                            <div class="text">The best group</div>
+                        </div>
+
+                        <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
+                            data-type="text" data-height="none" data-width="['700','750','700','450']"
+                            data-whitespace="normal" data-hoffset="['0','0','0','0']"
+                            data-voffset="['190','185','180','150']" data-x="['center','center','center','center']"
+                            data-y="['middle','middle','middle','middle']" data-textalign="['top','top','top','top']"
+                            data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'>
+                            <div class="btn-box">
+                                <a href="#services" class="theme-btn btn-style-one"><span class="btn-title">@lang("infos.slides.btn1")</span></a>
+                                <a href="#about" class="theme-btn btn-style-one light-bg"><span class="btn-title">@lang("infos.slides.btn2")</span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li data-index="rs-2" data-transition="zoomout">
+                        <!-- MAIN IMAGE -->
                         <img src="{{ asset('common/newimg/07.jpeg') }}" alt="" class="rev-slidebg">
 
                         <div class="tp-caption" data-paddingbottom="[10,0,0,0]" data-paddingleft="[0,0,0,0]"
@@ -261,55 +298,36 @@
     </section>
     <!-- End Services Section -->
     <!-- About Section -->
-    <section id="about" class="about-section">
+    <section id="about" class="why-choose-us-three pt-0 mt-5 mb-5">
         <div class="auto-container">
-            <div class="outer-box">
-                <div class="row">
-                    <div class="content-column col-xl-6 col-lg-7 col-md-12 col-sm-12 order-2 wow fadeInRight"
-                        data-wow-delay="600ms">
-                        <div class="inner-column">
-                            <div class="sec-title">
-                                <span class="sub-title">@lang("infos.main_menu.about")?</span>
-                                <h2>@lang("infos.idea") </h2>
-                                {{-- <h4>The professional approach to development.</h4> --}}
-                                <div class="text">@lang("infos.descAbout")</div>
-                            </div>
+            <div class="row">
+				<div class="content-column col-xl-5 col-lg-5 col-md-12 col-sm-12 order-2 wow fadeInLeft" data-wow-delay="600ms">
+					<div class="inner-column">
+						<div class="sec-title">
+							<span class="sub-title">@lang("infos.main_menu.about")?</span>
+							<h2>@lang("infos.idea")</h2>
+							<div class="text"></div>
+						</div>
 
-                            <!--Skills-->
-                            {{-- <div class="skills">
-                                <!--Skill Item-->
-                                <div class="skill-item">
-                                    <div class="skill-header">
-                                        <h6 class="skill-title">@lang("infos.slides.at") TBG,</h6>
-                                    </div>
-                                </div>
-                            </div> --}}
-{{--
-                            <ul class="list-style-one">
-                                <li><i class="fa fa-check-circle"></i> @lang("infos.slides.link_1") </li>
-                                <li><i class="fa fa-check-circle"></i>@lang("infos.slides.link_2")</li>
-                                <li><i class="fa fa-check-circle"></i>@lang("infos.slides.link_3")</li>
-                            </ul> --}}
-                        </div>
-                    </div>
+						<!-- Work Block -->
+						<div class="work-block">
+							<div class="inner-box">
+								<span class="icon fa fa-check"></span>
+								<h6 class="title"></h6>
+								<div class="text">@lang("infos.descAbout")</div>
+							</div>
+						</div>
+						{{-- <a href="page-about.html" class="theme-btn btn-style-one hvr-dark" ><span class="btn-title">Explore Now</span></a> --}}
+					</div>
+				</div>
 
-                    <!-- Image Column -->
-                    <div class="image-column col-xl-6 col-lg-5 col-md-12 col-sm-12">
-                        <div class="inner-column wow fadeInLeft">
-                            <div class="image-box">
-                                <span class="icon icon-dots-one bounce-x"></span>
-                                <figure class="image-1 overlay-anim wow fadeInUp"><img
-                                        src="{{ asset('common/newimg/03.jpg') }}" alt=""></figure>
-                                <figure class="image-2 overlay-anim wow fadeInRight"><img
-                                        src="{{ asset('common/newimg/06.jpg') }}" alt="" class="rev-slidebg">
-                                </figure>
-                                <span class="icon-box icon-one"><i class="flaticon-innovation"></i></span>
-                                <span class="icon-box icon-two"><i class="flaticon-rocket"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+				<!-- Image Column -->
+				<div class="image-column col-xl-7 col-lg-7 col-md-12 col-sm-12">
+					<div class="image-box wow fadeInRight">
+						<figure class="image overlay-anim"><img src="{{ asset('common/images/services/about.jpg') }}" alt=""></figure>
+					</div>
+				</div>
+			</div>
         </div>
     </section>
     <!--Emd About Section -->
@@ -582,7 +600,22 @@
                     </li>
 					<li class="slide-item">
                         <div class="img">
-                            <img src="{{asset('assets/images/partenaire/NOEL-POUR-TOUS.png')}}" alt="">
+                            <img src="{{asset('common/images/logo-client/noel.png')}}" alt="">
+                        </div>
+                    </li>
+					<li class="slide-item">
+                        <div class="img">
+                            <img src="{{asset('common/images/logo-client/fdnt.png')}}" alt="">
+                        </div>
+                    </li>
+					<li class="slide-item">
+                        <div class="img">
+                            <img src="{{asset('common/images/logo-client/airtel.png')}}" alt="">
+                        </div>
+                    </li>
+					<li class="slide-item">
+                        <div class="img">
+                            <img src="{{asset('common/images/logo-client/fdnt.png')}}" alt="">
                         </div>
                     </li>
 					<li class="slide-item">

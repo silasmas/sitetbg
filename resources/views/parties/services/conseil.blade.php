@@ -45,14 +45,14 @@
                                     <a href="#" class="gap-lg-3 gap-2 active" id="home-tab" data-bs-toggle="tab"
                                         data-bs-target="#tab-1" type="button" role="tab" aria-controls="tab-1"
                                         aria-selected="true">
-                                        <span>Website Development</span>
+                                        <span>Book Session</span>
                                         <i class="fas fa-angle-right"></i></a>
                                 </li>
                                 <li>
                                     <a href="#" class="gap-lg-3 gap-2" id="home-tab" data-bs-toggle="tab"
                                         data-bs-target="#tab-2" type="button" role="tab" aria-controls="pensee"
                                         aria-selected="false">
-                                        <span>Website Development</span>
+                                        <span>Masterclass</span>
                                         <i class="fas fa-angle-right"></i></a>
                                 </li>
                             </ul>
