@@ -44,14 +44,14 @@
                                     <a href="#" class="gap-lg-3 gap-2 active" id="home-tab" data-bs-toggle="tab"
                                         data-bs-target="#tab-1" type="button" role="tab" aria-controls="tab-1"
                                         aria-selected="true">
-                                        <span>@lang('infos.service.s1.titre')</span>
+                                        <span>TBG Grafik</span>
                                         <i class="fas fa-angle-right"></i></a>
                                 </li>
                                 <li>
                                     <a href="#" class="gap-lg-3 gap-2" id="home-tab" data-bs-toggle="tab"
                                         data-bs-target="#tab-2" type="button" role="tab" aria-controls="pensee"
                                         aria-selected="false">
-                                        <span>@lang('infos.service.s2.titre')</span>
+                                        <span>8fink</span>
                                         <i class="fas fa-angle-right"></i></a>
                                 </li>
                             </ul>
@@ -65,10 +65,10 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="home-tab">
                         <div class="services-details__content">
-                            <img src="{{ asset('common/images/logo-master-class.png') }}" alt="img-logo"
+                            <img src="{{ asset('common/images/logo-tbggrafik.png') }}" alt="img-logo"
                                 class="img-logo">
-                            <h3 class="mt-4">@lang("infos.details")</h3>
-                            <p>@lang('infos.service.s1.description')</p>
+                            <h3 class="mt-4">@lang("infos.more")</h3>
+                            <p>@lang('infos.produits.tbggrafik')</p>
                         </div>
                         <section class="projects-section-two pt-5" id="portfolio">
                             <div class="auto-container">
@@ -82,10 +82,10 @@
                     </div>
                     <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="home-tab">
                         <div class="services-details__content">
-                            <img src="{{ asset('common/images/logo-master-class.png') }}" alt="img-logo"
+                            <img src="{{ asset('common/images/logo-8-fing.web.png') }}" alt="img-logo"
                                 class="img-logo">
-                            <h3 class="mt-4">@lang("infos.details")</h3>
-                            <p>@lang('infos.service.s2.description')</p>
+                                <h3 class="mt-4">@lang("infos.more")</h3>
+                                <p>@lang('infos.produits.8fink')</p>
                         </div>
                         <section class="projects-section-two pt-5" id="portfolio">
                             <div class="auto-container">

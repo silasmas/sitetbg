@@ -66,10 +66,10 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="home-tab">
                         <div class="services-details__content">
-                            <img src="{{ asset('common/images/logo-book-session-web-ok.png') }}" alt="img-logo"
+                            <img src="{{ asset('common/images/logo-tbg publishing.png') }}" alt="img-logo"
                                 class="img-logo">
-                            <h3 class="mt-4">Description</h3>
-                            <p> </p>
+                                <h3 class="mt-4">@lang("infos.more")</h3>
+                                <p>@lang("infos.produits.tbgpub")</p>
                         </div>
                         <section class="projects-section-two pt-5" id="portfolio">
                             <div class="auto-container">
