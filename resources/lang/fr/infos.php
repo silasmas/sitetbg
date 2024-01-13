@@ -25,7 +25,7 @@ return [
     'stat' => 'Il ya encore des hauteurs à gravir avec vous!',
     'projetop' => 'Top projets',
     'projet' => 'Projets',
-    'projetRessent' => 'Projets ressent ',
+    'projetRessent' => 'Projets recents ',
     'participant' => 'Participants formé',
     'client' => 'Clients satisfaits',
     'register_update' => 'Enregistrer la mise à jour',
@@ -122,9 +122,7 @@ return [
         'p1' => 'Recent portfolio',
         'p2' => 'Nos recentes réalisation',
     ],
-    'descAbout' => "Nous conseillons par la formation et le coaching, nous concevons des projets de développement
-    d'entreprise et des plans de communication et nous réalisons les évènements internes ainsi
-    qu'externes des entreprises et personnes de notoriétés.",
+    'descAbout' => "Nous sommes une consultance en matière de communication d'entreprises, avec une expertise dans trois domaines d'appui spécifique : la formation du personnel, la conception des projets et supports marketing ainsi que l'organisation des évènements corporate.",
     // ===== HEADER CONTENT
     // Top bar
     'idea' => 'Conseiller - Concevoir - Réaliser',
@@ -192,7 +190,7 @@ return [
     ],
 
     'services' => [
-        'subtitle' => 'Services we offer',
+        'subtitle' => 'Nos services',
         'description' => 'Professionalism in our <br> services is essential',
         'title1' => 'Edition <br>des livres',
         'description1' => "Nous réalisons votre rêve en éditant vos livres, concevant couverture et mise en

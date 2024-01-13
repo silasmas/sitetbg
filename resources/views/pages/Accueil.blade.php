@@ -182,9 +182,9 @@
                         <span class="sub-title">@lang("infos.slides.btn1")</span>
                         <h2>@lang("infos.services.subtitle")</h2>
                     </div>
-                    <div class="col-lg-5">
+                    {{-- <div class="col-lg-5">
                         <div class="text">@lang("infos.services.description")</div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
 
@@ -338,7 +338,7 @@
                 <div class="row">
                     <div class="title-column col-lg-12 col-md-12 col-sm-12">
                         <div class="sec-title text-center">
-                            <span class="sub-title">@lang('infos.projet')</span>
+                            {{-- <span class="sub-title">@lang('infos.projet')</span> --}}
                             <h2>@lang('infos.projetRessent')</h2>
                         </div>
                         {{-- <div class="inner-column">
