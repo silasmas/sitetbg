@@ -513,11 +513,6 @@
                     </li>
 					<li class="slide-item">
                         <div class="img">
-                            <img src="{{asset('common/images/logo-client/fdnt.png')}}" alt="">
-                        </div>
-                    </li>
-					<li class="slide-item">
-                        <div class="img">
                             <img src="{{asset('common/images/logo-client/pcn.jpg')}}" alt="">
                         </div>
                     </li>
