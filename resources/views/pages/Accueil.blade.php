@@ -198,7 +198,7 @@
                                 <div class="inner-box ">
                                     <div class="image-box">
                                         <figure class="image"><a href="{{ route('detail-service',['id'=>"conseiller"]) }}"><img src="{{ asset('assets/images/services/feature-1.jpg') }}" alt=""></a></figure>
-                                        <i class="icon flaticon-design"></i>
+                                        <i class="icon flaticon-consulting"></i>
                                     </div>
                                     <div class="content-box">
                                         <h5 class="title"><a href="{{ route('detail-service',['id'=>"conseiller"]) }}">@lang("infos.s1.titre")</a></h5>
@@ -212,7 +212,10 @@
                                 <div class="inner-box ">
                                     <div class="image-box">
                                         <figure class="image"><a href="{{ route('detail-service',['id'=>"concevoir"]) }}"><img src="{{ asset('assets/images/services/feature-2.jpg') }}" alt=""></a></figure>
-                                        <i class="icon flaticon-research-and-development"></i>
+                                        <i class="icon flaticon-graphic-design">
+
+                                            {{-- <img src="{{ asset('common/images/concevoir.png') }}" width="50" alt="{{ __('') }}"> --}}
+                                        </i>
                                     </div>
                                     <div class="content-box">
                                         <h5 class="title"><a href="{{ route('detail-service',['id'=>"concevoir"]) }}">@lang("infos.s2.titre")</a></h5>
@@ -226,7 +229,7 @@
                                 <div class="inner-box ">
                                     <div class="image-box">
                                         <figure class="image"><a href="{{ route('detail-service',['id'=>'realiser']) }}"><img src="{{ asset('assets/images/services/feature-3.jpg') }}" alt=""></a></figure>
-                                        <i class="icon flaticon-sharing"></i>
+                                        <i class="icon flaticon-innovation"></i>
                                     </div>
                                     <div class="content-box">
                                         <h5 class="title"><a href="{{ route('detail-service',['id'=>'realiser']) }}">@lang("infos.s3.titre")</a></h5>
@@ -237,62 +240,7 @@
                         </div>
                     </div>
                 </section>
-                <!-- Service Block -->
-                {{-- <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
-                    <div class="inner-box">
-                        <span class="count">01</span>
-                        <h6 class="title"><a href="#">@lang("infos.services.title1")</a></h6>
-                        <i class="icon flaticon-event"></i>
-                        <div class="text">@lang("infos.services.description1")</div>
-                    </div>
-                </div> --}}
 
-                <!-- Service Block -->
-                {{-- <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms">
-                    <div class="inner-box">
-                        <span class="count">02</span>
-                        <h6 class="title"><a href="#">@lang("infos.services.title2")</a></h6>
-                        <i class="icon flaticon-graphic-design"></i>
-                        <div class="text">@lang("infos.services.description2")</div>
-                    </div>
-                </div> --}}
-
-                <!-- Service Block -->
-                {{-- <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms">
-                    <div class="inner-box">
-                        <span class="count">03</span>
-                        <h6 class="title"><a href="#">@lang("infos.services.title3")</a></h6>
-                        <i class="icon flaticon-technology"></i>
-                        <div class="text">@lang("infos.services.description3")</div>
-                    </div>
-                </div> --}}
-
-
-                <!-- Service Block -->
-                {{-- <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
-                    <div class="inner-box">
-                        <span class="count">04</span>
-                        <h6 class="title"><a href="#">@lang("infos.services.title4")</a></h6>
-                        <i class="icon flaticon-mobile-app"></i>
-                        <div class="text">@lang("infos.services.description4")</div>
-                    </div>
-                </div>
-                <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
-                    <div class="inner-box">
-                        <span class="count">05</span>
-                        <h6 class="title"><a href="#">@lang("infos.services.title5")</a></h6>
-                        <i class="icon flaticon-mobile-app"></i>
-                        <div class="text">@lang("infos.services.description5")</div>
-                    </div>
-                </div>
-                <div class="service-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="900ms">
-                    <div class="inner-box">
-                        <span class="count">06</span>
-                        <h6 class="title"><a href="#">@lang("infos.services.title6")</a></h6>
-                        <i class="icon flaticon-mobile-app"></i>
-                        <div class="text">@lang("infos.services.description6")</div>
-                    </div>
-                </div> --}}
             </div>
         </div>
     </section>
@@ -338,62 +286,10 @@
                 <div class="row">
                     <div class="title-column col-lg-12 col-md-12 col-sm-12">
                         <div class="sec-title text-center">
-                            {{-- <span class="sub-title">@lang('infos.projet')</span> --}}
                             <h2>@lang('infos.projetRessent')</h2>
                         </div>
-                        {{-- <div class="inner-column">
-                            <div class="sec-title light">
-                                <h3>@lang("infos.stat")</h3>
-                            </div>
-                        </div> --}}
                     </div>
 
-                    {{-- <div class="column col-lg-8 col-md-8 col-md-12 col-sm-12">
-                        <div class="fact-counter">
-                            <div class="row">
-                                <!-- Counter block-->
-                                <div class="counter-block col-lg-4 col-md-4 col-sm-12 wow fadeInUp animated"
-                                    style="visibility: visible; animation-name: fadeInUp;">
-                                    <div class="inner">
-                                        <div class="content">
-                                            <i class="icon flaticon-checking"></i>
-                                            <div class="count-box counted"><span class="count-text" data-speed="3000"
-                                                    data-stop="6420">10</span></div>
-                                            <h6 class="counter-title">@lang('infos.projetop')</h6>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Counter block-->
-                                <div class="counter-block col-lg-4 col-md-4 col-sm-12 wow fadeInUp animated"
-                                    data-wow-delay="300ms"
-                                    style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
-                                    <div class="inner">
-                                        <div class="content">
-                                            <i class="icon flaticon-recommend"></i>
-                                            <div class="count-box counted"><span class="count-text" data-speed="3000"
-                                                    data-stop="9280">4000</span></div>
-                                            <h6 class="counter-title">@lang('infos.participant')</h6>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--Counter block-->
-                                <div class="counter-block col-lg-4 col-md-4 col-sm-12 wow fadeInUp animated"
-                                    data-wow-delay="600ms"
-                                    style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;">
-                                    <div class="inner">
-                                        <div class="content">
-                                            <i class="icon flaticon-consulting"></i>
-                                            <div class="count-box counted"><span class="count-text" data-speed="3000"
-                                                    data-stop="380">20</span></div>
-                                            <h6 class="counter-title">@lang('infos.client')</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
                 </div>
             </div>
         </div>
@@ -438,7 +334,7 @@
                                         <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
                                                 class="fa fa-star"></i><i class="fa fa-star"></i><i
                                                 class="fa fa-star"></i></div>
-                                        <div class="text">{{ $tem->description}}</div>
+                                        <div class="text">{{ Str::limit($tem->description, 200, '...') }}</div>
                                     </div>
                                     <div class="info-box">
                                         <h6 class="name">{{ $tem->prenom.' - '.$tem->nom }}</h6>
@@ -554,9 +450,11 @@
 				<!-- Form Column -->
 				<div class="form-column col-lg-6 col-md-12 col-sm-12">
 					<div class="inner-column">
+
 						<!-- Contact Form -->
 						<div class="contact-form wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
-							<h2 class="title">@lang("infos.contact")</h2>
+                            {{-- <img src="{{ asset('common/images/Jocelyne.png') }}" class="image-superposee" alt="Image superposée"> --}}
+                            <h2 class="title">@lang("infos.contact")</h2>
 
 							<!--Contact Form-->
 							<form method="post" action="{{ route('sendMsg') }}" id="contact-form">
