@@ -124,7 +124,7 @@
                     <!-- Slide 3 -->
                     <li data-index="rs-3" data-transition="zoomout">
                         <!-- MAIN IMAGE -->
-                        <img src="{{ asset('common/newimg/08.jpeg') }}" alt="" class="rev-slidebg">
+                        <img src="{{ asset('common/newimg/08.jpg') }}" alt="" class="rev-slidebg">
 
                         <div class="tp-caption" data-paddingbottom="[10,0,0,0]" data-paddingleft="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
@@ -179,7 +179,7 @@
             <div class="sec-title light">
                 <div class="row">
                     <div class="col-lg-7">
-                        <span class="sub-title">@lang("infos.slides.btn1")</span>
+                        {{-- <span class="sub-title">@lang("infos.slides.btn1")</span> --}}
                         <h2>@lang("infos.services.subtitle")</h2>
                     </div>
                     {{-- <div class="col-lg-5">
