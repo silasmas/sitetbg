@@ -74,7 +74,7 @@
                         <section class="projects-section-two pt-5" id="portfolio">
                             <div class="auto-container">
                                 <div class="sec-title text-center">
-                                    <span class="sub-title">@lang('infos.portfolio.p1')</span>
+                                    {{-- <span class="sub-title">@lang('infos.portfolio.p1')</span> --}}
                                     <h2>@lang('infos.portfolio.p2')</h2>
                                 </div>
 
