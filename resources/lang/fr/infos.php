@@ -120,7 +120,7 @@ return [
         'voir' => 'Revoir',
         'enImge' => 'En image',
         'p1' => 'Recent portfolio',
-        'p2' => 'Nos recentes réalisation',
+        'p2' => 'Nos recentes réalisations',
     ],
     'descAbout' => "Nous sommes une consultance en matière de communication d'entreprises, avec une expertise dans trois domaines d'appui spécifique : la formation du personnel, la conception des projets et supports marketing ainsi que l'organisation des évènements corporate.",
     // ===== HEADER CONTENT
